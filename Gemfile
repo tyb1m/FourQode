@@ -5,6 +5,33 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+group :production do
+  gem 'unicorn'
+end
+
+group :development, :test do
+  gem 'capistrano'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano3-unicorn'
+end
+
+  gem 'devise'
+  gem 'pry-rails'
+  gem 'carrierwave'
+  gem 'fog-aws'
+  gem 'mini_magick'
+  gem 'rspec-rails'
+  gem 'haml-rails'
+  gem 'font-awesome-rails'
+  gem 'erb2haml'
+  gem 'factory_bot_rails'
+  gem 'kaminari'
+  gem 'nokogiri'
+  gem 'seed_dump'
+  gem 'seed-fu'
+  gem 'gretel'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.1.6'
