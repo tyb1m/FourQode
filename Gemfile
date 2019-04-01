@@ -6,7 +6,8 @@ git_source(:github) do |repo_name|
 end
 
 group :production do
-  gem 'unicorn'
+  gem 'unicorn', '5.4.1'
+  
 end
 
 group :development, :test do
