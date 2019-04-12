@@ -1,9 +1,9 @@
 .question {
-  &ShowBody {
+  &Show {
 
     &Header {
       width: 100%;
-      height: 5vh;
+      height: 7vh;
       overflow: hidden;
 
       &Condition {
@@ -22,15 +22,17 @@
 
       &Title {
         width: 85%;
+        height: 100%;
         color: #fff;
         background-color: #393636;
         float: right;
         vertical-align: middle;
-        padding: 2% 2.5%;
+        padding: 2.5%;
         font-size: 20px;
 
-        &Head {
+        h1, &Head {
           margin: 0 0 2.5% 0;
+          font-size: 20px;
         }
 
         &Container {
@@ -53,6 +55,17 @@
             border-radius: 30px;
             text-align: center;
           }
+        }
+      }
+    }
+
+    &Main {
+      margin: 5%;
+
+      &Text {
+        p {
+          font-size: 18px;
+          line-height: 1.7;
         }
       }
     }
