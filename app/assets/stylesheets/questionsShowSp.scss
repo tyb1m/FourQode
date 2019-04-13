@@ -3,7 +3,7 @@
 
     &Header {
       width: 100%;
-      height: 9vh;
+      height: 10vh;
       overflow: hidden;
 
       &Condition {
@@ -67,6 +67,7 @@
         p {
           font-size: 13px;
           line-height: 1.7;
+          color: #707070;
         }
       }
     }
