@@ -1,3 +1,4 @@
 // リセット
 @import "./normalize";
-@import "./questions";
+// @import "./questions";
+@import url(questionsShowSp.scss) screen and (max-width: 480px);

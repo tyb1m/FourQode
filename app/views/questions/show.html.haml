@@ -1,3 +1,5 @@
+%meta{content: "width=device-width,user-scalable=no,maximum-scale=1″ />", name: "viewport"}/
+%script{:src => "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"}
 .quesitonShow
   .questionShowHeader
     .questionShowHeaderCondition
@@ -21,7 +23,13 @@
         Console.logやdebaggaを使って確認しているのですが、治らない状況です。
         %br
         コードは下記の通りです。
-        %br
+        %pre
+          %code
+            .prettyprint
+              def create
+              Hello World
+              end
+      %p
         なるべく早く解決したいと思っています。
         %br
         どうぞ宜しくお願いします
