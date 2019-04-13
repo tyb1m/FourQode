@@ -1,0 +1,140 @@
+.questionsEntry{
+  &Warning{
+    width: vmax;
+    height: 5vh;
+    background-color: #FC6F6F;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &Body{
+    &Header{
+      display: flex;
+      margin-bottom: 5vh;
+      &Estimate{
+        width: 35vw;
+        margin-top: 2vh;
+        margin-left: 3vw;
+        &Title{
+          font-size: 18px;
+          font-weight: bold;
+        }
+        &Input{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &Point{
+            font-size: 20px;
+            margin-right: 1vw;
+          }
+          &Box{
+            width: 20vw;
+            height: 5vh;
+            border: 1px solid #808080;
+          }
+        }
+        &Commission{
+          display: flex;
+          align-items: left;
+          justify-content: left;
+          border-top: 1px solid black;
+          padding-top: 2vh;
+          margin-top: 2vh;
+          &Title{
+            width: 10vw;
+            font-size: 15px;
+            margin-left: 3vw;
+          }
+          &Price{
+            font-size: 15px;
+            margin-left: 5vw;
+          }
+        }
+        &Publication{
+          display: flex;
+          align-items: left;
+          justify-content: left;
+          border-top: 1px solid black;
+          padding-top: 2vh;
+          margin-top: 2vh;
+          &Title{
+            width: 10vw;
+            font-size: 15px;
+            margin-left: 3vw;
+          }
+          &Price{
+            font-size: 15px;
+            margin-left: 5vw;
+          }
+        }
+      }
+      &Language{
+        margin-top: 2vh;
+        margin-left: 5vw;
+        &Title{
+          font-size: 18px;
+          font-weight: bold;
+        }
+        &Tag{
+          width: 17vw;
+          height: 5vh;
+          border: 1px solid #808080;
+          margin-bottom: 1vh;
+        }
+        &Select{
+          width: 17vw;
+          height: 5vh;
+          border: 1px solid #808080;
+          margin-bottom: 1vh;
+        }
+      }
+      &Button{
+        width: 15vw;
+        height: 12vh;
+        padding: 1px;
+        font-weight: 900;
+        font-size: 1.5vw;
+        color: white;
+        background-color: #D4D9D4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5vh;
+        margin-left: 33vw;
+        margin-right: 2vw;
+      }
+    }
+    &Main{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      &Markup{
+        margin-right: 2vw;
+        margin-left: 2vw;
+        width: 160vw;
+        height: 100vh;
+        border: 1px solid #808080;
+        border-radius: 30px;
+        padding: 40px;
+        font-size: 1vw;
+        line-height: 4vh;
+        background-color: white;
+      }
+      &View{
+        margin-right: 2vw;
+        margin-left: 2vw;
+        width: 160vw;
+        height: 100vh;
+        border: 1px solid #808080;
+        border-radius: 30px;
+        padding: 40px;
+        font-size: 1vw;
+        line-height: 4vh;
+        background-color: white;
+      }
+    }
+  }
+}

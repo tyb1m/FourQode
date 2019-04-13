@@ -1,2 +1,5 @@
 @import "./normalize";
-@import "questionsNew";
+// @import "questionsEntry";
+@import url(questionsEntry.scss) screen and (min-width: 1025px); /* 1025以上 */
+@import url(questionsEntryTb.scss) screen and (max-width: 1024px); /* 1024以下 */
+@import url(questionsEntrySp.scss) screen and (max-width: 480px); /* 480以下 */

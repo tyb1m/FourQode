@@ -1,34 +1,34 @@
 %wrapper.questionsEntry
   .questionsEntryWarning
     金額を入力してください。
-  .questionsEntryBodyWrapper
-    .questionsEntryHeader
-      .questionsEntryHeaderEstimate
-        %h3.questionsEntryHeaderEstimateTitle
+  %wrapper.questionsEntryBody
+    %wrapper.questionsEntryBodyHeader
+      .questionsEntryBodyHeaderEstimate
+        %p.questionsEntryBodyHeaderEstimateTitle
           金額を入力してください（5000PTから）
-        .questionsEntryHeaderEstimateInput
-          .questionsEntryHeaderEstimateInputPoint
+        .questionsEntryBodyHeaderEstimateInput
+          .questionsEntryBodyHeaderEstimateInputPoint
             PT
-          .questionsEntryHeaderEstimateInputBox
-        .questionsEntryHeaderEstimateCommission
-          .questionsEntryHeaderEstimateCommissionTitle
+          .questionsEntryBodyHeaderEstimateInputBox
+        .questionsEntryBodyHeaderEstimateCommission
+          .questionsEntryBodyHeaderEstimateCommissionTitle
             手数料（15%）
-          .questionsEntryHeaderEstimateCommissionPrice
+          .questionsEntryBodyHeaderEstimateCommissionPrice
             0000
-        .questionsEntryHeaderEstimatePublication
-          .questionsEntryHeaderEstimatePublicationTitle
+        .questionsEntryBodyHeaderEstimatePublication
+          .questionsEntryBodyHeaderEstimatePublicationTitle
             掲載価格
-          .questionsEntryHeaderEstimatePublicationPrice
+          .questionsEntryBodyHeaderEstimatePublicationPrice
             0000
-      .questionsEntryHeaderLanguage
-        %h3.questionsEntryHeaderLanguageTitle
+      .questionsEntryBodyHeaderLanguage
+        %p.questionsEntryBodyHeaderLanguageTitle
           タグを入力してください
-        .questionsEntryHeaderLanguageTag
-        .questionsEntryHeaderLanguageSelect
-      .questionsEntryHeaderButton
+        .questionsEntryBodyHeaderLanguageTag
+        .questionsEntryBodyHeaderLanguageSelect
+      .questionsEntryBodyHeaderButton
         質問を作成
-    .questionsEntryMain
-      .questionsEntryMainMarkup
+    %wrapper.questionsEntryBodyMain
+      .questionsEntryBodyMainMarkup
         インクリメンタルサーチがうまくいきません
 
         ただいまECサイトを作成している最中でして商品を検索する際、
@@ -45,7 +45,7 @@
         言語環境
         ruby 3.2.1
         Rails 5.1.6
-      .questionsEntryMainView
+      .questionsEntryBodyMainView
         インクリメンタルサーチがうまくいきません
 
         ただいまECサイトを作成している最中でして商品を検索する際、
