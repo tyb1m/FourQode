@@ -22,13 +22,14 @@
 
       &Title {
         width: 83%;
-        height: 85%;
+        height: 83%;
         color: #fff;
         background-color: #393636;
         float: right;
         vertical-align: middle;
-        padding: 2%;
+        padding: 3% 2% 1% 2%;
         font-size: 15px;
+        overflow: auto;
 
         h1, &Head {
           margin: 0 0 2.5% 0;
@@ -38,6 +39,7 @@
         &Container {
           text-align: center;
           height: auto;
+          overflow: hidden;
 
           &Price {
             float: left;
@@ -97,7 +99,7 @@
           }
           &Text {
             float: left;
-            max-width: 250px;
+            max-width: 200px;
             background-color: #B4AEAE;
             font-size: 13px;
             color: #fff;
@@ -122,7 +124,7 @@
 
             &Text {
               float: right;
-              max-width: 250px;
+              max-width: 200px;
               background-color: #58EB90;
               font-size: 13px;
               color: #fff;
