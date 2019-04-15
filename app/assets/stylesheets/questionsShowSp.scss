@@ -9,7 +9,7 @@
       &Condition {
         background-color: #AD9F9F;
         color: #fff;
-        width: 10%;
+        width: 13%;
         height: 100%;
         float: left;
         display: -webkit-box;
@@ -21,7 +21,7 @@
       }
 
       &Title {
-        width: 86%;
+        width: 83%;
         height: 85%;
         color: #fff;
         background-color: #393636;
@@ -51,7 +51,7 @@
             background-color: #fff;
             color: #393636;
             font-size: 18px;
-            padding: 0.5% 2%;
+            padding: 0.5% 4%;
             margin: 0 0 0 5%;
             border-radius: 30px;
             text-align: center;
@@ -68,6 +68,69 @@
           font-size: 13px;
           line-height: 1.7;
           color: #707070;
+        }
+      }
+
+      &Chat {
+        margin: 2%;
+        width: auto;
+        height: auto;
+        overflow: auto;
+
+        &Container {
+          margin: 2%;
+          height: auto;
+          width: auto;
+          overflow: auto;
+
+          &Name {
+            font-size: 13px;
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            text-align: center;
+            border: solid 1px #707070;
+            color: #707070;
+
+          }
+          &Text {
+            float: left;
+            max-width: 250px;
+            background-color: #B4AEAE;
+            font-size: 13px;
+            color: #fff;
+            margin: 0 0 0 3%;
+            padding: 4%;
+            border-radius: 30px;
+          }
+
+          &Current {
+            &Name {
+              float: right;
+              font-size: 13px;
+              float: right;
+              height: 40px;
+              line-height: 40px;
+              width: 40px;
+              border-radius: 50%;
+              text-align: center;
+              border: solid 1px #707070;
+              color: #707070;
+            }
+
+            &Text {
+              float: right;
+              max-width: 250px;
+              background-color: #58EB90;
+              font-size: 13px;
+              color: #fff;
+              margin: 0 3% 0 0;
+              padding: 4%;
+              border-radius: 30px;
+            }
+          }
         }
       }
     }
