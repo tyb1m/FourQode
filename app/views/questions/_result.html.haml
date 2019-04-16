@@ -1,8 +1,15 @@
-.resultBtn
-  = link_to questions_path do
-    %p.resultBtnTitle
-      解決する
-    %p.resultBtnText
-      解決後の受取金額
-    %p.resultBtnPrice
-      ￥4,250
+%button.resultBtn#open
+  %p.resultBtnTitle
+    解決する
+  %p.resultBtnText
+    解決後の受取金額
+  %p.resultBtnPrice
+    ￥4,250
+#overlay
+.modal
+  .modal-inner.modal-banner
+    .modal-body
+      .modal-head.bold
+        Hironori Tsukishimaさんにメッセージと自分のアピールをお書きください。
+    .clearfix
+      #button.modal-btn#close キャンセル
