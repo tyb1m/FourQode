@@ -1,8 +1,8 @@
 .resultBtn {
-  bottom: 60px;
-  right: 60px;
-  width: 160px;
-  height: 160px;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
   position: fixed;
   border-radius: 50%;
   background-color: #F76464;
@@ -13,18 +13,18 @@
   }
 
     &Title {
-      font-size: 21px;
-      margin: 37px 0 25px 0;
+      font-size: 15px;
+      margin: 28px 0 10px 0;
       font-weight: bold;
     }
 
     &Text {
-      font-size: 15px;
+      font-size: 9px;
       margin: 0 0 5px 0;
     }
 
     &Price {
-      font-size: 20px;
+      font-size: 13px;
       margin: 0 auto;
       font-weight: bold;
     }
