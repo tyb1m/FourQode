@@ -1,10 +1,10 @@
 .questionsEntry{
   &Warning{
     width: vmax;
-    height: 5vh;
+    height: 3vh;
     background-color: #FC6F6F;
     color: white;
-    font-size: 18px;
+    font-size: 11px;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -15,24 +15,25 @@
       display: flex;
       margin-bottom: 5vh;
       &Estimate{
-        width: 35vw;
+        width: 60vw;
         margin-top: 2vh;
-        margin-left: 3vw;
+        margin-left: 2vw;
         &Title{
-          font-size: 18px;
+          font-size: 5px;
           font-weight: bold;
         }
         &Input{
           display: flex;
-          align-items: center;
-          justify-content: center;
+          align-items: left;
+          justify-content: left;
           &Point{
-            font-size: 20px;
-            margin-right: 1vw;
+            font-size: 5px;
+            margin-right: 4vw;
+            margin-left: 2vw;
           }
           &Box{
-            width: 20vw;
-            height: 5vh;
+            width: 25vw;
+            height: 3vh;
             border: 1px solid #808080;
           }
         }
@@ -41,16 +42,16 @@
           align-items: left;
           justify-content: left;
           border-top: 1px solid black;
-          padding-top: 2vh;
+          padding-top: 1vh;
           margin-top: 2vh;
           &Title{
             width: 10vw;
-            font-size: 15px;
+            font-size: 8px;
             margin-left: 3vw;
           }
           &Price{
-            font-size: 15px;
-            margin-left: 5vw;
+            font-size: 8px;
+            margin-left: 10vw;
           }
         }
         &Publication{
@@ -58,52 +59,53 @@
           align-items: left;
           justify-content: left;
           border-top: 1px solid black;
-          padding-top: 2vh;
-          margin-top: 2vh;
+          padding-top: 1vh;
+          margin-top: 1vh;
           &Title{
             width: 10vw;
-            font-size: 15px;
+            font-size: 8px;
             margin-left: 3vw;
           }
           &Price{
-            font-size: 15px;
-            margin-left: 5vw;
+            font-size: 8px;
+            margin-left: 10vw;
           }
         }
       }
       &Language{
+        width: 40vw;
         margin-top: 2vh;
         margin-left: 5vw;
         &Title{
-          font-size: 18px;
+          font-size: 8px;
           font-weight: bold;
         }
         &Tag{
-          width: 17vw;
-          height: 5vh;
+          width: 25vw;
+          height: 3vh;
           border: 1px solid #808080;
           margin-bottom: 1vh;
         }
         &Select{
-          width: 17vw;
-          height: 5vh;
+          width: 25vw;
+          height: 3vh;
           border: 1px solid #808080;
           margin-bottom: 1vh;
         }
       }
       &Button{
-        width: 15vw;
-        height: 12vh;
+        width: 20vw;
+        height: 6vh;
         padding: 1px;
         font-weight: 900;
-        font-size: 1.5vw;
+        font-size: 5px;
         color: white;
         background-color: #D4D9D4;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 5vh;
-        margin-left: 33vw;
+        margin-left: 1vw;
         margin-right: 2vw;
       }
     }
@@ -112,27 +114,29 @@
       flex-direction: row;
       justify-content: center;
       &Markup{
+        overflow: scroll;
         margin-right: 2vw;
         margin-left: 2vw;
         width: 160vw;
-        height: 100vh;
+        height: 65vh;
         border: 1px solid #808080;
         border-radius: 30px;
-        padding: 40px;
-        font-size: 1vw;
-        line-height: 4vh;
+        padding: 15px;
+        font-size: 5px;
+        line-height: 3vh;
         background-color: white;
       }
       &View{
+        overflow: scroll;
         margin-right: 2vw;
         margin-left: 2vw;
         width: 160vw;
-        height: 100vh;
+        height: 65vh;
         border: 1px solid #808080;
         border-radius: 30px;
-        padding: 40px;
-        font-size: 1vw;
-        line-height: 4vh;
+        padding: 15px;
+        font-size: 5px;
+        line-height: 3vh;
         background-color: white;
       }
     }
