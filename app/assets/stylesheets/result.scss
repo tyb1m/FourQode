@@ -9,6 +9,7 @@
   text-align: center;
   color: #FFF;
   outline: none; 
+  cursor: pointer;
 
   &Title {
     font-size: 21px;
@@ -33,8 +34,8 @@
 }
 
 .modal {
-  width: 600px;
-  height: 300px;
+  width: 700px;
+  height: 500px;
   position: fixed;
   background-color: #FFF;
   display: none;
@@ -45,10 +46,7 @@
   z-index: 3000;
   overflow-x: hidden;
   overflow-y: auto;
-
-  &Banner {
-    text-align: center;
-  }
+  border-radius: 20px;
 
   &Inner {
     position: relative;
@@ -59,27 +57,42 @@
     height: 100%;
 
     .modalBody {
-      padding: 64px;
+      padding: 10px;
       line-height: 1.5;
+      color: #707070;
     }
   }
 
   &Head {
-    font-size: 16px;
+    font-size: 17px;
+    margin: 30px;
+  }
+
+  &Text {
+    font-size: 17px;
+    padding: 10px;
+    margin: 30px;
+    border : solid 1px #707070; 
+    border-radius: 20px;
   }
 
   &Btn {
-    border-top: 1px solid #ccc;
-    width: calc(50% - 1px);
+    width: 30%;
+    margin: 0 50px;
     text-align: center;
     line-height: 63px;
     cursor: pointer;
     float: left;
+    color: #707070;
+    bottom: 30px;
   }
-}
 
-.bold {
-  font-weight: 600;
+  a {
+    text-decoration: none;
+    background-color: #3DD043;
+    color: #fff;
+    float: right;
+  }
 }
 
 #overlay {

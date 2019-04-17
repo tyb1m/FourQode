@@ -37,7 +37,7 @@
 }
 
 .modal {
-  width: 300px;
+  width: 400px;
   height: 400px;
   position: fixed;
   background-color: #FFF;
@@ -68,6 +68,7 @@
 
   &Head {
     font-size: 15px;
+    margin: 15px;
   }
 
   &Text {
