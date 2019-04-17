@@ -1,16 +1,126 @@
-.toppage-header {
-  background-color: #96C7BE;
-  width:100% ;
-  height:50vh ;
+
+.toppageBody{
+  &Header {
+    // &Login{
+    //   background-color: #3DD043 ;
+    //   width:100% ;
+    //   height:5vh ;
+    //   line-height: 5vh ;
+    //   font-size: 1rem ;
+    //   color: #FFFFFF ;
+    //   text-align: center ;
+    //   vertical-align:middle ;
+    // }
+    // &Logout{
+    //   background-color: #FC6F6F;
+    //   width:100% ;
+    //   height:5vh ;
+    // }
+    &Navbar{
+      margin: 0 auto;
+      position: relative;
+      // position: fixed;
+      // top: 0;
+      // float: left;
+      &Left{
+        float: left;
+        position: relative;
+        // position: relative;
+        &Logo{
+          width:100% ;
+          height:5vh ;
+          img {
+            max-height: 5vh;
+          }
+        }
+        &Search{
+          width:10vh ;
+          padding-left: 20px;
+        }
+      }
+      &Right{
+        float: right;
+        li{
+          list-style: none;
+          display: inline-block;
+          // padding-right: 10px;
+          // margin: 0;
+        }
+        &Login{
+          list-style: none;
+        }
+        &Register{
+          list-style: none;
+        }
+      }
+      
+    }
+
+
+    &Search{
+      background-color: #FFFFFF ;
+      width:100% ;
+      height:5vh ;
+    }
+
+    &Register{
+      // padding: 5vh 0 0 0;
+      background-color: #96C7BE ;
+      width:100% ;
+      height:50vh ;
+    }
+  }
+
+  &Main{
+    height: 500vh;
+    background-color: #ffffff;
+  }
+
+  &Footer{
+    &Title{
+    background-color: #707070 ;
+    width:100% ;
+    height:50vh ;
+    }
+
+    &Btn{
+      bottom: 32px;
+      right: 32px;
+      width: 160px;
+      height: 160px;
+      font-size: 22px;
+      border-radius: 50%;
+      background: #ea352d;
+      color: #fff;
+      position: fixed;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+  }
 }
 
-.toppage-body {
-  height: 500vh;
-  background-color: #ffffff;
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
 }
 
-.toppage-footer {
-  background-color: #707070;
-  width:100% ;
-  height:50vh ;
-}
+// .toppage-header {
+//     background-color: #96C7BE;
+//     width:100% ;
+//     height:50vh ;
+//   }
+  
+//   .toppage-body {
+//     height: 500vh;
+//     background-color: #ffffff;
+//   }
+  
+//   .toppage-footer {
+//     background-color: #707070;
+//     width:100% ;
+//     height:50vh ;
+//   }

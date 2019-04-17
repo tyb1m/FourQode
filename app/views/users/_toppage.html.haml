@@ -1,17 +1,110 @@
-.toppage-header
-  %header
-  全てのエンジニアのための[副業]Q&Aサイト
-  4Qode
-  画面共有と通話で
-  あなたの質問解消にコミットする
+%wrapper.toppage
+  %wrapper.toppageBody
+    %toppageBodyHeader
+      -# .toppageBodyHeaderLogin
+      -#   ログインしました
+        -# 仮置き　別通知
+      -# .toppageBodyHeaderLogout
+      -#   ログアウトしました
+      -#   質問をするためには、ユーザー登録が必要です
+      -#   質問を受け付けました。ありがとうございます。
+      .toppageBodyHeaderNavbar.clearfix
+        .toppageBodyHeaderNavbarLeft
+          .toppageBodyHeaderNavbarLeftLogo
+            = link_to root_path do
+              = image_tag "S59981830.png", class: "logo_icon"
+          .toppageBodyHeaderNavbarLeftSearch
+            -# 仮置き　タグ
+            %form
+              %input{type: "search", autocomplete: "off",　value: "", placeholder: "どんな質問を解決したいですか？"}
+            -# end---------
+        %ul.toppageBodyHeaderNavbarRight
+          %li.toppageBodyHeaderNavbarRightLogin ログイン
+          %li.toppageBodyHeaderNavbarRegister 新規登録
 
-  4Qodeでは、あなたの質問の売り買いを通して、
-  スピーディで温かみある質問解消を実現します。
+      .toppageBodyHeaderRegister
+        .toppageBodyHeaderRegisterTitle
+          全てのエンジニアのための[副業]Q&Aサイト
+          4Qode
+          画面共有と通話で
+          あなたの質問解消にコミットする
 
-  5分前に〇〇が〇〇さんの質問を解決しました
+          4Qodeでは、あなたの質問の売り買いを通して、
+          スピーディで温かみある質問解消を実現します。
+        .toppageBodyHeaderRegisterUpdates
+          5分前に〇〇が〇〇さんの質問を解決しました
 
-.toppage-body
-  %body
+        .toppageBodyHeaderRegisterInputs
+          -# =f.text_field :userid, autofocus: true, placeholder: "ユーザー名"
+          -# =f.text_field :email, placeholder: "メールアドレス"
+          -# =f.password_field :password, placeholder: "メールアドレス"
+          
+          メールアドレス
+          パスワード
+          以下の登録ボタンのクリックにより、
+          利用規約 及び 個人情報の取り扱い に関する要項に同意したものとします。
+          無料で登録する
+    %wrapper.toppageBodyMain
+      .toppageBodyMain
+      .toppageBodyMain
+    %wrapper.toppageBodyFooter
+      .toppageBodyFooterTitle
+        未解決
+        Ruby
+        PHP
+        Java
+        JS
+        Python
+        C++
+      .toppageBodyFooterBtn
+        質問する
 
-.toppage-footer
-  %foother
+        -# 新着question
+        -# Ruby新着question
+        -# タイトル
+        -# ¥30,000
+        -# Taro Yamada
+        -# イイね
+        -# フォロー
+        -# フォロワー
+
+        -# PHP新着question
+        -# タイトル
+        -# ¥30,000
+        -# Taro Yamada
+        -# イイね
+        -# フォロー
+        -# フォロワー
+
+        -# Python新着question
+        -# タイトル
+        -# ¥30,000
+        -# Taro Yamada
+        -# イイね
+        -# フォロー
+        -# フォロワー
+
+        -# 募集 4Qodeを一緒に作りたいエンジニア
+        -# タグ一覧
+        -# ユーザーを探す
+        -# バッジとは？
+        -# 4Qode?とは
+        -# 称号とう？
+        -# エキスパート一覧
+        -# 公式ブログ
+        -# 4Qode Report
+        -# 運営からのお知らせ
+        -# 4Qode API
+        -# ヘルプ
+        -# 運営会社
+        -# 利用規約
+        -# 個人情報の取り扱い
+        -# 個人情報保護方針
+        -# 広告掲載のお問い合わせ
+
+        -# 4Qodeについてご意見をお聞かせください
+        -# 送信
+        -# 頂いたご意見への回答は行っておりません。
+        -# 返信の必要なお問い合わせはこちら
+
+        -# @2019 xxxx Co., Ltd
