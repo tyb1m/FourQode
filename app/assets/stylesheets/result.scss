@@ -46,11 +46,11 @@
   overflow-x: hidden;
   overflow-y: auto;
 
-  &-banner {
+  &Banner {
     text-align: center;
   }
 
-  &-inner {
+  &Inner {
     position: relative;
     overflow: hidden;
     background: #fff;
@@ -58,17 +58,17 @@
     width: 100%;
     height: 100%;
 
-    .modal-body {
+    .modalBody {
       padding: 64px;
       line-height: 1.5;
     }
   }
 
-  &-head {
+  &Head {
     font-size: 16px;
   }
 
-  &-btn {
+  &Btn {
     border-top: 1px solid #ccc;
     width: calc(50% - 1px);
     text-align: center;

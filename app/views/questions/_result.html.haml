@@ -7,9 +7,21 @@
     ￥4,250
 #overlay
 .modal
-  .modal-inner.modal-banner
-    .modal-body
-      .modal-head.bold
-        Hironori Tsukishimaさんにメッセージと自分のアピールをお書きください。
+  .modalInner
+    .modalBody
+      .modalHead
+        Hironori Tsukishimaさんに
+        %br
+        メッセージと自分のアピールをお書きください。
+      .modalText
+        私はこれまで、Railsを10年間開発し続けて来ました
+        %br
+        Jsも当然やっており、インクリメンタルサーチ、ajax
+        などの操作はお手の物です。
+        %br
+        間違いなく1時間以内に解決できる自信があります
+        %br
+        期待に添います。お願いします
     .clearfix
-      #button.modal-btn#close キャンセル
+      #button.modalBtn#close キャンセル
+      = link_to "送信", "", class: "modalBtn"
