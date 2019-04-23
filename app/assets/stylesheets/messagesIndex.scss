@@ -1,13 +1,223 @@
 .messagesIndex {
-  width: 100vw;
-  height: 100vh;
+  margin: 4% 3% 3% 3%;
+  box-sizing: border-box;
+  overflow: hidden;
 
   &Left {
-    width: 30%;
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+
+    &User {
+      width: 100%;
+      height: 60vh;
+    }
+
+    &Icon {
+      width: 100%;
+      height: 15vh;
+      button, &Phone {
+        width: 50%;
+        height: 100%;
+        float: left;
+        text-align: center;
+        cursor: pointer;
+        .fa {
+          font-size: 50px;
+          color: black;
+          text-align: center;
+        }
+        p.text {
+          color: #63B6EE;
+          width: auto;
+          margin: 10px 0 0 0;
+        }
+      }
+      button, &Pc {
+        display:inline-block;
+        width: 50%;
+        height: 100%;
+        float: left;
+        text-align: center;
+        cursor: pointer;
+        .fa {
+          font-size: 50px;
+          color: black;
+          text-align: center;
+        }
+        p.text {
+          color: #63B6EE;
+          width: auto;
+          margin: 10px 0 0 0;
+        }
+      }
+    }
+    &Status {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #3DD043;
+      color: #fff;
+      padding: 13px;
+      border-radius: 30px;
+    }
   }
 
   &Right {
-    width: 70%;
+    width: 65%;
+    float: right;
+    .question {
+      &Show {
     
+        &Header {
+          width: 100%;
+          height: 13vh;
+          overflow: auto;
+    
+          &Condition {
+            background-color: #F76464;
+            color: #fff;
+            width: 10%;
+            height: 100%;
+            float: left;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+          }
+    
+          &Title {
+            width: 90%;
+            height: 100%;
+            box-sizing: border-box;
+            color: #fff;
+            background-color: #393636;
+            float: right;
+            vertical-align: middle;
+            padding: 1.75%;
+            margin: 0 auto;
+            font-size: 22px;
+            overflow:hidden;
+    
+            h1, &Head {
+              margin: 0 0 1.5% 0;
+              font-size: 22px;
+            }
+    
+            &Container {
+              text-align: center;
+              height: auto;
+              overflow: auto;
+    
+              &Price {
+                float: left;
+                margin: 0.5% 0;
+              }
+    
+              &Language {
+                float: left;
+                width: auto;
+                height: auto;
+                background-color: #fff;
+                color: #393636;
+                font-size: 20px;
+                padding: 0.5% 4%;
+                margin: 0 0 0 5%;
+                border-radius: 30px;
+                text-align: center;
+              }
+            }
+          }
+        }
+    
+        &Main {
+          margin: 3%;
+    
+          &Text {
+            p {
+              font-size: 17px;
+              line-height: 1.7;
+              color: #707070;
+            }
+          }
+    
+          &Chat {
+            margin: 2% 35% 2% 2%;
+            width: auto;
+            height: auto;
+            overflow: auto;
+    
+            &Container {
+              margin: 2%;
+              height: auto;
+              width: auto;
+              overflow: auto;
+    
+              &Name {
+                font-size: 15px;
+                float: left;
+                height: 50px;
+                line-height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                text-align: center;
+                border: solid 1px #707070;
+                color: #707070;
+    
+              }
+              &Text {
+                float: left;
+                max-width: 600px;
+                background-color: #B4AEAE;
+                font-size: 16px;
+                color: #fff;
+                margin: 0 0 0 3%;
+                padding: 2%;
+                border-radius: 30px;
+                line-height: 1.7;
+              }
+    
+              &Current {
+                &Name {
+                  float: right;
+                  font-size: 15px;
+                  float: right;
+                  height: 50px;
+                  line-height: 50px;
+                  width: 50px;
+                  border-radius: 50%;
+                  text-align: center;
+                  border: solid 1px #707070;
+                  color: #707070;
+                }
+    
+                &Text {
+                  float: right;
+                  max-width: 600px;
+                  background-color: #58EB90;
+                  font-size: 16px;
+                  color: #fff;
+                  margin: 0 3% 0 0;
+                  padding: 2%;
+                  border-radius: 30px;
+                  line-height: 1.7;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
 }

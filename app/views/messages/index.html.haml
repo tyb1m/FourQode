@@ -1,4 +1,14 @@
 .messagesIndex
   .messagesIndexLeft
+    .messagesIndexLeftUser
+    .messagesIndexLeftIcon
+      %button.messagesIndexLeftIconPhone
+        = fa_icon "phone-volume", class: "faa-shake animated-hover"
+        %p.text 通話
+      %button.messagesIndexLeftIconPc
+        = fa_icon "desktop", class: "faa-shake animated-hover"
+        %p.text 画面共有
+    %button.messagesIndexLeftStatus
+      ステータスを完了に変更
   .messagesIndexRight
     = render "questions/showMain"
