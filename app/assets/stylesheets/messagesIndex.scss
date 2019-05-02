@@ -3,46 +3,54 @@
   box-sizing: border-box;
   overflow: hidden;
 
-  &Left {
-    width: 25%;
-    float: left;
-    box-sizing: border-box;
-    @media screen
-    &User {
-      width: 100%;
-      height: 60vh;
+  @media screen and (max-width: 1024px){
+    &Left {
+      display: none;
     }
+  } 
+  
+  @media screen and (min-width: 1025px){ 
+    &Left {
+      width: 25%;
+      float: left;
+      box-sizing: border-box;
+      
+      &User {
+        width: 100%;
+        height: 60vh;
+      }
 
-    &Icon {
-      width: 100%;
-      height: 15vh;
-      button, &Phone, &Pc {
-        width: 50%;
-        height: 100%;
-        float: left;
-        text-align: center;
-        cursor: pointer;
-        .fa {
-          font-size: 50px;
-          color: black;
+      &Icon {
+        width: 100%;
+        height: 15vh;
+        button, &Phone, &Pc {
+          width: 50%;
+          height: 100%;
+          float: left;
           text-align: center;
-        }
-        p.text {
-          color: #63B6EE;
-          width: auto;
-          margin: 10px 0 0 0;
+          cursor: pointer;
+          .fa {
+            font-size: 50px;
+            color: black;
+            text-align: center;
+          }
+          p.text {
+            color: #63B6EE;
+            width: auto;
+            margin: 10px 0 0 0;
+          }
         }
       }
-    }
-    
-    &Status {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      background-color: #3DD043;
-      color: #fff;
-      padding: 13px;
-      border-radius: 30px;
+      
+      &Status {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #3DD043;
+        color: #fff;
+        padding: 13px;
+        border-radius: 30px;
+      }
     }
   }
 
