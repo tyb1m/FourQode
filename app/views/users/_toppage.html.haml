@@ -8,45 +8,110 @@
       -#   ログアウトしました
       -#   質問をするためには、ユーザー登録が必要です
       -#   質問を受け付けました。ありがとうございます。
-      .toppageBodyHeaderNavbar.clearfix
+      .toppageBodyHeaderNavbar
         .toppageBodyHeaderNavbarLeft
           .toppageBodyHeaderNavbarLeftLogo
             = link_to root_path do
               = image_tag "S59981830.png", class: "logo_icon"
           .toppageBodyHeaderNavbarLeftSearch
-            -# 仮置き　タグ
+            -# 仮置き
             %form
               %input{type: "search", autocomplete: "off",　value: "", placeholder: "どんな質問を解決したいですか？"}
+                -# %i.fa.fa-search
             -# end---------
-        %ul.toppageBodyHeaderNavbarRight
-          %li.toppageBodyHeaderNavbarRightLogin ログイン
-          %li.toppageBodyHeaderNavbarRegister 新規登録
-
-      .toppageBodyHeaderRegister
-        .toppageBodyHeaderRegisterTitle
-          全てのエンジニアのための[副業]Q&Aサイト
-          4Qode
-          画面共有と通話で
-          あなたの質問解消にコミットする
-
-          4Qodeでは、あなたの質問の売り買いを通して、
-          スピーディで温かみある質問解消を実現します。
-        .toppageBodyHeaderRegisterUpdates
-          5分前に〇〇が〇〇さんの質問を解決しました
-
-        .toppageBodyHeaderRegisterInputs
-          -# =f.text_field :userid, autofocus: true, placeholder: "ユーザー名"
-          -# =f.text_field :email, placeholder: "メールアドレス"
-          -# =f.password_field :password, placeholder: "メールアドレス"
+        .toppageBodyHeaderNavbarRight
+          %i.fa.fa-sign-in
+          .toppageBodyHeaderNavbarRightLogin ログイン
+          %i.fa.fa-user-plus
+          .toppageBodyHeaderNavbarRightRegist 新規登録
           
-          メールアドレス
-          パスワード
-          以下の登録ボタンのクリックにより、
-          利用規約 及び 個人情報の取り扱い に関する要項に同意したものとします。
-          無料で登録する
     %wrapper.toppageBodyMain
-      .toppageBodyMain
-      .toppageBodyMain
+      .toppageBodyMainRegist
+        .toppageBodyMainRegistDscrpt
+          %h1.toppageBodyMainRegistDscrptName
+            全てのエンジニアのための[副業]Q&Aサイト
+          %p.toppageBodyMainRegistDscrptWho
+            4Qode
+          %p.toppageBodyMainRegistDscrptHow
+            画面共有と通話で
+            %br あなたの質問解消にコミットする
+          %p.toppageBodyMainRegistDscrptWhat
+            4Qodeでは、あなたの質問の売り買いを通して、
+            %br スピーディで温かみある質問解消を実現します
+          %p.toppageBodyMainRegistDscrptUpdates
+            5分前に〇〇が〇〇さんの質問を解決しました
+        .toppageBodyMainRegistInputs
+          .toppageBodyMainRegistInputsUser
+            %form
+              %input{type: "text", autocomplete: "off",　value: "", placeholder: "ユーザー名"}
+              %input{type: "text", autocomplete: "off",　value: "", placeholder: "メールアドレス"}
+              %input{type: "password", autocomplete: "off",　value: "", placeholder: "パスワード"}
+          .toppageBodyMainRegistInputsRule
+            以下の登録ボタンのクリックにより、
+            %br 利用規約 及び 個人情報の取り扱い に関する要項に同意したものとします。
+          .toppageBodyMainRegistInputsSignup
+            %button 無料で登録する
+          .toppageBodyMainRegistInputsIcon
+            %i.fa.fa-facebook-square
+            %i.fa.fa-twitter-square
+            %i.fa.fa-google
+            %i.fa.fa-github-square
+      %section.toppageBodyContents
+        %ul
+          %li 未解決
+          %li Ruby
+          %li PHP
+          %li Java
+          %li JS
+          %li Python
+          %li C++  
+        .toppageBodyContentsQstn
+          %h2.toppageBodyContentsQstnCategory
+            新着Questions
+        %section.toppageBodyContentsQstnSubcategory
+          %h3.toppageBodyContentsQstnSubcategoryRuby
+            Ruby新着Questions
+          .toppageBodyContentsQstnSubcategoryWrapper
+            %section.toppageBodyContentsQstnSubcategoryWrapperCard
+              .toppageBodyContentsQstnSubcategoryWrapperCardTop
+                .toppageBodyContentsQstnSubcategoryWrapperCardTopTitle
+                  タイトル
+                .toppageBodyContentsQstnSubcategoryWrapperCardTopPrice
+                  ¥30,000
+              .toppageBodyContentsQstnSubcategoryWrapperCardMiddle
+                .toppageBodyContentsQstnSubcategoryWrapperCardMiddleAvater
+                  = link_to root_path do
+                    = image_tag "S59981830.png", class: "logo_icon"
+                  .toppageBodyContentsQstnSubcategoryWrapperCardMiddleName
+                    Taro Yamada
+              .toppageBodyContentsQstnSubcategoryWrapperCardBottom
+                .toppageBodyContentsQstnSubcategoryWrapperCardBottomBox
+                  .toppageBodyContentsQstnSubcategoryWrapperCardBottomBoxIine
+                    イイね
+                  .toppageBodyContentsQstnSubcategoryWrapperCardBottomBoxValue
+                    100
+                .toppageBodyContentsQstnSubcategoryWrapperCardBottomBox
+                  .toppageBodyContentsQstnSubcategoryWrapperCardBottomBoxFollow
+                    フォロー
+                  .toppageBodyContentsQstnSubcategoryWrapperCardBottomBoxValue
+                    100
+                .toppageBodyContentsQstnSubcategoryWrapperCardBottomBox
+                  .toppageBodyContentsQstnSubcategoryWrapperCardBottomBoxFollower
+                    フォロワー
+                  .toppageBodyContentsQstnSubcategoryWrapperCardBottomBoxValue
+                    100
+            .toppageBodyContentsQstnSubcategoryWrapperCard
+              テスト
+            .toppageBodyContentsQstnSubcategoryWrapperCard
+              テスト
+            .toppageBodyContentsQstnSubcategoryWrapperCard
+              テスト
+            .toppageBodyContentsQstnSubcategoryWrapperCard
+              テスト
+
+          
+
+
     %wrapper.toppageBodyFooter
       .toppageBodyFooterTitle
         未解決
@@ -59,14 +124,6 @@
       .toppageBodyFooterBtn
         質問する
 
-        -# 新着question
-        -# Ruby新着question
-        -# タイトル
-        -# ¥30,000
-        -# Taro Yamada
-        -# イイね
-        -# フォロー
-        -# フォロワー
 
         -# PHP新着question
         -# タイトル

@@ -1,80 +1,274 @@
 
 .toppageBody{
   &Header {
-    // &Login{
-    //   background-color: #3DD043 ;
-    //   width:100% ;
-    //   height:5vh ;
-    //   line-height: 5vh ;
-    //   font-size: 1rem ;
-    //   color: #FFFFFF ;
-    //   text-align: center ;
-    //   vertical-align:middle ;
-    // }
-    // &Logout{
-    //   background-color: #FC6F6F;
-    //   width:100% ;
-    //   height:5vh ;
-    // }
+    
     &Navbar{
-      margin: 0 auto;
-      position: relative;
-      // position: fixed;
-      // top: 0;
-      // float: left;
+      height: 6vh;
+      // margin: 0 5vh 0 ;
+      
+      position: fixed;	/* ヘッダーを固定する */
+      // top: 0;	/* 上部から配置の基準位置を決める */ 
+      // left: 0;	/* 左から配置の基準位置を決める */ 
+      width: 100%;	/* ヘッダーの横幅を指定する */
+      background: #FFFFFF;
+
       &Left{
-        float: left;
-        position: relative;
-        // position: relative;
+        margin-left: 21vh ;
         &Logo{
-          width:100% ;
-          height:5vh ;
+          width:25vh ;
+          float: left;
+          position: relative;
           img {
-            max-height: 5vh;
+            max-height: 5.5vh;
           }
         }
+
         &Search{
-          width:10vh ;
-          padding-left: 20px;
+          input {
+            position: relative;
+            float: left;
+            border: 1px solid #ccc;
+            background: #f5f5f5;
+            border-radius: 4px;
+            height:4vh ;
+            width: 60vh ;
+            margin: 1vh 0 1vh 0 ;
+            padding: 0 0 0 1vh;
+            font-size: 1vw
+          }
+          // i {
+          //   position: absolute;
+          // }
         }
       }
+
       &Right{
         float: right;
-        li{
-          list-style: none;
+        margin-right: 21vh ;
+        padding: 1vh 0 1vh 0;
+        font-size: 1vw;
+        &Login {
           display: inline-block;
-          // padding-right: 10px;
-          // margin: 0;
+          margin: 0 5vh 0 0 ;
         }
-        &Login{
-          list-style: none;
+        &Regist{
+          display: inline-block;
         }
-        &Register{
-          list-style: none;
+        .fa.fa-sign-in{
+          font-size: 2.5vw;
         }
+        i{
+          font-size: 2.2vw;
+          display: inline-block;
+          vertical-align: middle;
+        } 
       }
-      
-    }
-
-
-    &Search{
-      background-color: #FFFFFF ;
-      width:100% ;
-      height:5vh ;
-    }
-
-    &Register{
-      // padding: 5vh 0 0 0;
-      background-color: #96C7BE ;
-      width:100% ;
-      height:50vh ;
     }
   }
 
   &Main{
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // margin: 0 auto;
+
+    &Regist{
+    background-color: #96C7BE ;
+    width:100% ;
+    height:50vh ;
+    padding-top: 6vh;
+
+    display: flex;
+    
+    // justify-content: space-between;
+    // align-items: center;
+    // margin: 0 auto;
+    
+    // display:inline-block;
+    // padding-right: 12px;
+    // display:block
+      &Dscrpt{
+        width: 100% ;
+        height: 40vh ;
+        display: flex;
+        flex-direction: column;
+        // display: table-cell;
+        // vertical-align: middle;
+        margin: 5vh 5vh 5vh 21vh;
+        // padding: 5vh 0 5vh 0;
+        &Name{
+          font-size: 1vw;
+        }
+        &Who{
+          font-size: 3vw;
+        }
+        &How{
+          font-size: 1.3vw;
+          // letter-spacing: 2vw;
+          line-height: 1.5rem;
+        }
+        &What{
+          font-size: 1.2vw;
+          line-height: 1.5rem;
+          // letter-spacing: 2vw;
+          // line-height: 1.6;
+        }
+        &Updates{
+          color: #EB5858;
+        }
+      }
+      &Inputs{
+        width:100% ;
+        height:40vh ;
+        display: flex;
+        flex-direction:row-reverse; 
+        // display: table-cell;
+        // vertical-align: middle;
+        margin: 5vh 21vh 5vh 5vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // width: (50%-50vh) ;
+        &User{
+          input{
+            border: 1px solid #ccc;
+            // background: #f5f5f5;
+            border-radius: 4px ;
+            height: 4vh ;
+            width: 60vh ;
+            margin: 1vh 0 1vh 0 ;
+            padding: 0 0 0 1vh;
+            font-size: 1vw
+          }
+        }
+        &Rule{
+          color: #707070;
+          
+        }
+        &Signup{
+          button{ 
+            border-radius: 4px ;
+            // margin-top: 1vh;
+            font-size: 1.3vw ;
+            height: 4vh ;
+            width: 61vh ;
+            background-color: #3DD043;
+            color: #FFFFFF;
+          }
+        }
+        &Icon{
+          // padding: 2.5% 0;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          
+          // margin-top: 1vh ;
+          font-size: 4vw;
+        }
+      }
+    }
+  }
+
+  &Contents{
     height: 500vh;
     background-color: #ffffff;
-  }
+     ul{
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 5vh 21vh 5vh 21vh;
+      }
+      li{
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        height: 4vh;
+        width: 13vh;
+        font-size: 1.5vw;
+        text-align: center;
+        line-height: 1.5rem;
+      }
+      &Qstn{
+        &Category {
+          text-align: center;
+          font-size: 2vw;
+        }
+        &Subcategory{
+          h3 {
+            text-align: center;
+            font-size: 1.5vw;
+            color: #597EE3;
+          }
+          &Wrapper{
+            margin: 5vh 21vh 5vh;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            &Card{
+              // position: relative;
+              // float: left;
+              border: 1px solid #ccc;
+              height: 20vh;
+              width: 20vh;
+              margin: 0 1vh 1vh 0;
+              // padding: 0 0 0 1vh;
+              font-size: 1vw;
+
+              &Top{
+                height: 6.5vh;
+                background-color: #96C7BE;
+                color: #597EE3;
+                font-size: 1.4vw;
+                line-height: 1.5rem;
+                padding: 0.5vh 0.5vh 0.5vh 0.5vh;
+              }
+
+              &Middle{
+                height: 5.5vh;
+                padding: 0.5vh 0.5vh 0.5vh 0.5vh;
+              
+                &Avater{
+                  position: relative;
+                  img{
+                  border: 1px solid #ccc;
+                  border-radius: 50%;
+                  height: 5.5vh;
+                  width: 5.5vh;
+                  }
+                }
+
+                &Name{
+                  position: absolute;
+                  float: right;               
+                  bottom: 0.3vh;
+                  right: 1vh;
+                }
+              }
+
+              &Bottom{
+                height: 5vh;
+                padding: 0.5vh 0.5vh 0.5vh 0.5vh;
+                align-items: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                font-size: 0.6vw;
+
+                &Box{
+                  text-align: center;
+                }
+                
+              }
+            }
+          }
+        }
+      }
+    }
+
 
   &Footer{
     &Title{
@@ -84,11 +278,11 @@
     }
 
     &Btn{
-      bottom: 32px;
-      right: 32px;
-      width: 160px;
-      height: 160px;
-      font-size: 22px;
+      bottom: 4vh;
+      right: 4vh;
+      width: 18vh;
+      height: 18vh;
+      font-size: 1.5vw;
       border-radius: 50%;
       background: #ea352d;
       color: #fff;
@@ -107,20 +301,3 @@
   clear: both;
   display: block;
 }
-
-// .toppage-header {
-//     background-color: #96C7BE;
-//     width:100% ;
-//     height:50vh ;
-//   }
-  
-//   .toppage-body {
-//     height: 500vh;
-//     background-color: #ffffff;
-//   }
-  
-//   .toppage-footer {
-//     background-color: #707070;
-//     width:100% ;
-//     height:50vh ;
-//   }
