@@ -347,3 +347,11 @@ template {
 [hidden] {
   display: none;
 }
+
+// Added ul reset manually
+ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
