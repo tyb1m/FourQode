@@ -2,25 +2,44 @@
   %h1 新規登録
   .newMainMail
     %h2.newMainMailTitle
-      メールアドレスで登録
+      = image_tag 'gmail.png'
+      %p メールアドレスで登録
     .newMainMailName
-      ユーザー名　　　※実名をご記入ください
+      %p ユーザー名　　　※実名をご記入ください
+      .newMainMailNameBox
+        test
     .newMainMailAddress
-      メールアドレス
+      %p メールアドレス
+      .newMainMailAddressBox
+        example@4qode.com
     .newMainMailPassword
-      パスワード　　　※半角英数字6~20文字
-    %p
-      利用規約及び個人情報の取り扱いに関する要項をご確認の上、同意いただける場合は、「同意して登録」ボタンを押してください。
+      %p パスワード　　　※半角英数字6~20文字
+      .newMainMailPasswordBox
+        password
+    %p.text
+      = link_to "利用規約", ''
+      及び
+      = link_to "個人情報"
+      の取り扱いに関する要項をご確認の上、同意いただける場合は、「同意して登録」ボタンを押してください。
     .newMainMailSend
       同意して登録
     
   .newMainSns
     %h2.newMainSnsTitle
-      SNSで登録
+      = image_tag 'sns.png'
+      %p SNSで登録
     .newMainSnsBox
-      %li Facebook
-      %li Twitter
-      %li Google
-      %li Github
+      %li
+        = image_tag 'facebook.png'
+        %p Facebook
+      %li 
+        = image_tag 'twitter.png'
+        %p Twitter
+      %li
+        = image_tag 'google.png' 
+        %p Google
+      %li
+        = image_tag 'github.png'
+        %p Github
 
 = render 'default/footer'
