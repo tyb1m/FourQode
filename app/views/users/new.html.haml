@@ -22,7 +22,7 @@
       = link_to "個人情報"
       の取り扱いに関する要項をご確認の上、同意いただける場合は、「同意して登録」ボタンを押してください。
     .newMainMailSend
-      同意して登録
+      =link_to "同意して登録", 'newDone'
     
   .newMainSns
     %h2.newMainSnsTitle
@@ -30,16 +30,21 @@
       %p SNSで登録
     .newMainSnsBox
       %li
-        = image_tag 'facebook.png'
-        %p Facebook
+        = link_to do
+          = image_tag 'facebook.png'
+          %p Facebook
       %li 
-        = image_tag 'twitter.png'
-        %p Twitter
+        = link_to do
+          = image_tag 'twitter.png'
+          %p Twitter
       %li
-        = image_tag 'google.png' 
-        %p Google
+        = link_to do
+          = image_tag 'google.png' 
+          %p google
       %li
-        = image_tag 'github.png'
-        %p Github
+        = link_to do
+          = image_tag 'github.png'
+          %p Github
+  .clearfix
 
 = render 'default/footer'
