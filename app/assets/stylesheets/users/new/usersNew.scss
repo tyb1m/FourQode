@@ -8,9 +8,10 @@
   }
 
   &Mail {
-    width: 55%;
+    width: 50%;
     float: right;
     color: #707070;
+    margin-right: 5%;
     h2 {
       font-size: 18px;
       font-weight: bolder;
@@ -136,13 +137,11 @@
     }
 
     &Box {
-      text-align: center;
-
       li {
         list-style: none;
         padding: 10px;
         border: 1px solid #707070;
-        margin: 3%;
+        margin: 8% 3%;
         width: 50%;
         display: block;
       
