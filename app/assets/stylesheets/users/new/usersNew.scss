@@ -43,7 +43,6 @@
         padding: 10px;
         margin-bottom: 15px;
         border: 1px solid #707070;
-        color: #e2e2e2;
       }
     }
 
@@ -57,7 +56,6 @@
         padding: 10px;
         margin-bottom: 15px;
         border: 1px solid #707070;
-        color: #e2e2e2;
       }
     }
 
@@ -71,7 +69,6 @@
         padding: 10px;
         margin-bottom: 15px;
         border: 1px solid #707070;
-        color: #e2e2e2;
       }
     }
 
@@ -88,24 +85,15 @@
     }
 
     &Send {
-      text-align: center;
-      padding: 17px 50px;
-      width: 120px;
-      background: #85D8A5;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 10%;
-
-      a {
-        text-decoration: none;
-        color: #fff;
+      input.button {
         font-weight: bolder;
+        border-style: none;
+        color: #fff;
+        text-align: center;
+        background: #85D8A5;
         display: block;
-        
-        p {
-          margin: auto 0;
-        }
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   }
