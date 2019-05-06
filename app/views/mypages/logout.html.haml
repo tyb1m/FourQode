@@ -1,0 +1,7 @@
+%wrapper.mypage
+  %wrapper.mypageSideBars
+    = render partial: "sidebar"
+  %wrapper.logout
+    .logout__button
+      =link_to method: :delete, class: "btn-default" do
+        ログアウト

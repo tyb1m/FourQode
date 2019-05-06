@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
   resources :users
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :mypages do
+    collection do
+      get :index1
+      get :index2
+      get :index3
+      get :index4
+      get :index5
+      get :logout
+      get :mail_password
+      get :notification
+      get :profile
+      get :card
+    end
+  end
 end
