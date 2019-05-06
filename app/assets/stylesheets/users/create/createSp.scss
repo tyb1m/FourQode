@@ -1,0 +1,60 @@
+.create {
+  line-height: 1.7;
+  background: #eaeaea;
+  color: #333333;
+
+  &Title {
+    padding: 7%;
+
+    img {
+      height: 25px;
+      width: 25px;
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    p {
+      margin: auto 0;
+      display: inline-block;
+      vertical-align: middle;
+      font-weight: bolder;
+    }
+  }
+
+  &Image {
+    padding: 7%;
+
+  }
+  &Main {
+    padding: 7%;
+    background: #fff;
+    font-size: 13px;
+    p {
+      margin: 5% 0;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &Foot {
+    padding: 7%;
+    font-size: 13px;
+
+    span {
+      font-weight: bold;
+    }
+
+    li {
+      padding-left: 1.4em;
+      text-indent: -1.4em;
+
+      a  {
+        text-decoration: none;
+        color: #00b5e2;
+      }
+    }
+  }
+}

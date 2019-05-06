@@ -52,11 +52,17 @@
 -# = render 'default/footer'
 
 .create
-  %p 仮登録メール送信完了
+  .createTitle
+    = image_tag 'mail.png'
+    %p 仮登録メール送信完了
   .createMain
-    「example@fourqode」宛にexample@fourqodeからメールが届きますので、
-    %span 30分以内
-    に本登録を完了してください。
+    .createImage
+      画像あとで挿入
+    %p
+      %span「example@fourqode.com」
+      宛にexample@fourqode.comからメールが届きますので、
+      %span 30分以内
+      に本登録を完了してください。
 
   .createFoot
     メールが届かない場合
@@ -67,6 +73,8 @@
     %br
     %br
     上記を確認してもアールが確認できなかった場合、お手数をおかけしますが以下を行ってください。
+    %br
+    %br
     %li 
       メールアドレスを正確に入力して再度
       = link_to "仮登録", new_user_registration_path
@@ -74,5 +82,7 @@
     %li
       = link_to "お問い合わせ"
       より連絡する
+
+= render 'default/footer'
 
 
