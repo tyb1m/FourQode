@@ -11,3 +11,20 @@
 @import url(default/footer/footerSp.scss) screen and (max-width: 480px);
 @import url(default/footer/footerTb.scss) screen and (min-width: 480px);
 @import url(default/footer/footer.scss) screen and (min-width: 1025px);
+
+@import "reset";
+
+@import "mypagesPc/sidebar";
+@import "mypagesPc/head";
+@import "mypagesPc/index1";
+@import "mypagesPc/index2";
+// @import "mypagesPc/index3";
+@import "mypagesPc/index4";
+@import "mypagesPc/index5";
+@import "mypagesPc/notification";
+@import "mypagesPc/profile";
+@import "mypagesPc/mail_password";
+@import url(mypagesSp/sidebar.scss) screen and (max-width: 480px);
+@import url(mypagesSp/head.scss) screen and (max-width: 480px);
+@import url(mypagesSp/index1.scss) screen and (max-width: 480px);
+@import url(mypageSp/index2.scss) screen and (max-width: 480);
