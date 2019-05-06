@@ -1,0 +1,38 @@
+.mypage{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding: 10px;
+  margin: 0 auto;
+  .mypageBody{
+    padding: 30px;
+    .mypageHeader{
+      background-color: #C9C4C4;
+      height: 250px;
+      padding-top: 20px;
+      .mypagePhotoIcon{
+        background-color: white;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        margin:0 auto ;
+      }
+      .mypageUserName{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 30px;
+      }
+      .mypageReport{
+        text-align: center;
+        margin-top: 10px;
+        .mypageGood, .mypageLeaded{
+          display: inline-block;
+          font-size: 30px;
+        }
+        p + p{
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
