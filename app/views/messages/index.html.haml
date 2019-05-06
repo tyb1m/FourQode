@@ -1,0 +1,42 @@
+.messagesIndex
+  .messagesIndexLeft
+    .messagesIndexLeftUser
+    .messagesIndexLeftIcon
+      %button.messagesIndexLeftIconPhone
+        = fa_icon "phone-volume", class: "faa-shake animated-hover"
+        %p.text 通話
+      %button.messagesIndexLeftIconPc
+        = fa_icon "desktop", class: "faa-shake animated-hover"
+        %p.text 画面共有
+    %button.messagesIndexLeftStatus#open
+      ステータスを完了に変更
+  .messagesIndexRight
+    = render "questions/showMain"
+
+#overlay
+.modal
+  .modalInner
+    .modalBody
+      .modalBodyStar
+        星はいくつでしょうか？
+        -# = form.hidden_field :rating, id: :book_rating
+        #star-rating.star
+
+
+      .modalHead
+        Hironori Tsukishimaさんの評価を正直にお書きください。
+      .modalText
+        とても親切に教えてくださいました。
+        %br
+        ありがとうございます。
+    .clearfix
+      #button.modalBtn#close キャンセル
+      = link_to "送信", "", class: "modalBtn"
+
+:javascript
+  $('#star-rating').raty({
+  path: '/assets/',
+  click: function(score, e) {
+  $("#book_rating").val(score)
+  }
+  });

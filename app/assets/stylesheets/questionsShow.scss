@@ -3,7 +3,7 @@
 
     &Header {
       width: 100%;
-      height: 16vh;
+      height: 17vh;
       overflow: auto;
 
       &Condition {
@@ -21,14 +21,17 @@
       }
 
       &Title {
-        width: 86%;
-        height: auto;
+        width: 90%;
+        height: 100%;
+        box-sizing: border-box;
         color: #fff;
         background-color: #393636;
         float: right;
         vertical-align: middle;
-        padding: 2%;
+        padding: 1.75%;
+        margin: 0 auto;
         font-size: 25px;
+        overflow:hidden;
 
         h1, &Head {
           margin: 0 0 1.5% 0;
