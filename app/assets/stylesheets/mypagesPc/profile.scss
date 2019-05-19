@@ -1,0 +1,52 @@
+.profile, .mailPassword{
+    width: 60vw;
+    margin-top:30px;
+    background-color: rgb(235, 228, 228);
+    &HeaderTitle, .mailPasswordHeaderTitle{
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        padding-top:20px;
+    }
+    &MainBody{
+        background-image: url(https://static-mercari-jp-imgtr2.akamaized.net/thumb/members/503246329.jpg?1493355635);
+        background-size:cover;
+        width:60vw;
+        height:50vh;
+        margin-top:20px;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+    &UserIcon{
+        background-color: white;
+        width:70px;
+        height:70px;
+        border-radius: 35px;
+    }
+    &Name{
+        height:40px;
+        margin-left:20px;
+        font-size:20px;
+    }
+    &Body{
+        width:57vw;
+        height:60vh;
+        margin: 50px auto;
+        display:block;
+        font-size:15px;
+        padding:5px;
+    }
+    .change_button{
+        width: 57vw;
+        height: 50px;
+        background:red;
+        margin: 0 auto;
+        color:white;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 50px;
+        display:block;
+        text-align:center;
+    }
+}
