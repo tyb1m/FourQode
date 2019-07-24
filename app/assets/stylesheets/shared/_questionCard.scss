@@ -8,8 +8,8 @@
     &Card{
       border: 1px solid #ccc;
       font-size: 0.99em;
-      height: 200px;
-      width: 210px;
+      height: 220px;
+      width: 220px;
 
     // PC画面の横幅設定により、カード枚数設定予定
     // @media screen and (max-width: 1500px){
@@ -23,10 +23,10 @@
     // }
 
       &Top{
-        height: 110px;
+        height: 135px;
         background-color: #707070;
         color: #FFFFFF;
-        font-size: 1.2em;
+        font-size: 1.05em;
         line-height: 1.8;
         padding: 8px;
 
@@ -50,7 +50,7 @@
       }
 
       &Middle{
-        height: 40px;
+        height: 45px;
         padding-left: 10px;
         align-items: center;
         display: flex;
