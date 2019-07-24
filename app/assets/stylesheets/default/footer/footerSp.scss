@@ -1,0 +1,51 @@
+.footer {
+  height: auto;
+  background-color: #464D56;
+  overflow: hidden;
+  
+  &Body {
+    box-sizing: border-box;
+
+    &Logo {
+      margin: 10%;
+    }
+
+    ul {
+      margin: 10%;
+      padding-left: 0;
+
+      li {
+        display: inline-block;
+        line-height: 2.3;
+        margin-right: 10px;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 13px;
+        }
+
+        .icon {
+          color: #fff;
+          font-size: 1.2em;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px){
+    &Contact {
+      display: none;
+    }
+  }
+
+  &Copyright {
+    margin: 5% 10%;
+    color: #fff;
+    bottom: 5vh;
+    font-size: 12px;
+    text-align: center;
+  }
+}

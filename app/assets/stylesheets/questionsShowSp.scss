@@ -1,0 +1,140 @@
+.question {
+  &Show {
+
+    &Header {
+      width: 100%;
+      height: 10vh;
+      overflow: hidden;
+
+      &Condition {
+        background-color: #AD9F9F;
+        color: #fff;
+        width: 13%;
+        height: 100%;
+        float: left;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+      }
+
+      &Title {
+        width: 83%;
+        height: 83%;
+        color: #fff;
+        background-color: #393636;
+        float: right;
+        vertical-align: middle;
+        padding: 3% 2% 1% 2%;
+        font-size: 15px;
+        overflow: auto;
+
+        h1, &Head {
+          margin: 0 0 2.5% 0;
+          font-size: 15px;
+        }
+
+        &Container {
+          text-align: center;
+          height: auto;
+          overflow: hidden;
+
+          &Price {
+            float: left;
+            margin: 1%;
+          }
+
+          &Language {
+            float: left;
+            width: auto;
+            height: auto;
+            background-color: #fff;
+            color: #393636;
+            font-size: 18px;
+            padding: 0.5% 4%;
+            margin: 0 0 0 5%;
+            border-radius: 30px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    &Main {
+      margin: 5%;
+
+      &Text {
+        p {
+          font-size: 13px;
+          line-height: 1.7;
+          color: #707070;
+        }
+      }
+
+      &Chat {
+        margin: 2%;
+        width: auto;
+        height: auto;
+        overflow: auto;
+
+        &Container {
+          margin: 2%;
+          height: auto;
+          width: auto;
+          overflow: auto;
+
+          &Name {
+            font-size: 13px;
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            text-align: center;
+            border: solid 1px #707070;
+            color: #707070;
+
+          }
+          &Text {
+            float: left;
+            max-width: 200px;
+            background-color: #B4AEAE;
+            font-size: 13px;
+            color: #fff;
+            margin: 0 0 0 3%;
+            padding: 4%;
+            border-radius: 30px;
+          }
+
+          &Current {
+            &Name {
+              float: right;
+              font-size: 13px;
+              float: right;
+              height: 40px;
+              line-height: 40px;
+              width: 40px;
+              border-radius: 50%;
+              text-align: center;
+              border: solid 1px #707070;
+              color: #707070;
+            }
+
+            &Text {
+              float: right;
+              max-width: 200px;
+              background-color: #58EB90;
+              font-size: 13px;
+              color: #fff;
+              margin: 0 3% 0 0;
+              padding: 4%;
+              border-radius: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

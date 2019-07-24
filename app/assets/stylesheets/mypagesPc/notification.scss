@@ -1,0 +1,23 @@
+.mypagesNotification{
+    padding:30px;
+    width:60vw;
+    .notificationDetails{
+        font-size: 40px;
+    }
+    .notificationHead{
+        border:0.5px solid #c0c0c0;
+        border-left:5px solid #58EB90;
+        display:flex;
+        font-size:20px;
+        padding:10px;
+        .notificationTitle{
+            margin-left:20px;
+        }
+    }
+    .notificationDetails, .notificationHead{
+        margin-bottom:30px;
+    }
+    .notificationBody{
+        white-space: pre-wrap;
+    }
+}

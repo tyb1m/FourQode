@@ -1,0 +1,52 @@
+.newMain
+  %h1 新規登録
+  = form_for(@user, html: {class: 'newMainMail'}) do |f|
+    = render "devise/shared/error_messages", resource: resource
+    %h2.newMainMailTitle
+      = image_tag 'gmail.png'
+      %p メールアドレスで登録
+    .newMainMailName
+      %p ユーザー名
+      = f.text_field :name, autofocus: true, autocomplete: "name", class: 'newMainMailNameBox'
+    .newMainMailAddress
+      %p メールアドレス
+      = f.email_field :email, autofocus: true, autocomplete: "email", class: 'newMainMailAddressBox'
+    .newMainMailPassword
+      %p パスワード　　　※半角英数字6~20文字
+      = f.password_field :password, autocomplete: "new-password", class: 'newMainMailPasswordBox'
+    .newMainMailPassword
+      %p 確認のためもう一度ご入力ください
+      = f.password_field :password_confirmation, autocomplete: "new-password", class: 'newMainMailPasswordBox'
+
+    %p.text
+      = link_to "利用規約", ''
+      及び
+      = link_to "個人情報"
+      の取り扱いに関する要項をご確認の上、同意いただける場合は、「同意して登録」ボタンを押してください。
+    .newMainMailSend
+      = f.submit "同意して登録", class: 'button'
+
+  .newMainSns
+    %h2.newMainSnsTitle
+      = image_tag 'sns.png'
+      %p SNSで登録
+    .newMainSnsBox
+      %li
+        = link_to do
+          = image_tag 'facebook.png'
+          %p Facebook
+      %li 
+        = link_to do
+          = image_tag 'twitter.png'
+          %p Twitter
+      %li
+        = link_to do
+          = image_tag 'google.png' 
+          %p google
+      %li
+        = link_to do
+          = image_tag 'github.png'
+          %p Github
+  .clearfix
+
+= render 'default/footer'

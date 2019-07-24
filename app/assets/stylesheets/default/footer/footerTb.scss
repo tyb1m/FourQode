@@ -1,0 +1,88 @@
+.footer {
+  height: auto;
+  background-color: #464D56;
+  overflow: hidden;
+  
+  &Body {
+    float: left;
+    width: 60%;
+
+    &Logo {
+      margin: 7%;
+    }
+
+    ul {
+      margin: 7%;
+      padding-left: 0;
+
+      li {
+        display: inline-block;
+        line-height: 2.3;
+        margin-right: 10px;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 15px;
+        }
+
+        .icon {
+          color: #fff;
+          font-size: 1.2em;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    @media screen and (min-width: 480px){
+      .contact {
+        display: none;
+      }
+    }
+  }
+
+  &Contact {
+    float: right;
+    width: 40%;
+
+    &Box {
+      margin: 7%;
+    
+      &Text {
+        background-color: #fff;
+        color: #464D56;
+        border-radius: 20px;
+        height: 150px;
+        padding: 5%;
+        box-sizing: border-box;
+      }
+
+      &Submit {
+        margin: 5% 0;
+        background-color: #3DD043;
+        border-radius: 20px;
+        padding: 3%;
+        box-sizing: border-box;
+        color: #fff;
+        width: auto;
+        text-align: center;
+
+      }
+
+      p {
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &Copyright {
+    margin: 5% 7%;
+    color: #fff;
+    bottom: 5vh;
+    font-size: 13px;
+    text-align: center;
+    clear: both;
+  }
+}
