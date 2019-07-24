@@ -1,171 +1,94 @@
+.toppagetest{
+  margin: 0 auto;
+}
 
 .toppageBody{
-  &Header {
-    
-    &Navbar{
-      height: 6vh;
-      // margin: 0 5vh 0 ;
-      
-      position: fixed;	/* ヘッダーを固定する */
-      // top: 0;	/* 上部から配置の基準位置を決める */ 
-      // left: 0;	/* 左から配置の基準位置を決める */ 
-      width: 100%;	/* ヘッダーの横幅を指定する */
-      background: #FFFFFF;
-
-      &Left{
-        margin-left: 21vh ;
-        &Logo{
-          width:25vh ;
-          float: left;
-          position: relative;
-          img {
-            max-height: 5.5vh;
-          }
-        }
-
-        &Search{
-          input {
-            position: relative;
-            float: left;
-            border: 1px solid #ccc;
-            background: #f5f5f5;
-            border-radius: 4px;
-            height:4vh ;
-            width: 60vh ;
-            margin: 1vh 0 1vh 0 ;
-            padding: 0 0 0 1vh;
-            font-size: 1vw
-          }
-          // i {
-          //   position: absolute;
-          // }
-        }
-      }
-
-      &Right{
-        float: right;
-        margin-right: 21vh ;
-        padding: 1vh 0 1vh 0;
-        font-size: 1vw;
-        &Login {
-          display: inline-block;
-          margin: 0 5vh 0 0 ;
-        }
-        &Regist{
-          display: inline-block;
-        }
-        .fa.fa-sign-in{
-          font-size: 2.5vw;
-        }
-        i{
-          font-size: 2.2vw;
-          display: inline-block;
-          vertical-align: middle;
-        } 
-      }
-    }
-  }
-
   &Main{
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
-    // margin: 0 auto;
 
     &Regist{
-    background-color: #96C7BE ;
-    width:100% ;
-    height:50vh ;
-    padding-top: 6vh;
-
+    background-image: url(PAK86_smonitatocode.jpg);
+    width: 100%;
+    height: 560px;
+    padding-top: 50px;
     display: flex;
-    
-    // justify-content: space-between;
-    // align-items: center;
-    // margin: 0 auto;
-    
-    // display:inline-block;
-    // padding-right: 12px;
-    // display:block
+
+
       &Dscrpt{
-        width: 100% ;
-        height: 40vh ;
+        width: 50%;
+        height: 453px;
+        color: #FFFFFF;
         display: flex;
         flex-direction: column;
-        // display: table-cell;
-        // vertical-align: middle;
-        margin: 5vh 5vh 5vh 21vh;
-        // padding: 5vh 0 5vh 0;
+        justify-content: space-between;
+        margin: 5vh 2.5vw 5vh 12vw;
+
         &Name{
-          font-size: 1vw;
+          font-size: 1em;
         }
+
         &Who{
-          font-size: 3vw;
+          font-size: 2em;
         }
+
         &How{
-          font-size: 1.3vw;
-          // letter-spacing: 2vw;
-          line-height: 2rem;
+          font-size: 1.3em;
+          line-height: 2;
         }
+
         &What{
-          font-size: 1.2vw;
-          line-height: 2rem;
-          // letter-spacing: 2vw;
-          // line-height: 1.6;
+          font-size: 1.2em;
+          line-height: 2;
         }
+
         &Updates{
           color: #EB5858;
         }
       }
-      &Inputs{
-        width:100% ;
-        height:40vh ;
-        display: flex;
-        flex-direction:row-reverse; 
-        // display: table-cell;
-        // vertical-align: middle;
-        margin: 5vh 21vh 5vh 5vh;
 
+      &Inputs{
+        width: 50%;
+        height: 40vh;
+        margin: 5vh 12vw 5vh 2.5vw;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        // width: (50%-50vh) ;
+
         &User{
-          input{
-            border: 1px solid #ccc;
-            // background: #f5f5f5;
-            border-radius: 4px ;
-            height: 4vh ;
-            width: 60vh ;
-            margin: 1vh 0 1vh 0 ;
-            padding: 0 0 0 1vh;
-            font-size: 1vw
+          :first-child{
+            margin: 0 0 1vh 0;
+          }
+
+          button{
+            height: 38px;
+            width: 100%;
+            margin: 5px 0;
+            padding-left: 10px;
+            font-size: 1em;
           }
         }
-        &Rule{
+
+        &Text{
           color: #707070;
-          
+          text-align: center;
         }
+
         &Signup{
-          button{ 
-            border-radius: 4px ;
-            // margin-top: 1vh;
-            font-size: 1.3vw ;
-            height: 4vh ;
-            width: 61vh ;
-            background-color: #3DD043;
-            color: #FFFFFF;
+          text-align:center;
+
+          input{ 
+            height: 31px;
+            width: 97.0%;
+            margin: 5px 0;
+            padding-left: 10px;
+            font-size: 1em;
           }
-        }
-        &Icon{
-          // padding: 2.5% 0;
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          
-          // margin-top: 1vh ;
-          font-size: 4vw;
+          button{
+            height: 38px;
+            width: 50%;
+            margin: 5px 0;
+            padding-left: 10px;
+            font-size: 1em;
+          }
         }
       }
     }
@@ -174,139 +97,68 @@
   &Contents{
     height: 500vh;
     background-color: #ffffff;
+
      ul{
       align-items: center;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin: 5vh 21vh 5vh 21vh;
+      margin: 5vh 12vw 5vh 12vw;
       }
 
       .movie{
-        height:13vh;
-        width: 26vh;
+        height: 13vh;
+        width: 16vw;
         font-size: 1.5vw;
         border-radius: 20px;
-        padding: 1.5vh 0 ;
+        padding: 1.5vh 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         i {
-          font-size: 4vw;
-          
-        }  
+          font-size: 3em;
+          padding-left: 1vw;
+        }
+
+        p{
+          font-size: 1em;
+          line-height: 2;
+          text-align: left;
+          padding-left: 1vw;
+        }
       }
 
       li{
         border: 1px solid #ccc;
         border-radius: 4px;
         height: 4vh;
-        width: 13vh;
-        font-size: 1.5vw;
+        width: 7vw;
+        font-size: 1.5em;
+        line-height: 2.2;
         text-align: center;
-        line-height: 2rem;
       }
+
       &Qstn{
         &Category {
           text-align: center;
-          font-size: 2vw;
+          font-size: 2em;
         }
         &Subcategory{
           h3 {
             text-align: center;
-            font-size: 1.5vw;
+            font-size: 1.5em;
             color: #597EE3;
           }
-          &Wrapper{
-            margin: 5vh 21vh 5vh;
-            align-items: center;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-
-            &Card{
-              // position: relative;
-              // float: left;
-              border: 1px solid #ccc;
-              height: 20vh;
-              width: 20vh;
-              margin: 0 1vh 1vh 0;
-              // padding: 0 0 0 1vh;
-              font-size: 1vw;
-
-              &Top{
-                height: 6.5vh;
-                background-color: #96C7BE;
-                color: #597EE3;
-                font-size: 1.4vw;
-                line-height: 1.5rem;
-                padding: 0.5vh 0.5vh 0.5vh 0.5vh;
-              }
-
-              &Middle{
-                height: 5.5vh;
-                padding: 0.5vh 0.5vh 0.5vh 0.5vh;
-              
-                &Avater{
-                  position: relative;
-                  img{
-                  border: 1px solid #ccc;
-                  border-radius: 50%;
-                  height: 5.5vh;
-                  width: 5.5vh;
-                  }
-                }
-
-                &Name{
-                  position: absolute;
-                  float: right;               
-                  bottom: 0.3vh;
-                  right: 1vh;
-                }
-              }
-
-              &Bottom{
-                height: 5vh;
-                padding: 0.5vh 0.5vh 0.5vh 0.5vh;
-                align-items: center;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                font-size: 0.6vw;
-
-                &Box{
-                  text-align: center;
-                }
-                
-              }
-            }
+          &More{
+            width: 950px;
+            margin: 0 auto;
+            text-align: right;
+            padding-top: 5px;
           }
         }
       }
     }
-
-
-  &Footer{
-    &Title{
-    background-color: #707070 ;
-    width:100% ;
-    height:50vh ;
-    }
-
-    &Btn{
-      bottom: 4vh;
-      right: 4vh;
-      width: 18vh;
-      height: 18vh;
-      font-size: 1.5vw;
-      border-radius: 50%;
-      background: #ea352d;
-      color: #fff;
-      position: fixed;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
-    }
-  }
 }
 
 .clearfix:after {

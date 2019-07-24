@@ -1,171 +1,82 @@
-%wrapper.toppage
-  %wrapper.toppageBody
-    %toppageBodyHeader
-      -# .toppageBodyHeaderLogin
-      -#   ログインしました
-        -# 仮置き　別通知
-      -# .toppageBodyHeaderLogout
-      -#   ログアウトしました
-      -#   質問をするためには、ユーザー登録が必要です
-      -#   質問を受け付けました。ありがとうございます。
-      .toppageBodyHeaderNavbar
-        .toppageBodyHeaderNavbarLeft
-          .toppageBodyHeaderNavbarLeftLogo
-            = link_to root_path do
-              = image_tag "S59981830.png", class: "logo_icon"
-          .toppageBodyHeaderNavbarLeftSearch
-            -# 仮置き
-            %form
-              %input{type: "search", autocomplete: "off",　value: "", placeholder: "どんな質問を解決したいですか？"}
-                -# %i.fa.fa-search
-            -# end---------
-        .toppageBodyHeaderNavbarRight
-          %i.fa.fa-sign-in
-          .toppageBodyHeaderNavbarRightLogin ログイン
-          %i.fa.fa-user-plus
-          .toppageBodyHeaderNavbarRightRegist 新規登録
-          
-    %wrapper.toppageBodyMain
-      .toppageBodyMainRegist
-        .toppageBodyMainRegistDscrpt
-          %h1.toppageBodyMainRegistDscrptName
-            全てのエンジニアのための[副業]Q&Aサイト
-          %p.toppageBodyMainRegistDscrptWho
-            4Qode
-          %p.toppageBodyMainRegistDscrptHow
-            画面共有と通話で
-            %br あなたの質問解消にコミットする
-          %p.toppageBodyMainRegistDscrptWhat
-            4Qodeでは、あなたの質問の売り買いを通して、
-            %br スピーディで温かみある質問解消を実現します
-          %p.toppageBodyMainRegistDscrptUpdates
-            5分前に〇〇が〇〇さんの質問を解決しました
-        .toppageBodyMainRegistInputs
-          .toppageBodyMainRegistInputsUser
-            %form
-              %input{type: "text", autocomplete: "off",　value: "", placeholder: "ユーザー名"}
-              %input{type: "text", autocomplete: "off",　value: "", placeholder: "メールアドレス"}
-              %input{type: "password", autocomplete: "off",　value: "", placeholder: "パスワード"}
-          .toppageBodyMainRegistInputsRule
-            以下の登録ボタンのクリックにより、
-            %br 利用規約 及び 個人情報の取り扱い に関する要項に同意したものとします。
-          .toppageBodyMainRegistInputsSignup
-            %button 無料で登録する
-          .toppageBodyMainRegistInputsIcon
-            %i.fa.fa-facebook-square
-            %i.fa.fa-twitter-square
-            %i.fa.fa-google
-            %i.fa.fa-github-square
-      %section.toppageBodyContents
-        %ul
-          %li 未解決
-          %li Ruby
-          %li PHP
-          %li Java
-          %li JS
-          %li Python
-          %li C++  
-          %li.movie
-            %i.fa.fa-github-square
-            4Qodeって？1分で理解
-            
-        .toppageBodyContentsQstn
-          %h2.toppageBodyContentsQstnCategory
-            新着Questions
-        %section.toppageBodyContentsQstnSubcategory
-          %h3.toppageBodyContentsQstnSubcategoryRuby
-            Ruby新着Questions
-          .toppageBodyContentsQstnSubcategoryWrapper
-            %section.toppageBodyContentsQstnSubcategoryWrapperCard
-              .toppageBodyContentsQstnSubcategoryWrapperCardTop
-                .toppageBodyContentsQstnSubcategoryWrapperCardTopTitle
-                  タイトル
-                .toppageBodyContentsQstnSubcategoryWrapperCardTopPrice
-                  ¥30,000
-              .toppageBodyContentsQstnSubcategoryWrapperCardMiddle
-                .toppageBodyContentsQstnSubcategoryWrapperCardMiddleAvater
-                  = link_to root_path do
-                    = image_tag "S59981830.png", class: "logo_icon"
-                  .toppageBodyContentsQstnSubcategoryWrapperCardMiddleName
-                    Taro Yamada
-              .toppageBodyContentsQstnSubcategoryWrapperCardBottom
-                .toppageBodyContentsQstnSubcategoryWrapperCardBottomBox
-                  .toppageBodyContentsQstnSubcategoryWrapperCardBottomBoxIine
-                    イイね
-                  .toppageBodyContentsQstnSubcategoryWrapperCardBottomBoxValue
-                    100
-                .toppageBodyContentsQstnSubcategoryWrapperCardBottomBox
-                  .toppageBodyContentsQstnSubcategoryWrapperCardBottomBoxFollow
-                    フォロー
-                  .toppageBodyContentsQstnSubcategoryWrapperCardBottomBoxValue
-                    100
-                .toppageBodyContentsQstnSubcategoryWrapperCardBottomBox
-                  .toppageBodyContentsQstnSubcategoryWrapperCardBottomBoxFollower
-                    フォロワー
-                  .toppageBodyContentsQstnSubcategoryWrapperCardBottomBoxValue
-                    100
-            .toppageBodyContentsQstnSubcategoryWrapperCard
-              テスト
-            .toppageBodyContentsQstnSubcategoryWrapperCard
-              テスト
-            .toppageBodyContentsQstnSubcategoryWrapperCard
-              テスト
-            .toppageBodyContentsQstnSubcategoryWrapperCard
-              テスト
+= render 'shared/header'
 
-          
+%main.toppageBodyMain
+  .toppageBodyMainRegist
+    .toppageBodyMainRegistDscrpt
+      %h2.toppageBodyMainRegistDscrptName
+        全てのエンジニアのため
+        の[副業]Q&Aサイト
+      %p.toppageBodyMainRegistDscrptWho
+        4Qode
+      %p.toppageBodyMainRegistDscrptHow
+        画面共有と通話で
+        %br あなたの質問解消にコミットする
+      %p.toppageBodyMainRegistDscrptWhat
+        4Qodeでは、あなたの質問の売り買いを通して、
+        %br スピーディで温かみある質問解消を実現します
+      %p.toppageBodyMainRegistDscrptUpdates
+        5分前に〇〇が〇〇さんの質問を解決しました
+    .toppageBodyMainRegistInputs
+      .toppageBodyMainRegistInputsUser
+        / %form
+        /   %input{type: "text", autocomplete: "off", value: "", placeholder: "ユーザー名"}
+        /   %input{type: "text", autocomplete: "off", value: "", placeholder: "メールアドレス"}
+        /   %input{type: "password", autocomplete: "off", value: "", placeholder: "パスワード"}
+        %button 無料で登録する
+        %button 無料で登録する
+        %button 無料で登録する
+        %button 無料で登録する
+        %button 無料で登録する
+      .toppageBodyMainRegistInputsText
+        OR
+      .toppageBodyMainRegistInputsSignup
+        %form
+          %input{type: "text", autocomplete: "off", value: "", placeholder: "ユーザー名"}
+          %input{type: "text", autocomplete: "off", value: "", placeholder: "メールアドレス"}
+        %button 無料で登録する
+      / .toppageBodyMainRegistInputsIcon
+      /   %i.fa.fa-facebook-square
+      /   %i.fa.fa-twitter-square
+      /   %i.fa.fa-google
+      /   %i.fa.fa-github-square
+  %section.toppageBodyContents
+    %ul
+      %li 未解決
+      %li Ruby
+      %li PHP
+      %li Java
+      %li JS
+      %li Python
+      %li C++
+      %li.movie
+        %i.fa.fa-github-square
+        %p
+          4Qodeって？
+          %br
+          1分で理解
 
+    .toppageBodyContentsQstn
+      %h2.toppageBodyContentsQstnCategory
+        新着Questions
+    %section.toppageBodyContentsQstnSubcategory
+      %h3.toppageBodyContentsQstnSubcategoryRuby
+        Ruby新着Questions
+      .toppageBodyContentsQstnSubcategoryWrapper
+        = render 'shared/questionCard'
+        = render 'shared/questionCard'
+        = render 'shared/questionCard'
+        = render 'shared/questionCard'
+      .toppageBodyContentsQstnSubcategoryMore
+        もっとみる>>
 
-    %wrapper.toppageBodyFooter
-      .toppageBodyFooterTitle
-        未解決
-        Ruby
-        PHP
-        Java
-        JS
-        Python
-        C++
-      .toppageBodyFooterBtn
-        質問する
-
-
-        -# PHP新着question
-        -# タイトル
-        -# ¥30,000
-        -# Taro Yamada
-        -# イイね
-        -# フォロー
-        -# フォロワー
-
-        -# Python新着question
-        -# タイトル
-        -# ¥30,000
-        -# Taro Yamada
-        -# イイね
-        -# フォロー
-        -# フォロワー
-
-        -# 募集 4Qodeを一緒に作りたいエンジニア
-        -# タグ一覧
-        -# ユーザーを探す
-        -# バッジとは？
-        -# 4Qode?とは
-        -# 称号とう？
-        -# エキスパート一覧
-        -# 公式ブログ
-        -# 4Qode Report
-        -# 運営からのお知らせ
-        -# 4Qode API
-        -# ヘルプ
-        -# 運営会社
-        -# 利用規約
-        -# 個人情報の取り扱い
-        -# 個人情報保護方針
-        -# 広告掲載のお問い合わせ
-
-        -# 4Qodeについてご意見をお聞かせください
-        -# 送信
-        -# 頂いたご意見への回答は行っておりません。
-        -# 返信の必要なお問い合わせはこちら
-
-        -# @2019 xxxx Co., Ltd
+= render 'shared/questionButton'
+/ %wrapper.toppageBodySpfooter
+/   .toppageBodySpfootericons
+/     %i.fa.fa-home
+/     ホーム
+/   .toppageBodySpfooterQstn
+/     %i.fa.fa-question-circle
+/     質問
+/   .toppageBodySpfooterSolve
+/     %i.fa.fa-list-alt
+/     解決申請者一覧

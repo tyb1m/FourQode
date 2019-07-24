@@ -3,10 +3,10 @@
 @import "./normalize";
 
 // トップページ
-@import "./toppage";
 
-
-// SP/TB/PC
-@import url(style.css) screen and (min-width: 1025px); /* 1025以上 */
-@import url(tablet.css) screen and (max-width: 1024px); /* 1024以下 */
-@import url(smart.css) screen and (max-width: 480px); /* 480以下 */
+@import url(toppageSp.scss) screen and (max-width: 480px);
+@import url(toppageTb.scss) screen and (min-width: 480px);
+@import url(toppage.scss) screen and (min-width: 1025px);
+@import "shared/header";
+@import "shared/questionButton";
+@import "shared/questionCard";
