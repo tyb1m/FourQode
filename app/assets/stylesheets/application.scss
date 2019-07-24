@@ -34,3 +34,11 @@
 @import url(mypagesSp/head.scss) screen and (max-width: 480px);
 @import url(mypagesSp/index1.scss) screen and (max-width: 480px);
 @import url(mypageSp/index2.scss) screen and (max-width: 480);
+
+// トップページ
+@import url(toppageSp.scss) screen and (max-width: 480px);
+@import url(toppageTb.scss) screen and (min-width: 480px);
+@import url(toppage.scss) screen and (min-width: 1025px);
+@import "shared/header";
+@import "shared/questionButton";
+@import "shared/questionCard";

@@ -1,0 +1,318 @@
+
+// .toppageBody{
+//   &Header {
+
+//     &Navbar{
+//       height: 6vh;
+//       position: fixed;
+//       width: 100%;
+//       background: #FFFFFF;
+
+//       &Logo{
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+//         margin: 0 2.5vw;
+
+//         img {
+//           max-height: 5.5vh;
+//         }
+
+//         &Left{
+//           display: flex;
+
+//           &Search{
+//             border: none;
+//             background: #f5f5f5;
+//             border-radius: 0 10px 10px 0;
+//             height: 4vh;
+//             margin: 1vh 0;
+//             font-size: 2em;
+//           }
+//           input {
+//             border: none;
+//             background: #f5f5f5;
+//             border-radius: 10px 0 0 10px;
+//             height: 4vh;
+//             width: 27vw;
+//             margin: 1vh 0;
+//             padding-left: 1vw;
+//             font-size: 1em;
+//           }
+//         }
+//       }
+
+//       &Right{
+//         margin: 0.8vh 0;
+
+//         &Login {
+//           display: inline-block;
+//           margin-right: 1vw;
+//         }
+
+//         &Regist{
+//           display: inline-block;
+//         }
+
+//         .fa.fa-sign-in{
+//           font-size: 4em;
+//         }
+//         i{
+//           font-size: 3em;
+//           display: inline-block;
+//           vertical-align: middle;
+//         }
+//       }
+//     }
+//   }
+
+//   &Main{
+
+//     &Regist{
+//     background-color: #96C7BE ;
+//     width: 100%;
+//     height: 46vh;
+//     padding-top: 6vh;
+//     display: flex;
+
+//       &Dscrpt{
+//         width: 50%;
+//         height: 40vh ;
+//         display: flex;
+//         flex-direction: column;
+//         margin: 3vh 2.5vw;
+
+//         &Name{
+//           font-size: 1.4em;
+//         }
+//         &Who{
+//           font-size: 4em;
+//         }
+//         &How{
+//           font-size: 1.6em;
+//           line-height: 2;
+//         }
+//         &What{
+//           font-size: 1.5em;
+//           line-height: 2;
+//         }
+
+//         &Updates{
+//           font-size: 1.3em;
+//           color: #EB5858;
+//         }
+//       }
+
+//       &Inputs{
+//         width: 50%;
+//         height: 40vh;
+//         margin: 3vh 2.5vw;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+
+//         &User{
+//           :first-child{
+//             margin: 0 0 1vh 0;
+//           }
+//           input{
+//             border: 1px solid #ccc;
+//             border-radius: 4px;
+//             height: 4vh;
+//             width: 44vw;
+//             margin: 1vh 0 1vh 0;
+//             padding-left: 1vw;
+//             font-size: 1em;
+//           }
+//         }
+//         &Rule{
+//           color: #707070;
+
+//         }
+//         &Signup{
+//           button{ 
+//             border-radius: 4px;
+//             font-size: 1.3em;
+//             height: 4vh;
+//             width: 45vw;
+//             background-color: #3DD043;
+//             color: #FFFFFF;
+//           }
+//         }
+
+//         &Icon{
+//           display: flex;
+//           flex-direction: row;
+//           flex-wrap: wrap;
+//           justify-content: space-between;
+//           font-size: 4.5em;
+//         }
+//       }
+//     }
+//   }
+
+//   &Contents{
+//     height: 500vh;
+//     background-color: #ffffff;
+//      ul{
+//       align-items: center;
+//       display: flex;
+//       flex-wrap: wrap;
+//       justify-content: space-between;
+//       margin: 5vh 2.5vw;
+//       }
+
+//       .movie{
+//         height: 1vh;
+//         width: 16vw;
+//         font-size: 1.5vw;
+//         border-radius: 20px;
+//         padding: 1.5vh 0;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         i {
+//           font-size: 3em;
+//           padding-left: 1vw;
+//         }
+//         p{
+//           font-size: 1em;
+//           line-height: 2;
+//           text-align: left;
+//           padding-left: 1vw;
+//         }
+//       }
+
+//       li{
+//         border: 1px solid #ccc;
+//         border-radius: 4px;
+//         height: 4vh;
+//         width: 7vw;
+//         font-size: 1.5em;
+//         line-height: 2.7;
+//         text-align: center;
+//       }
+
+//       &Qstn{
+//         &Category {
+//           text-align: center;
+//           font-size: 2em;
+//         }
+//         &Subcategory{
+//           h3 {
+//             text-align: center;
+//             font-size: 1.5em;
+//             color: #597EE3;
+//           }
+//           &Wrapper{
+//             width: 77vw;
+//             margin: 5vh 12vw 5vh;
+//             display: flex;
+//             flex-wrap: wrap;
+//             justify-content: space-between;
+
+//             &Card{
+//               border: 1px solid #ccc;
+//               margin: 0 1vw 1vh 0;
+//               font-size: 1em;
+//               height: 14vh;
+//               width: 21vw;
+
+//             // PC画面の横幅設定により、カード枚数設定予定
+//             // @media screen and (max-width: 1500px){
+//             //     height: 400px;
+//             //     width: 300px;
+//             // }
+
+//             // @media screen and (max-width: 1200px){
+//             //     height: 500px;
+//             //     width: 400px;
+//             // }
+
+//               &Top{
+//                 height: 4.5vh;
+//                 background-color: #96C7BE;
+//                 color: #597EE3;
+//                 font-size: 1.4em;
+//                 line-height: 1.5;
+//                 padding: 0.5vh 0.5vw;
+//               }
+
+//               &Middle{
+//                 height: 3.5vh;
+//                 padding: 0.5vh 0.5vw;
+
+//                 &Avater{
+//                   position: relative;
+//                   img{
+//                   border: 1px solid #ccc;
+//                   border-radius: 50%;
+//                   height: 45px;
+//                   width: 45px;
+//                   }
+//                 }
+
+//                 &Name{
+//                   position: absolute;
+//                   float: right;
+//                   bottom: 0.3vh;
+//                   right: 0.5vw;
+
+//                 }
+//               }
+
+//               &Bottom{
+//                 height: 2vh;
+//                 padding: 0.5vh 0.5vw;
+//                 font-size: 0.7em;
+//                 align-items: center;
+//                 display: flex;
+//                 flex-wrap: wrap;
+//                 justify-content: space-between;
+
+//                 &Box{
+//                   text-align: center;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+
+
+//   &Footer{
+//     &Title{
+//     background-color: #707070 ;
+//     width: 100%;
+//     height: 50vh;
+//     }
+
+//     &Btn{
+//       bottom: 2vh;
+//       right: 2vh;
+//       width: 12vh;
+//       height: 12vh;
+//       font-size: 1.5em;
+//       border-radius: 50%;
+//       background: #ea352d;
+//       color: #fff;
+//       position: fixed;
+//       text-align: center;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       z-index: 1000;
+//     }
+//   }
+//   &Spfooter{
+//      display: none;
+//   }
+// }
+
+// .clearfix:after {
+//   content: "";
+//   clear: both;
+//   display: block;
+// }

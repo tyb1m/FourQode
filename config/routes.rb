@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  
   devise_for :users, :controllers => {
     :registrations => 'users/registrations',
     :sessions => 'users/sessions'   
@@ -11,6 +12,7 @@ Rails.application.routes.draw do
     get "logout", :to => "users/sessions#destroy"
     post "create", :to => "users/registrations#create"
   end
+
   resources :users
   resources :messages, only: [:index]
   resource :questions, only: [:show]
@@ -28,4 +30,8 @@ Rails.application.routes.draw do
       get :card
     end
   end
+  
+  # 仮置き
+  root 'users#index'
+
 end

@@ -1,0 +1,16 @@
+%header.toppage
+  .toppageBody
+    .toppageBodyHeader
+      .toppageBodyHeaderNavbar
+        .toppageBodyHeaderNavbarLogo
+          = image_tag "S59981830.png", class: "logo_icon"
+          .toppageBodyHeaderNavbarLogoLeft
+            %form
+              %input{type: "search", autocomplete: "off", value: "", placeholder: "質問を検索"}
+            %button.toppageBodyHeaderNavbarLogoLeftSearch
+              %i.fa.fa-search
+          .toppageBodyHeaderNavbarRight
+            %i.fa.fa-sign-in
+            .toppageBodyHeaderNavbarRightLogin ログイン
+            %i.fa.fa-user-plus
+            .toppageBodyHeaderNavbarRightRegist 新規登録
