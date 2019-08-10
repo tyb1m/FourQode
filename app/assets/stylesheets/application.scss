@@ -1,14 +1,12 @@
-@import "./normalize";
-// @import "questionsEntry";
-@import url(questionsEntry.scss) screen and (min-width: 1025px); /* 1025以上 */
-@import url(questionsEntryTb.scss) screen and (max-width: 1024px); /* 1024以下 */
-@import url(questionsEntrySp.scss) screen and (max-width: 480px); /* 480以下 */
-// リセット
+// @import "./normalize";
+// @import url(questions/questionsEntry.scss) screen and (min-width: 1025px);
+// @import url(questions/questionsEntryTb.scss) screen and (max-width: 1024px);
+// @import url(questions/questionsEntrySp.scss) screen and (max-width: 480px);
+@import "questions/questionsEntry";
+@import "questions/questionsPolicy";
+@import "questions/questionsPolicy2";
+
+@import "shared/header";
+@import "shared/questionButton";
+@import "shared/questionCard";
 @import "font-awesome";
-@import "./prism";
-@import url(questionsShowSp.scss) screen and (max-width: 480px);
-@import url(questionsShowTb.scss) screen and (min-width: 480px);
-@import url(questionsShow.scss) screen and (min-width: 1025px);
-@import url(resultSp.scss) screen and (max-width: 480px);
-@import url(resultTb.scss) screen and (min-width: 480px);
-@import url(result.scss) screen and (min-width: 1025px);

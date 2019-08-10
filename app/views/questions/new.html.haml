@@ -1,64 +1,11 @@
-%wrapper.questionsEntry
-  .questionsEntryWarning
-    金額を入力してください。
-  %wrapper.questionsEntryBody
-    %wrapper.questionsEntryBodyHeader
-      .questionsEntryBodyHeaderEstimate
-        %p.questionsEntryBodyHeaderEstimateTitle
-          金額を入力してください（5000PTから）
-        .questionsEntryBodyHeaderEstimateInput
-          .questionsEntryBodyHeaderEstimateInputPoint
-            PT
-          .questionsEntryBodyHeaderEstimateInputBox
-        .questionsEntryBodyHeaderEstimateCommission
-          .questionsEntryBodyHeaderEstimateCommissionTitle
-            手数料（15%）
-          .questionsEntryBodyHeaderEstimateCommissionPrice
-            0000
-        .questionsEntryBodyHeaderEstimatePublication
-          .questionsEntryBodyHeaderEstimatePublicationTitle
-            掲載価格
-          .questionsEntryBodyHeaderEstimatePublicationPrice
-            0000
-      .questionsEntryBodyHeaderLanguage
-        %p.questionsEntryBodyHeaderLanguageTitle
-          タグを入力してください
-        .questionsEntryBodyHeaderLanguageTag
-        .questionsEntryBodyHeaderLanguageSelect
-      .questionsEntryBodyHeaderButton
-        質問を作成
-    %wrapper.questionsEntryBodyMain
-      .questionsEntryBodyMainMarkup
-        インクリメンタルサーチがうまくいきません
-
-        ただいまECサイトを作成している最中でして商品を検索する際、
-        Keyupでのインクリメンタルサーチを実装しようと考えております
-        しかしながらkeyupでのイベントがどうも発火していません。
-        Console.logやdebaggaを使って確認しているのですが、治らない状況です。
-        コードは下記の通りです
-
-        対象コード
-
-        試したこと
-        Console.logとdebbagaによるデバック。
-
-        言語環境
-        ruby 3.2.1
-        Rails 5.1.6
-      .questionsEntryBodyMainView
-        インクリメンタルサーチがうまくいきません
-
-        ただいまECサイトを作成している最中でして商品を検索する際、
-        Keyupでのインクリメンタルサーチを実装しようと考えております
-        しかしながらkeyupでのイベントがどうも発火していません。
-        Console.logやdebaggaを使って確認しているのですが、治らない状況です。
-        コードは下記の通りです
-
-        対象コード
-
-        試したこと
-        Console.logとdebbagaによるデバック。
-
-        言語環境
-        ruby 3.2.1
-        Rails 5.1.6
+%wrapper.toppageHeader
+  = render "shared/header"
+- if request.from_pc?
+  %wrapper.questionsEntry
+    = render "questions/newPc"
+- elsif request.from_ipad?
+  %wrapper.questionsEntryTb
+    = render "questions/newTb"
+- elsif request.from_smartphone?
+  %wrapper.questionsEntrySp
+    = render "questions/newSp"
