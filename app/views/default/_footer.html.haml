@@ -1,45 +1,57 @@
-%footer.footer
-  .footerBody
-    .footerBodyLogo
-      ロゴ出来次第挿入予定
-    %ul
-      %li
-        = fa_icon 'caret-right', class: 'icon'
-        = link_to 'タグ一覧'
-      %li
-        = fa_icon 'caret-right', class: 'icon'
-        = link_to 'ユーザーを探す'
-      %li
-        = fa_icon 'caret-right', class: 'icon'
-        = link_to '4Qodeについて'
-      %li
-        = fa_icon 'caret-right', class: 'icon'
-        = link_to 'ユーザー一覧'
-      %li
-        = fa_icon 'caret-right', class: 'icon'
-        = link_to 'ヘルプ'
-      %li
-        = fa_icon 'caret-right', class: 'icon'
-        = link_to '運営からのお知らせ'
-      %li
-        = fa_icon 'caret-right', class: 'icon'
-        = link_to '運営会社'
-      %li
-        = fa_icon 'caret-right', class: 'icon'
-        = link_to '利用規約'
-      %li
-        = fa_icon 'caret-right', class: 'icon'
-        = link_to '個人情報の取り扱い'
-      %li.contact
-        = fa_icon 'caret-right', class: 'icon'
-        = link_to 'お問い合わせ'
-  .footerContact
-    .footerContactBox
-      .footerContactBoxText
-        4Qodeについてご意見お聞かせください
-      .footerContactBoxSubmit
-        送信
-      %p
-        いただいたご意見への回答は行っておりません。
-  .footerCopyright
-    ©︎2019 4Qode
+%wrapper.toppageBodySpfooter
+  %footer.footer
+    .footerBox
+      .footerBoxContact
+        .footerBoxContactBox
+          .footerBoxContactBoxLogo
+            %i.fas.fa-arrow-up
+            4Qode
+          .footerBoxContactBoxText
+            %br TEL 0000-00-0000
+            %br 000000000000@fourcorde.ocm
+            %br 年末年始を除き年中無休
+            %br
+            %br ©︎2019 4Qode
+
+      .footerBoxBody
+        .footerBoxBodyLogo
+          %ul
+            %li
+              = fa_icon 'caret-right', class: 'icon'
+              = link_to 'タグ一覧'
+            %li
+              = fa_icon 'caret-right', class: 'icon'
+              = link_to 'ユーザーを探す'
+            %li
+              = fa_icon 'caret-right', class: 'icon'
+              = link_to '4Qodeについて'
+            %li
+              = fa_icon 'caret-right', class: 'icon'
+              = link_to 'ユーザー一覧'
+            %li
+              = fa_icon 'caret-right', class: 'icon'
+              = link_to 'ヘルプ'
+            %li
+              = fa_icon 'caret-right', class: 'icon'
+              = link_to '運営からのお知らせ'
+            %li
+              = fa_icon 'caret-right', class: 'icon'
+              = link_to '運営会社'
+            %li
+              = fa_icon 'caret-right', class: 'icon'
+              = link_to '利用規約'
+            %li
+              = fa_icon 'caret-right', class: 'icon'
+              = link_to '個人情報の取り扱い'
+            %li.contact
+              = fa_icon 'caret-right', class: 'icon'
+              = link_to 'お問い合わせ'
+        .footerBoxBodyCopyright
+          %i.fas.fa-arrow-up
+          %i.fas.fa-arrow-up
+          %i.fas.fa-arrow-up
+          %i.fas.fa-arrow-up
+          %i.fas.fa-arrow-up
+
+      / .footerCopyright
+      /   %p ©︎2019 4Qode
