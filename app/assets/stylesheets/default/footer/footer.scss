@@ -1,89 +1,108 @@
 .footer {
-  height: auto;
+  height: 250px;
   background-color: #464D56;
-  overflow: hidden;
-  
-  &Body {
-    float: left;
-    width: 65%;
+  // position: absolute;
+  // overflow: hidden;
+  &Box{
+    margin: 0 auto;
+    width: 1240px;;
 
-    &Logo {
-      margin: 7% 5% 7% 13%;
-    }
+    &Contact {
+      float: left;
+      width: 35%;
+      margin-top: -30px;
 
-    ul {
-      margin: 7% 5% 7% 13%;
-      padding-left: 0;
+      &Box {
+        margin: 0 30px 0;
+        height: 280px;
+        background-color: #2B6419;
 
-      li {
-        display: inline-block;
-        line-height: 2.3;
-        margin-right: 10px;
-
-        a {
-          text-decoration: none;
-          color: #fff;
-          font-size: 15px;
+        &Logo {
+          padding: 30px;
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
+          color: #FFFFFF;
+          font-size: 40px;
+          // border-radius: 20px;
+          // height: 150px;
+          // padding: 5%;
+          // box-sizing: border-box;
+          // padding-left: 30px;
+          // float: left;
+          // font-size: 100px;
         }
 
-        .icon {
+        // &Submit {
+        //   font-size: 20px;
+        //   // margin: 5% 0;
+        //   // background-color: #3DD043;
+        //   // border-radius: 20px;
+        //   // padding: 3%;
+        //   // box-sizing: border-box;
+        //   // color: #fff;
+        //   // width: auto;
+        //   // text-align: center;
+        //   padding-right: 30px;
+        //   float: right;
+        // }
+
+        &Text {
           color: #fff;
-          font-size: 1.2em;
-          display: inline-block;
-          vertical-align: middle;
+          font-size: 14px;
+          padding: 10px 30px;
         }
       }
     }
 
-    @media screen and (min-width: 480px){
-      .contact {
-        display: none;
+    &Body {
+      float: right;
+      width: 65%;
+
+      &Logo {
+        // margin: 7% 5% 7% 13%;
+
+        ul {
+          margin-top: 70px;
+
+          li {
+            display: inline-block;
+            line-height: 2.3;
+            margin-right: 62px;
+
+            a {
+              text-decoration: none;
+              color: #fff;
+              font-size: 15px;
+            }
+
+            .icon {
+              color: #fff;
+              font-size: 14px;
+              display: inline-block;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+
+      &Copyright{
+        margin-top: 50px;
+        text-align: right;
+        color: #FFFFFF;
+      }
+      @media screen and (min-width: 480px){
+        .contact {
+          display: none;
+        }
       }
     }
-  }
 
-  &Contact {
-    float: right;
-    width: 35%;
-
-    &Box {
-      margin: 7%;
-      padding: 0 7%;
-    
-      &Text {
-        background-color: #fff;
-        color: #464D56;
-        border-radius: 20px;
-        height: 150px;
-        padding: 5%;
-        box-sizing: border-box;
-      }
-
-      &Submit {
-        margin: 5% 0;
-        background-color: #3DD043;
-        border-radius: 20px;
-        padding: 3%;
-        box-sizing: border-box;
-        color: #fff;
-        width: auto;
-        text-align: center;
-
-      }
-
-      p {
-        color: #fff;
-        font-size: 14px;
-      }
-    }
-  }
-
-  &Copyright {
-    margin: 5% 7% 3% 7%;
-    color: #fff;
-    bottom: 5vh;
-    font-size: 13px;
-    text-align: center;
-    clear: both;
+    // &Copyright {
+    //   // margin: 5% 7% 3% 7%;
+    //   color: #fff;
+    //   font-size: 13px;
+    //   text-align: right;
+    // }
   }
 }
