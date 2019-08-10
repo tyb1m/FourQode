@@ -2,44 +2,47 @@
 
 %main.toppageBodyMain
   .toppageBodyMainRegist
-    .toppageBodyMainRegistDscrpt
-      %h2.toppageBodyMainRegistDscrptName
-        全てのエンジニアのため
-        の[副業]Q&Aサイト
-      %p.toppageBodyMainRegistDscrptWho
-        4Qode
-      %p.toppageBodyMainRegistDscrptHow
-        画面共有と通話で
-        %br あなたの質問解消にコミットする
-      %p.toppageBodyMainRegistDscrptWhat
-        4Qodeでは、あなたの質問の売り買いを通して、
-        %br スピーディで温かみある質問解消を実現します
-      %p.toppageBodyMainRegistDscrptUpdates
-        5分前に〇〇が〇〇さんの質問を解決しました
-    .toppageBodyMainRegistInputs
-      .toppageBodyMainRegistInputsUser
-        / %form
-        /   %input{type: "text", autocomplete: "off", value: "", placeholder: "ユーザー名"}
-        /   %input{type: "text", autocomplete: "off", value: "", placeholder: "メールアドレス"}
-        /   %input{type: "password", autocomplete: "off", value: "", placeholder: "パスワード"}
-        %button Twitterでログイン
-        %button Facebookでログイン
-        %button Githubでログイン
-        %button Googleでログイン
-        %button はてなでログイン
-      .toppageBodyMainRegistInputsText
-        OR
-      .toppageBodyMainRegistInputsSignup
-        %form
-          %input{type: "text", autocomplete: "off", value: "", placeholder: "ユーザー名"}
-          %input{type: "text", autocomplete: "off", value: "", placeholder: "メールアドレス"}
-        %button 無料で登録する
-      / .toppageBodyMainRegistInputsIcon
-      /   %i.fa.fa-facebook-square
-      /   %i.fa.fa-twitter-square
-      /   %i.fa.fa-google
-      /   %i.fa.fa-github-square
+    .toppageBodyMainRegistBox
+      .toppageBodyMainRegistBoxDscrpt
+        %h2.toppageBodyMainRegistBoxDscrptName
+          全てのエンジニアのため
+          の[副業]Q&Aサイト
+        %p.toppageBodyMainRegistBoxDscrptWho
+          4Qode
+        %p.toppageBodyMainRegistBoxDscrptHow
+          画面共有と通話で
+          %br あなたの質問解消にコミットする
+        %p.toppageBodyMainRegistBoxDscrptWhat
+          4Qodeでは、あなたの質問の売り買いを通して、
+          %br スピーディで温かみある質問解消を実現します
+        %p.toppageBodyMainRegistBoxDscrptUpdates
+          5分前に〇〇が〇〇さんの質問を解決しました
+      .toppageBodyMainRegistBoxInputs
+        .toppageBodyMainRegistBoxInputsUser
+          / %form
+          /   %input{type: "text", autocomplete: "off", value: "", placeholder: "ユーザー名"}
+          /   %input{type: "text", autocomplete: "off", value: "", placeholder: "メールアドレス"}
+          /   %input{type: "password", autocomplete: "off", value: "", placeholder: "パスワード"}
+          %button Twitterでログイン
+          %button Facebookでログイン
+          %button Githubでログイン
+          %button Googleでログイン
+          %button はてなでログイン
+        .toppageBodyMainRegistBoxInputsText
+          OR
+        .toppageBodyMainRegistBoxInputsSignup
+          %form
+            %input{type: "text", autocomplete: "off", value: "", placeholder: "ユーザー名"}
+            %input{type: "text", autocomplete: "off", value: "", placeholder: "メールアドレス"}
+          %button 無料で登録する
+        / .toppageBodyMainRegistInputsIcon
+        /   %i.fa.fa-facebook-square
+        /   %i.fa.fa-twitter-square
+        /   %i.fa.fa-google
+        /   %i.fa.fa-github-square
   %section.toppageBodyContents
+    .toppageBodyContentsTag
+      質問をタグから探す
     %ul
       %li 未解決
       %li Ruby
@@ -48,35 +51,57 @@
       %li JS
       %li Python
       %li C++
-      %li.movie
-        %i.fa.fa-github-square
-        %p
-          4Qodeって？
-          %br
-          1分で理解
+      %li 未解決
+      %li Ruby
+      %li PHP
+      %li Java
+      %li JS
+      %li Python
+      %li C++
+    %section.toppageBodyContentsCategory
+      %h2 新着Questions
+    .toppageBodyContentsCategory
+      %h3 Ruby新着Questions
+      .toppageBodyContentsCategoryWrapper
+        = render 'shared/questionCard'
+        = render 'shared/questionCard'
+      %p もっとみる>>
 
-    %section.toppageBodyContentsQstn
-      %h2.toppageBodyContentsQstnCategory
-        新着Questions
-    .toppageBodyContentsQstnSubcategory
-      %h3.toppageBodyContentsQstnSubcategoryRuby
-        Ruby新着Questions
-      .toppageBodyContentsQstnSubcategoryWrapper
+    .toppageBodyContentsCategory
+      %h3 Ruby新着Questions
+      .toppageBodyContentsCategoryWrapper
         = render 'shared/questionCard'
         = render 'shared/questionCard'
+      %p もっとみる>>
+
+    .toppageBodyContentsCategory
+      %h3 Ruby新着Questions
+      .toppageBodyContentsCategoryWrapper
         = render 'shared/questionCard'
         = render 'shared/questionCard'
-      .toppageBodyContentsQstnSubcategoryMore
-        もっとみる>>
+      %p もっとみる>>
+
+    %section.toppageBodyContentsCategory
+      %h2 高単価Questions
+    .toppageBodyContentsCategory
+      %h3 Ruby新着Questions
+      .toppageBodyContentsCategoryWrapper
+        = render 'shared/questionCard'
+        = render 'shared/questionCard'
+      %p もっとみる>>
+
+    .toppageBodyContentsCategory
+      %h3 Ruby新着Questions
+      .toppageBodyContentsCategoryWrapper
+        = render 'shared/questionCard'
+        = render 'shared/questionCard'
+
+      %p もっとみる>>
+    .toppageBodyContentsSelect
+      .toppageBodyContentsSelectPageup
+        %br PAGE TOP
+        %i.fas.fa-arrow-up
+%wrapper.toppageBodySpfooter
+  = render 'default/footer'
 
 = render 'shared/questionButton'
-/ %wrapper.toppageBodySpfooter
-/   .toppageBodySpfootericons
-/     %i.fa.fa-home
-/     ホーム
-/   .toppageBodySpfooterQstn
-/     %i.fa.fa-question-circle
-/     質問
-/   .toppageBodySpfooterSolve
-/     %i.fa.fa-list-alt
-/     解決申請者一覧
