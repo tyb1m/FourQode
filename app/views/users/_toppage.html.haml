@@ -1,0 +1,82 @@
+= render 'shared/header'
+
+%main.toppageBodyMain
+  .toppageBodyMainRegist
+    .toppageBodyMainRegistDscrpt
+      %h2.toppageBodyMainRegistDscrptName
+        全てのエンジニアのため
+        の[副業]Q&Aサイト
+      %p.toppageBodyMainRegistDscrptWho
+        4Qode
+      %p.toppageBodyMainRegistDscrptHow
+        画面共有と通話で
+        %br あなたの質問解消にコミットする
+      %p.toppageBodyMainRegistDscrptWhat
+        4Qodeでは、あなたの質問の売り買いを通して、
+        %br スピーディで温かみある質問解消を実現します
+      %p.toppageBodyMainRegistDscrptUpdates
+        5分前に〇〇が〇〇さんの質問を解決しました
+    .toppageBodyMainRegistInputs
+      .toppageBodyMainRegistInputsUser
+        / %form
+        /   %input{type: "text", autocomplete: "off", value: "", placeholder: "ユーザー名"}
+        /   %input{type: "text", autocomplete: "off", value: "", placeholder: "メールアドレス"}
+        /   %input{type: "password", autocomplete: "off", value: "", placeholder: "パスワード"}
+        %button 無料で登録する
+        %button 無料で登録する
+        %button 無料で登録する
+        %button 無料で登録する
+        %button 無料で登録する
+      .toppageBodyMainRegistInputsText
+        OR
+      .toppageBodyMainRegistInputsSignup
+        %form
+          %input{type: "text", autocomplete: "off", value: "", placeholder: "ユーザー名"}
+          %input{type: "text", autocomplete: "off", value: "", placeholder: "メールアドレス"}
+        %button 無料で登録する
+      / .toppageBodyMainRegistInputsIcon
+      /   %i.fa.fa-facebook-square
+      /   %i.fa.fa-twitter-square
+      /   %i.fa.fa-google
+      /   %i.fa.fa-github-square
+  %section.toppageBodyContents
+    %ul
+      %li 未解決
+      %li Ruby
+      %li PHP
+      %li Java
+      %li JS
+      %li Python
+      %li C++
+      %li.movie
+        %i.fa.fa-github-square
+        %p
+          4Qodeって？
+          %br
+          1分で理解
+
+    .toppageBodyContentsQstn
+      %h2.toppageBodyContentsQstnCategory
+        新着Questions
+    %section.toppageBodyContentsQstnSubcategory
+      %h3.toppageBodyContentsQstnSubcategoryRuby
+        Ruby新着Questions
+      .toppageBodyContentsQstnSubcategoryWrapper
+        = render 'shared/questionCard'
+        = render 'shared/questionCard'
+        = render 'shared/questionCard'
+        = render 'shared/questionCard'
+      .toppageBodyContentsQstnSubcategoryMore
+        もっとみる>>
+
+= render 'shared/questionButton'
+/ %wrapper.toppageBodySpfooter
+/   .toppageBodySpfootericons
+/     %i.fa.fa-home
+/     ホーム
+/   .toppageBodySpfooterQstn
+/     %i.fa.fa-question-circle
+/     質問
+/   .toppageBodySpfooterSolve
+/     %i.fa.fa-list-alt
+/     解決申請者一覧

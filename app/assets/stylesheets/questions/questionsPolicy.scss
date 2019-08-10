@@ -1,0 +1,100 @@
+.questionPolicy{
+  width: 65vw;
+  // height: 550px;
+  // padding: 10px 10px 10px 10px;
+  // background-color: #FFFFFF;
+  // position: fixed;
+  // top: 10vh;
+  // right: 0;
+  // bottom: 0;
+  // left: 18vw;
+  // overflow-x: hidden;
+  // overflow-y: auto;
+  // display: none;
+  height: 550px;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  left: 50%;
+  padding: 40px;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
+  &Body{
+
+    &Header{
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-bottom: 1px solid #ECECEC;
+      &1{
+        color: black;
+        font-size: 13px;
+        font-weight: bold;
+        margin-bottom: 1vh;
+        text-align: center;
+        line-height: 25px;
+        margin-top: 2vh;
+      }
+      &2{
+        color: black;
+        font-size: 5px;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+    &Main{
+      display: flex;
+      flex-direction: column;
+      &Text{
+        color: black;
+        font-size: 13px;
+        margin-bottom: 1vh;
+        text-align: center;
+        line-height: 25px;
+        margin-top: 5vh;
+      }
+      &Image{
+        .fa-edit{
+          color: #3A3A3A;
+          font-size: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 10vh;
+        }
+      }
+      &Button{
+        width: 15vw;
+        height: 45px;
+        font-size: 6px;
+        background-color: #0C5601;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 15vh;
+        .policyBtn1{
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+#questionPolicyOverlay {
+  // width: 100%;
+  // height: 100%;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

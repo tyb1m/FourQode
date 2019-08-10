@@ -1,0 +1,20 @@
+%wrapper.mypage
+  %wrapper.mypageSideBars
+    = render partial: "sidebar"
+  %wrapper.mypagesNotification
+    %h3.notificationDetails
+      お知らせ詳細
+    .notificationHead
+      .notificationDate
+        2019/3/28
+      .notificationTitle
+        サーバーがサボり始めました
+    %p.notificationBody
+      %p いつも、4Qodeをご愛用いただきありがとうございます。
+      %p ユーザーの皆様にご不便をおかけしています。
+      誠に驚きなのですが、サーバーがサボることを覚えました。
+      それでも末長く、お付き合いしていただけたらと思います。
+      %p 今後とも4Qodeを何卒よろしくお願い致します。
+    .noitificationBack
+      = link_to "#"
+
