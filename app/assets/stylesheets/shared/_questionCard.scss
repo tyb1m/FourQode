@@ -1,4 +1,4 @@
-.toppageBodyContentsQstnSubcategory{
+.toppageBodyContentsCategory{
   &Wrapper{
     width: 950px;
     margin: 0 auto;
@@ -55,8 +55,26 @@
         align-items: center;
         display: flex;
 
+        &Waiting{
+          background-color: #848484;
+          padding: 5px;
+          border-radius: 4px;
+          font-size: 14px;
+          color: #FFFFFF;
+        }
+
+        &Solved{
+          background-color: #96322E;
+          padding: 5px;
+          border-radius: 4px;
+          font-size: 14px;
+          color: #FFFFFF;
+        }
+
+
         &Pple{
           font-weight: bold;
+          padding-left: 30px; 
         }
       }
 
