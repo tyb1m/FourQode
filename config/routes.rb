@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  
+
   devise_for :users, :controllers => {
     :registrations => 'users/registrations',
-    :sessions => 'users/sessions'   
-  } 
-  
+    :sessions => 'users/sessions'
+  }
+
   devise_scope :user do
     get "user/:id", :to => "users/registrations#detail"
     get "signup", :to => "users/registrations#new"
@@ -14,8 +14,11 @@ Rails.application.routes.draw do
   end
 
   resources :users
-  resources :messages, only: [:index]
-  resource :questions, only: [:show]
+  resources :items , only: [:new , :create, :destroy, :update]
+  resources :questions, only: [:show, :new]
+  # get 'questions/new/markdown'
+  # get 'questions/new/preview'
+
   resources :mypages do
     collection do
       get :index1
@@ -30,7 +33,7 @@ Rails.application.routes.draw do
       get :card
     end
   end
-  
+
   # 仮置き
   root 'users#index'
 
