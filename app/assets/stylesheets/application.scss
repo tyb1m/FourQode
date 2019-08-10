@@ -1,8 +1,7 @@
 // リセット
 @import "reset";
-@import "./normalize";
 @import "font-awesome";
-@import "./prism";
+// @import "./prism";
 @import "./messagesIndex";
 @import url(questionsShowSp.scss) screen and (max-width: 480px);
 @import url(questionsShowTb.scss) screen and (min-width: 480px);
