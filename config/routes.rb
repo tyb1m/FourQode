@@ -13,6 +13,10 @@ Rails.application.routes.draw do
     post "create", :to => "users/registrations#create"
   end
 
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  end
+
   resources :users
   resources :items , only: [:new , :create, :destroy, :update]
   resources :questions, only: [:show, :new]
