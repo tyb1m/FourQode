@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     :sessions => 'users/sessions'
   }
 
+  mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
+
   devise_scope :user do
     get "user/:id", :to => "users/registrations#detail"
     get "signup", :to => "users/registrations#new"
@@ -13,9 +15,6 @@ Rails.application.routes.draw do
     post "create", :to => "users/registrations#create"
   end
 
-  if Rails.env.development?
-    mount LetterOpenerWeb::Engine, at: "/letter_opener"
-  end
 
   resources :users
   resources :items , only: [:new , :create, :destroy, :update]
