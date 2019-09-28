@@ -5,7 +5,9 @@ Rails.application.routes.draw do
     :sessions => 'users/sessions'
   }
 
-  mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
+  end
 
   devise_scope :user do
     get "user/:id", :to => "users/registrations#detail"
