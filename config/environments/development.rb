@@ -31,15 +31,6 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
   config.action_mailer.delivery_method = :letter_opener_web
-  # config.action_mailer.smtp_settings = {
-  #   :address => 'smtp.gmail.com',
-  #   :port => 587,
-  #   :domain => 'example.com',
-  #   :user_name => 'example@gmail.com',
-  #   :password => 'dlapwoeifkbmzksl', # Googleが発行する、12桁のアプリケーションパスワード
-  #   :authentication => :login,
-  #   :enable_starttls_auto => true
-  # }
 
   config.action_mailer.perform_caching = false
 
