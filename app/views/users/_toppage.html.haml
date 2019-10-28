@@ -43,6 +43,7 @@
   %section.toppageBodyContents
     .toppageBodyContentsTag
       質問をタグから探す
+      = link_to 'ログアウト', destroy_user_session_path, method: :delete
     %ul
       %li 未解決
       %li Ruby
