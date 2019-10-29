@@ -102,6 +102,14 @@
       .toppageBodyContentsSelectPageup
         %br PAGE TOP
         %i.fas.fa-arrow-up
+- if user_signed_in?
+  #tag_modal_overlay
+  #setting_tag_modal
+    %span タグが未登録です
+    #registration_tag
+      %span タグを登録することで質問を受けやすくなります
+      = link_to '登録ページへ', new_user_tags_path(current_user)
+    #tag_modal_close あとで登録する
 
 = render 'default/footer'
 
