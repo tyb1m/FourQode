@@ -1,33 +1,17 @@
-.create
-  .createTitle
-    = image_tag 'mail.png'
-    %p 仮登録メール送信完了
-  .createMain
-    .createImage
-      画像あとで挿入
-    %p
-      %span「example@fourqode.com」
-      宛にexample@fourqode.comからメールが届きますので、
-      %span 30分以内
-      に本登録を完了してください。
-
-  .createFoot
-    メールが届かない場合
-    %span スパムメールフォルダ
-    や
-    %span 迷惑メールフォルダ
-    に届いている場合があります。
-    %br
-    %br
-    上記を確認しても、メールが確認できなかった場合、お手数をおかけしますが以下を行ってください。
-    %br
-    %br
-    %li 
-      メールアドレスを正確に入力して再度
-      = link_to "仮登録", new_user_registration_path
-      する
-    %li
-      = link_to "お問い合わせ"
-      より連絡する
-
+= render 'shared/header'
+#userCreate
+  %h1 仮登録完了
+  #createMain
+    = image_tag 'checkmark.png', class: 'createImage'
+    %p info@4Qode.comから入力メールアドレス宛に仮登録メールを送信しました。
+    %p メールボックスから確認してください。
+  #createSub
+    %p メールが届きませんか？
+    %ul
+      %li 迷惑メールボックスに届いている場合があります。
+      %li @4Qode.comの受信を許可してください。
+      %li
+        それでも届かない場合、お手数ですが
+        %span>= link_to 'お問い合わせ'
+        から連絡してください。
 = render 'default/footer'

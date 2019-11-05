@@ -3,11 +3,11 @@
 @import "font-awesome";
 // @import "./prism";
 @import "./messagesIndex";
-@import url(questionsShowSp.scss) screen and (max-width: 480px);
+// @import url(questionsShowSp.scss) screen and (max-width: 480px);
 @import url(questionsShowTb.scss) screen and (min-width: 480px);
 @import url(questionsShow.scss) screen and (min-width: 1025px);
-@import url(resultSp.scss) screen and (max-width: 480px);
-@import url(resultTb.scss) screen and (min-width: 480px);
+// @import url(resultSp.scss) screen and (max-width: 480px);
+// @import url(resultTb.scss) screen and (min-width: 480px);
 @import url(result.scss) screen and (min-width: 1025px);
 @import url(default/footer/footerSp.scss) screen and (max-width: 480px);
 @import url(default/footer/footerTb.scss) screen and (min-width: 480px);
@@ -32,7 +32,7 @@
 @import url(mypagesSp/sidebar.scss) screen and (max-width: 480px);
 @import url(mypagesSp/head.scss) screen and (max-width: 480px);
 @import url(mypagesSp/index1.scss) screen and (max-width: 480px);
-@import url(mypageSp/index2.scss) screen and (max-width: 480);
+// @import url(mypageSp/index2.scss) screen and (max-width: 480);
 
 // トップページ
 @import url(toppageSp.scss) screen and (max-width: 480px);
@@ -44,3 +44,4 @@
 @import "questions/questionsEntry";
 @import "questions/questionsPolicy";
 @import "questions/questionsPolicy2";
+@import "tagModal";
