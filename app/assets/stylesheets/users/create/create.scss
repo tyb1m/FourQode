@@ -1,63 +1,39 @@
-.create {
-  line-height: 1.7;
-  color: #333333;
-
-  &Title {
-    margin: 4% 7%;
-
-    img {
-      height: 28px;
-      width: 28px;
-      margin-right: 10px;
-      display: inline-block;
-      vertical-align: middle;
+#userCreate{
+  color: #3b3b3b;
+  background: #F0F0F0;
+  h1{
+    font-size: 25px;
+    text-align: center;
+    padding: 120px 0 30px;
+  }
+  #createMain{
+    text-align: center;
+    margin-bottom: 30px;
+    img{
+      width: 200px;
+      padding: 50px 0;
     }
-
-    p {
-      margin: auto 0;
-      display: inline-block;
-      vertical-align: middle;
-      font-weight: bolder;
-      font-size: 25px;
+    p{
+      font-size: 17px;
+      line-height: 1.7;
     }
   }
-
-  &Image {
-    padding: 7%;
-
-  }
-  &Main {
-    margin: 7% 14%;
-    padding: 4% 14%;
-    background: #fff;
-    font-size: 15px;
-    border: 1px solid #707070;
-
-    p {
-      margin: 5% 0;
-
-      span {
-        font-weight: bold;
-      }
+  #createSub{
+    color: #848484;
+    font-size: 14px;
+    padding: 30px 0 80px;
+    margin: 0 30%;
+    p{
+      padding: 20px 0;
     }
-  }
-
-  &Foot {
-    margin: 7%;
-    padding: 0  14%;
-    font-size: 13px;
-
-    span {
-      font-weight: bold;
-    }
-
-    li {
-      padding-left: 1.4em;
-      text-indent: -1.4em;
-
-      a  {
-        text-decoration: none;
-        color: #00b5e2;
+    ul{
+      margin: 0 20px;
+      li{
+        line-height: 1.7;
+        a{
+          color: #3683FF;
+          text-decoration: none;
+        }
       }
     }
   }
