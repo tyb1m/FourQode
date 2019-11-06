@@ -24,11 +24,9 @@ Rails.application.routes.draw do
   end
   resources :items , only: [:new , :create, :destroy, :update]
   resources :questions, only: [:show, :new]
-  # get 'questions/new/markdown'
-  # get 'questions/new/preview'
 
   resources :mypages do
-    collection do
+    member do
       get :index1
       get :index2
       get :index3
@@ -39,6 +37,10 @@ Rails.application.routes.draw do
       get :notification
       get :profile
       get :card
+      get :review2_1_1
+      get :review2_2_1
+      get :review2_2_2
+      get :review2_2_3
     end
   end
 
