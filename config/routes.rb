@@ -1,19 +1,27 @@
 Rails.application.routes.draw do
 
-  devise_for :users, :controllers => {
-    :registrations => 'users/registrations',
-    :sessions => 'users/sessions'
+  devise_for :users, controllers: {
+    registrations: 'users/registrations',
+    comfirmations: 'users/confirmations',
+    sessions: 'users/sessions'
   }
+
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
+  end
 
   devise_scope :user do
     get "user/:id", :to => "users/registrations#detail"
     get "signup", :to => "users/registrations#new"
+    post "create", :to => "users/registrations#create"
     get "login", :to => "users/sessions#new"
     get "logout", :to => "users/sessions#destroy"
-    post "create", :to => "users/registrations#create"
   end
 
-  resources :users
+
+  resources :users do
+    resource :tags, only: %i(new create edit destroy update), module: :users
+  end
   resources :items , only: [:new , :create, :destroy, :update]
   resources :questions, only: [:show, :new]
 
