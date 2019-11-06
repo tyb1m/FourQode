@@ -50,3 +50,8 @@
 @import "questions/questionsPolicy";
 @import "questions/questionsPolicy2";
 @import "tagModal";
+
+// タグ登録
+@import url(users/tags/newSp.scss) screen and (max-width: 480px);
+@import url(users/tags/newTb.scss) screen and (min-width: 480px);
+@import url(users/tags/new.scss) screen and (min-width: 1025px);
