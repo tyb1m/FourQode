@@ -2,7 +2,7 @@
   // z-index: 1;
   &Warning1{
     width: vmax;
-    height: 70px;
+    height: 120px;
     background-color: #9BCE08;
     color: white;
     font-size: 15px;
@@ -20,7 +20,7 @@
   &Warning2{
     display: none!important;
     width: vmax;
-    height: 70px;
+    height: 120px;
     background-color: #ECECEC;
     color: black;
     font-size: 15px;
@@ -33,7 +33,7 @@
   &Warning3{
     display: none!important;
     width: vmax;
-    height: 70px;
+    height: 120px;
     background-color: #90171F;
     color: white;
     font-size: 15px;
@@ -50,7 +50,7 @@
   &Warning4{
     display: none!important;
     width: vmax;
-    height: 70px;
+    height: 120px;
     background-color: #90171F;
     color: white;
     font-size: 30px;
@@ -64,31 +64,31 @@
     margin: 0 auto;
     padding: 15px 0px 15px 0;
     &Title{
-      width: 95vw;
+      width: 97vw;
       height: 55px;
       background-color: #FFFFFF;
       display: flex;
       align-items: center;
       font-size: 10px;
       color: #BBBBBB;
-      padding: 0px 15px 0px 15px;
+      padding: 0vw 2vw 0vw 2vw;
       margin: 0 auto;
     }
     &Language{
-      width: 95vw;
+      width: 97vw;
       height: 55px;
       background-color: #FFFFFF;
       display: flex;
       align-items: center;
       font-size: 10px;
       color: #BBBBBB;
-      padding: 0px 15px 0px 15px;
+      padding: 0vw 2vw 0vw 2vw;
       margin: 0 auto;
       margin-top: 15px;
     }
     &Question{
       width: 97vw;
-      height: 550px;
+      height: 80vh;
       background-color: #FFFFFF;
       display: flex;
       align-items: center;
@@ -138,7 +138,7 @@
           }
         }
         &Text{
-          height: 65vh;
+          height: 70vh;
           overflow: auto;
           padding: 2vh 2vh 2vh 2vh;
           font-size: 15px;
@@ -163,7 +163,7 @@
           }
         }
         &Text{
-          height: 65vh;
+          height: 70vh;
           overflow: auto;
           padding: 2vh 2vh 2vh 2vh;
           font-size: 15px;
@@ -173,7 +173,7 @@
     }
     &Estimate{
       width: 30vw;
-      height: 280px;
+      height: 40vh;
       margin: 0 auto;
       margin-top: 5vh;
       margin-bottom: 5vh;
