@@ -23,7 +23,9 @@ Rails.application.routes.draw do
     resource :tags, only: %i(new create edit destroy update), module: :users
   end
   resources :items , only: [:new , :create, :destroy, :update]
-  resources :questions, only: [:show, :new]
+  resources :questions, only: [:show, :new] do
+    resources :answers, only: %i(show)
+  end
 
   resources :mypages do
     member do
