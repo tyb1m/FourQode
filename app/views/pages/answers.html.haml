@@ -1,0 +1,69 @@
+-# = render 'shared/header'
+#main_container
+  #questions_show_container
+    #questions_show_detail
+      %ul
+        %li PHP
+        %li Android
+      %h1 インクリメンタルサーチができません
+      %span 進行中
+      %span 閲覧数 7
+      %span 回答数 0
+      #post_detail
+        #post_day
+          %span 投稿日　2019/07/04 23:46
+          %span 回答期限　2019/07/11 23:46
+        #post_user
+          = image_tag "icon_sample"
+          #post_user_detail
+            %p Hironori Tsukishima
+            %span
+              いいね
+              %br
+              300
+            %span
+              解決数
+              %br
+              1000
+            %button +フォロー中
+    #questions_show_element
+      %p ただいまECサイトを作成している最中でして商品を検索する際、Keyupでのインクリメンタルサーチを実装しようと考えております、がkeyupでのイベントがどうも発火していません。
+      %p Console.logやdebaggaを使って確認しているのですが、治らない状況です。
+      %p
+      %p コードは下記の通りです
+      %p 結果画像は以下に添付します
+      %p よろしくお願いします。
+  #questions_answer_container
+    #questions_answer_chat.answer_user
+      = image_tag "icon_sample"
+      .chat_element
+        %p よろしくお願いします。
+    #questions_answer_chat.answer_user
+      = image_tag "icon_sample"
+      .chat_element
+        %p バブリングなど検討しましたか？
+    #questions_answer_chat.post_user
+      = image_tag "icon_sample"
+      .chat_element
+        %p バブリングとは何でしょう？すみません勉強不足で、、。
+    #questions_answer_chat.answer_user
+      = image_tag "icon_sample"
+      .chat_element
+        %p ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+        %p ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+        %p ジャルジャル まじでおもろい
+    #questions_answer_chat.post_user
+      = image_tag "icon_sample"
+      .chat_element
+        %p ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+        %p ジャルジャル まじでおもろい
+    #questions_answer_chat.post_user
+      = image_tag "icon_sample"
+      .chat_element
+        %span ・・・
+    #chat_form
+      
+  %button
+    %span 質問が解決しました！
+    終了する
+= render 'default/footer'
