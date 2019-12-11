@@ -236,6 +236,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    redcarpet (2.3.0)
     responders (3.0.0)
       actionpack (>= 5.0)
       railties (>= 5.0)
@@ -336,6 +337,7 @@ DEPENDENCIES
   capistrano3-unicorn
   capybara (~> 2.13)
   carrierwave
+  coderay
   coffee-rails (~> 4.2)
   devise
   erb2haml
@@ -356,6 +358,7 @@ DEPENDENCIES
   puma (~> 3.7)
   rack-user_agent
   rails (= 5.1.6)
+  redcarpet (~> 2.3.0)
   rspec-rails
   sass-rails (~> 5.0)
   seed-fu
