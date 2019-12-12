@@ -1,13 +1,11 @@
 // リセット
 @import "reset";
+
 @import "font-awesome";
-// @import "./prism";
+
 @import "./messagesIndex";
-// @import url(questionsShowSp.scss) screen and (max-width: 480px);
 @import url(questionsShowTb.scss) screen and (min-width: 480px);
 @import url(questionsShow.scss) screen and (min-width: 1025px);
-// @import url(resultSp.scss) screen and (max-width: 480px);
-// @import url(resultTb.scss) screen and (min-width: 480px);
 @import url(result.scss) screen and (min-width: 1025px);
 @import url(default/footer/footerSp.scss) screen and (max-width: 480px);
 @import url(default/footer/footerTb.scss) screen and (min-width: 480px);
@@ -50,3 +48,8 @@
 @import "questions/questionsPolicy";
 @import "questions/questionsPolicy2";
 @import "tagModal";
+
+// answerページ
+@import url(answers/showSp.scss) screen and (max-width: 480px);
+@import url(answers/showTb.scss) screen and (min-width: 480px);
+@import url(answers/show.scss) screen and (min-width: 1025px);

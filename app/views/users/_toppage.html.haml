@@ -44,6 +44,7 @@
     .toppageBodyContentsTag
       質問をタグから探す
       = link_to 'ログアウト', destroy_user_session_path, method: :delete
+      = link_to 'answersページ', page_path('answers')
     %ul
       %li 未解決
       %li Ruby
