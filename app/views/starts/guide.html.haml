@@ -1,0 +1,127 @@
+= render "shared/header"
+%wrapper.start
+  %wrapper.startSideBars
+    %nav.startSideBars
+      %p.startSideBarsTitle
+        始めての方へ
+      %ul.startSideBarsList
+        %li.startSideBarsListLink#borderLine1#selectedList
+          = link_to "始めてガイド", class: "startNavList", id: "sub-menu-open"
+          = fa_icon "fas.fa-angle-right", class: "fa-angle-right"
+        .startSideBarsSub
+          .startSideBarsSubLink#SideBarSub#borderLine1
+            = link_to "1分でわかる4Qode", class: ""
+          .startSideBarsSubLink#SideBarSub#borderLine1
+            = link_to "ルールとマナー", class: ""
+
+
+
+
+
+
+        %li.startSideBarsListLink#borderLine1
+          = link_to "質問に関して", question_starts_path, class: "startNavList"
+          = fa_icon "fas.fa-angle-right", class: "fa-angle-right"
+        %li.startSideBarsListLink#borderLine1
+          = link_to "解決に関して", solution_starts_path, class: "startNavList"
+          = fa_icon "fas.fa-angle-right", class: "fa-angle-right"
+        %li.startSideBarsListLink#borderLine1
+          = link_to "サイト内コインに関して", coin_starts_path, class: "startNavList"
+          = fa_icon "fas.fa-angle-right", class: "fa-angle-right"
+        %li.startSideBarsListLink#borderLine1
+          = link_to "登録/ログイン/通知に関して", regist_starts_path, class: "startNavList"
+          = fa_icon "fas.fa-angle-right", class: "fa-angle-right"
+        %li.startSideBarsListLink
+          = link_to "キャンセル/返金に関して", cancel_starts_path, class: "startNavList"
+          = fa_icon "fas.fa-angle-right", class: "fa-angle-right"
+      %p.startSideBarsTitle
+        規約について
+      %ul.startSideBarsList
+        %li.startSideBarsListLink#borderLine1
+          = link_to "利用規約",  class: "startNavList"
+        %li.startSideBarsListLink#borderLine1
+          = link_to "プライバシーポリシー",  class: "startNavList"
+        %li.startSideBarsListLink
+          = link_to "商標に関して",  class: "startNavList"
+      %p.startSideBarsTitle
+        お問い合わせ
+      %ul.startSideBarsList
+        %li.startSideBarsListLink
+          = link_to "お問い合わせ",  class: "startNavList"
+
+  %wrapper.startBody
+    .startBodyMain
+      .startBodyMainTitle
+        4Qodeガイド
+      .startBodyMainList
+        .startBodyMainListGuide
+          .startBodyMainListGuideTitle
+            初めてガイド
+          .startBodyMainListGuideBox
+            .startBodyMainListGuideBox1
+              1分でわかる4Qode
+            .startBodyMainListGuideBox2
+              ルールとマナー
+        .startBodyMainListGuide
+          .startBodyMainListGuideTitle
+            質問に関して
+          .startBodyMainListGuideBox
+            .startBodyMainListGuideBox1
+              マークダウンがプレビューされない（仮）
+            .startBodyMainListGuideBox2
+              質問解決後の評価をしてくれない（仮）
+            .startBodyMainListGuideBox3
+              取引をキャンセルしたい（仮）
+        .startBodyMainListGuide
+          .startBodyMainListGuideTitle
+            解決に関して
+          .startBodyMainListGuideBox
+            .startBodyMainListGuideBox1
+              請負申請に返信がこない（仮）
+            .startBodyMainListGuideBox2
+              質問解決後の評価をしてくれない（仮）
+            .startBodyMainListGuideBox3
+              取引をキャンセルしたい（仮）
+        .startBodyMainListGuide
+          .startBodyMainListGuideTitle
+            サイト内コインに関して
+          .startBodyMainListGuideBox
+            .startBodyMainListGuideBox1
+              請負申請に返信がこない（仮）
+            .startBodyMainListGuideBox2
+              質問解決後の評価をしてくれない（仮）
+            .startBodyMainListGuideBox3
+              取引をキャンセルしたい（仮）
+        .startBodyMainListGuide
+          .startBodyMainListGuideTitle
+            登録/ログイン/通知に関して
+          .startBodyMainListGuideBox
+            .startBodyMainListGuideBox1
+              請負申請に返信がこない（仮）
+            .startBodyMainListGuideBox2
+              質問解決後の評価をしてくれない（仮）
+            .startBodyMainListGuideBox3
+              取引をキャンセルしたい（仮）
+        .startBodyMainListGuide
+          .startBodyMainListGuideTitle
+            キャンセル/返金に関して
+          .startBodyMainListGuideBox
+            .startBodyMainListGuideBox1
+              請負申請に返信がこない（仮）
+            .startBodyMainListGuideBox2
+              質問解決後の評価をしてくれない（仮）
+            .startBodyMainListGuideBox3
+              取引をキャンセルしたい（仮）
+
+
+
+
+
+
+
+
+
+
+= render 'default/footer'
+
+= render 'shared/questionButton'

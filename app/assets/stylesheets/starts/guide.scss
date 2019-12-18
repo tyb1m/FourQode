@@ -1,0 +1,136 @@
+.start{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding: 30px;
+  padding-top: 50px;
+  margin: 0 auto;
+  background-color: #F0F0F0;
+}
+
+//Sidebar
+.startSideBars{
+  width: 30vw;
+  margin-top: 80px;
+  padding-bottom: 150px;
+  &Title{
+    margin-top: 50px;
+    height: 40px;
+    width: 300px;
+    font-weight: bold;
+  }
+  ul{
+    list-style: none;
+    width: 330px;
+    li{
+      background-color: white;
+      height: 40px;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      &:hover{
+        background: gray;
+      }
+      a{
+        display: block;
+        text-decoration: none;
+        font-size: 12px;
+        color: black;
+        font-weight: bold;
+        white-space: nowrap;
+      }
+      .fa-angle-right{
+        display: inline-block;
+        font-size: 30px;
+        color: #DEDEDE;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+      }
+
+    }
+    #borderLine1{
+      border-bottom: solid 1px #DEDEDE;
+    }
+    #selectedList{
+      background-color: #AAD300;
+      // a{
+      //   display: block;
+      //   text-decoration: none;
+      //   font-size: 12px;
+      //   color: black;
+      //   font-weight: bold;
+      //   white-space: nowrap;
+      // }
+      &:hover{
+        background: gray;
+      }
+    }
+  }
+}
+.startSideBarsSub{
+  display: none;
+}
+
+//Main
+.startBodyMain{
+  width: 55vw;
+  &Title{
+    margin-top: 80px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+  }
+  &List{
+    margin-top: 65px;
+    display: flex;
+    flex-direction : row;
+    flex-wrap: wrap;
+    &Guide{
+      width: 350px;
+      height: 250px;
+      background-color: white;
+      padding: 10px;
+      margin-bottom: 40px;
+      margin-right: 40px;
+      &Title{
+        padding: 10px;
+        height: 50px;
+        display: table-cell;
+        vertical-align: middle;
+        font-weight: bold;
+      }
+      &Box{
+        padding: 10px;
+        border-top: solid 0.5px #c0c0c0;
+        font-size: 12px;
+        &1{
+          margin-top: 25px;
+        }
+        &2{
+          margin-top: 40px;
+        }
+        &3{
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
+.is-active {
+  background-color: red;
+}
+
+.fa-angle-down{
+  font-size: 30px;
+  color: #DEDEDE;
+  position: absolute;
+  left: 330px;
+}
+
+
+
+.startBody{
+  width: 70vw;
+}
