@@ -1,16 +1,23 @@
-%header.toppage
-  .toppageBody
-    .toppageBodyHeader
-      .toppageBodyHeaderNavbar
-        .toppageBodyHeaderNavbarLogo
-          = image_tag "S59981830.png", class: "logo_icon"
-          .toppageBodyHeaderNavbarLogoLeft
-            %form
-              %input{type: "search", autocomplete: "off", value: "", placeholder: "質問を検索"}
-            %button.toppageBodyHeaderNavbarLogoLeftSearch
-              %i.fa.fa-search
-          .toppageBodyHeaderNavbarRight
-            %i.fa.fa-sign-in
-            .toppageBodyHeaderNavbarRightLogin ログイン
-            %i.fa.fa-user-plus
-            .toppageBodyHeaderNavbarRightRegist 新規登録
+%header
+  .header_main
+    = image_tag 'logo2'
+    .search_form
+      %form
+        %input.search_text_area{type: "search", placeholder: "質問を検索"}
+      %button
+        = fa_icon 'search'
+  .header_user_status
+    - if user_signed_in?
+      %ul
+        %li
+        %li
+          = image_tag 'sample'
+          = user.name
+        %li= link_to 'ログアウト', destroy_user_session_path, method: :delete
+    -else
+      = link_to new_user_session_path do
+        = fa_icon 'sign-in', class: 'fa-fw'
+        新規登録
+      = link_to new_user_registration_path do
+        = fa_icon 'user-plus', class: 'fa-fw'
+        新規登録
