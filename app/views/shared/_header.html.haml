@@ -8,16 +8,18 @@
         = fa_icon 'search'
   .header_user_status
     - if user_signed_in?
-      %ul
-        %li
-        %li
-          = image_tag 'sample'
-          = user.name
-        %li= link_to 'ログアウト', destroy_user_session_path, method: :delete
+      = fa_icon 'bell-o', class: 'fa-fw'
+      -# TODO: mypageできたらlinkへ
+      .current_user_detail
+        = image_tag 'sns'
+        = link_to "#{current_user.name}" , ''
+      = link_to destroy_user_session_path, method: :delete do
+        = fa_icon 'sign-out', class: 'fa-fw'
+        %p ログアウト
     -else
       = link_to new_user_session_path do
         = fa_icon 'sign-in', class: 'fa-fw'
-        新規登録
+        %p ログイン
       = link_to new_user_registration_path do
         = fa_icon 'user-plus', class: 'fa-fw'
-        新規登録
+        %p 新規登録
