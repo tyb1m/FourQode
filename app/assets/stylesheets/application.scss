@@ -9,7 +9,6 @@
 @import url(result.scss) screen and (min-width: 1025px);
 @import url(default/footer/footerSp.scss) screen and (max-width: 480px);
 @import url(default/footer/footerTb.scss) screen and (min-width: 480px);
-@import url(default/footer/footer.scss) screen and (min-width: 1025px);
 @import url(users/new/usersNewSp.scss) screen and (max-width: 480px);
 @import url(users/new/usersNewTb.scss) screen and (min-width: 480px);
 @import url(users/new/usersNew.scss) screen and (min-width: 1025px);
@@ -42,6 +41,7 @@
 @import url(toppageTb.scss) screen and (min-width: 480px);
 @import url(toppage.scss) screen and (min-width: 1025px);
 @import "shared/header";
+@import "shared/footer";
 @import "shared/questionButton";
 @import "shared/questionCard";
 @import "questions/questionsEntry";
@@ -53,3 +53,8 @@
 @import url(answers/showSp.scss) screen and (max-width: 480px);
 @import url(answers/showTb.scss) screen and (min-width: 480px);
 @import url(answers/show.scss) screen and (min-width: 1025px);
+
+// タグ登録
+@import url(users/tags/newSp.scss) screen and (max-width: 480px);
+@import url(users/tags/newTb.scss) screen and (min-width: 480px);
+@import url(users/tags/new.scss) screen and (min-width: 1025px);

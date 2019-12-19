@@ -1,67 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <title>The page you were looking for doesn't exist (404)</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <style>
-  .rails-default-error-page {
-    background-color: #EFEFEF;
-    color: #2E2F30;
+<meta charset="UTF-8">
+<title>4Qode</title>
+</head>
+<body>
+  <!-- <header>
+    TODO: header完成したらここに追加
+  </header> -->
+  <div class="errors">
+    <div class="error_header">
+      <span>SORRY!</span>
+      <h1>404</h1>
+    </div>
+    <p>お探しのページは見つかりませんでした。</p>
+    <a href="/">4Qode TOPへ</a>
+  </div>
+  <!-- <footer>
+    TODO: footer完成したらここにも追加
+  </footer> -->
+</body>
+<style>
+  body{
+    width: 100vw;
+    height: 100vh;
+    color: #3B3B3B;
     text-align: center;
-    font-family: arial, sans-serif;
+    background: #F0F0F0;
     margin: 0;
   }
-
-  .rails-default-error-page div.dialog {
-    width: 95%;
-    max-width: 33em;
-    margin: 4em auto 0;
+  .errors{
+    padding: 100px 0 100px;
   }
-
-  .rails-default-error-page div.dialog > div {
-    border: 0.5px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #BBB;
-    border-top: #B00100 solid 4px;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    background-color: white;
-    padding: 7px 12% 0;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  .errors .error_header span{
+    font-size: 80px;
   }
-
-  .rails-default-error-page h1 {
-    font-size: 100%;
-    color: #730E15;
-    line-height: 1.5em;
+  .errors .error_header h1{
+    font-size: 200px;
+    padding: 0;
+    margin: 0;
   }
-
-  .rails-default-error-page div.dialog > p {
-    margin: 0 0 1em;
-    padding: 1em;
-    background-color: #F7F7F7;
-    border: 0.5px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #999;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-color: #DADADA;
-    color: #666;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  .errors p{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
   }
-  </style>
-</head>
-
-<body class="rails-default-error-page">
-  <!-- This file lives in public/404.html -->
-  <div class="dialog">
-    <div>
-      <h1>The page you were looking for doesn't exist.</h1>
-      <p>You may have mistyped the address or the page may have moved.</p>
-    </div>
-    <p>If you are the application owner check the logs for more information.</p>
-  </div>
-</body>
+  .errors a{
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 2px;
+    background: #006600;
+    padding: 10px 180px;
+    margin: 50px 0;
+  }
+</style>
 </html>

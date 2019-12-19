@@ -43,7 +43,6 @@
   %section.toppageBodyContents
     .toppageBodyContentsTag
       質問をタグから探す
-      = link_to 'ログアウト', destroy_user_session_path, method: :delete
       = link_to 'answersページ', page_path('answers')
     %ul
       %li 未解決
@@ -112,6 +111,6 @@
       = link_to '登録ページへ', new_user_tags_path(current_user)
     #tag_modal_close あとで登録する
 
-= render 'default/footer'
+= render 'shared/footer'
 
 = render 'shared/questionButton'
