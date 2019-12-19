@@ -1,0 +1,97 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/circleci-rails
+
+    docker:
+      - image: circleci/ruby:2.3.4-node-browsers
+        environment:
+          RAILS_ENV: test
+          # https://circleci.com/docs/2.0/faq/#how-can-i-set-the-timezone-in-docker-images
+          TZ: "/usr/share/zoneinfo/Asia/Tokyo"
+          DB_HOST: 127.0.0.1
+      - image: circleci/mysql:5.6-ram
+
+    #branches:
+    #  only:
+    #    - master
+    #    - staging
+
+    steps:
+      - checkout
+
+      # https://discuss.circleci.com/t/using-bundler-2-0-during-ci-fails/27411/3
+      - run:
+          name: Configure Bundler
+          command: |
+            echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
+            source $BASH_ENV
+            gem install bundler
+      # 日本語フォント
+      - run:
+          name: Install Japanese Font
+          command: |
+            sudo apt-get install fonts-migmix
+      # 最新版のChrome(既にChrome入ってるが古いChromeだとSeleniumがエラーを吐くので)
+      - run:
+          name: Latest Chrome Install
+          command: |
+            sudo apt-get install libappindicator3-1
+            curl -L -o google-chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            sudo dpkg -i google-chrome.deb
+            sudo sed -i 's|HERE/chrome\"|HERE/chrome\" --disable-setuid-sandbox|g' /opt/google/chrome/google-chrome
+            rm google-chrome.deb
+      # /etc/hosts
+      - run:
+          name: /etc/hosts setup
+          command: |
+            echo 127.0.0.1 bicycle_navi.test | sudo tee -a /etc/hosts
+      # Restore bundle cache
+      - type: cache-restore
+        name: Restore bundle cache
+        key: rails-bundle-{{ checksum "Gemfile.lock" }}
+
+      - run:
+          name: Bundle Install
+          command: bundle install
+
+      # Store bundle cache
+      - type: cache-save
+        name: Store bundle cache
+        key: rails-bundle-{{ checksum "Gemfile.lock" }}
+        paths:
+          - vendor/bundle
+
+      # Only necessary if app uses webpacker or yarn in some other way
+      #- type: cache-restore
+      #  name: Restore yarn cache
+      #  key: rails-yarn-{{ checksum "yarn.lock" }}
+
+      #- run:
+      #    name: Yarn Install
+      #    command: yarn install
+
+      # Store yarn / webpacker cache
+      #- type: cache-save
+      #  name: Store yarn cache
+      #  key: rails-yarn-{{ checksum "yarn.lock" }}
+      #  paths:
+      #    - ~/.yarn-cache
+
+      - run:
+          name: Wait for DB
+          command: dockerize -wait tcp://localhost:3306 -timeout 1m
+
+      # Setup database
+      - run:
+          name: データベースの起動を待機
+          command: dockerize -wait tcp://127.0.0.1:3306 -timeout 1m
+      - run:
+          name: Database setup
+          command: |
+            bundle exec rake db:create
+            bundle exec rake db:migrate
+      # run tests!
+      - run:
+          name: run tests
+          command: bundle exec rspec 
