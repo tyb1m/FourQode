@@ -22,13 +22,58 @@
   ul{
     list-style: none;
     width: 330px;
+    .SideBarSub_firstGuide{
+      display: none;
+      line-height: 5px;
+      a{
+      font-weight: 100;
+      }
+    }
+    .SideBarSub_questions{
+      display: none;
+      line-height: 5px;
+      a{
+      font-weight: 100;
+      }
+    }
+    .SideBarSub_solution{
+      display: none;
+      line-height: 5px;
+      a{
+      font-weight: 100;
+      }
+    }
+    .SideBarSub_coin{
+      display: none;
+      line-height: 5px;
+      a{
+      font-weight: 100;
+      }
+    }
+    .SideBarSub_register{
+      display: none;
+      line-height: 5px;
+      a{
+      font-weight: 100;
+      }
+    }
+    .SideBarSub_cancel{
+      display: none;
+      line-height: 5px;
+      a{
+      font-weight: 100;
+      }
+    }
+
+
+
     li{
       background-color: white;
       height: 40px;
       padding: 30px;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      position: relative;
       &:hover{
         background: gray;
       }
@@ -40,20 +85,53 @@
         font-weight: bold;
         white-space: nowrap;
       }
+      #fa-firstGuide{
+        display: inline-block;
+        font-size: 30px;
+        color: #DEDEDE;
+      }
+      #fa-questions{
+        display: inline-block;
+        font-size: 30px;
+        color: #DEDEDE;
+      }
+      #fa-solution{
+        display: inline-block;
+        font-size: 30px;
+        color: #DEDEDE;
+      }
+      #fa-coin{
+        display: inline-block;
+        font-size: 30px;
+        color: #DEDEDE;
+      }
+      #fa-register{
+        display: inline-block;
+        font-size: 30px;
+        color: #DEDEDE;
+      }
+      #fa-cancel{
+        display: inline-block;
+        font-size: 30px;
+        color: #DEDEDE;
+      }
+
+
+
+
+
+
       .fa-angle-right{
         display: inline-block;
         font-size: 30px;
         color: #DEDEDE;
-        position: absolute;
-        right: 10px;
-        top: 15px;
       }
 
     }
     #borderLine1{
       border-bottom: solid 1px #DEDEDE;
     }
-    #selectedList{
+    .selectedList{
       background-color: #AAD300;
       // a{
       //   display: block;
@@ -69,9 +147,6 @@
     }
   }
 }
-.startSideBarsSub{
-  display: none;
-}
 
 //Main
 .startBodyMain{
@@ -83,6 +158,7 @@
     font-weight: bold;
   }
   &List{
+    list-style: none;
     margin-top: 65px;
     display: flex;
     flex-direction : row;
@@ -107,12 +183,27 @@
         font-size: 12px;
         &1{
           margin-top: 25px;
+          a{
+            display: block;
+            text-decoration: none;
+            color: black;
+          }
         }
         &2{
           margin-top: 40px;
+          a{
+            display: block;
+            text-decoration: none;
+            color: black;
+          }
         }
         &3{
           margin-top: 40px;
+          a{
+            display: block;
+            text-decoration: none;
+            color: black;
+          }
         }
       }
     }
@@ -128,8 +219,6 @@
   position: absolute;
   left: 330px;
 }
-
-
 
 .startBody{
   width: 70vw;
