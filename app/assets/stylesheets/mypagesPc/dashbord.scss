@@ -1,0 +1,229 @@
+.contents{
+  margin: 46px;
+  background-color: white;
+  width: 50%;
+  h2{
+    font-size: 40px;
+    text-align: center;
+    border-bottom: solid 1px #DEDEDE;
+    margin: 0 30px;
+    padding: 30px 0;
+  }
+  li{
+    list-style: none;
+    padding: 10px 20px;
+    position: relative;
+    margin: 0 30px;
+  // notifications
+    .date, .title, .toggle, .labels p{
+      display: inline-block;
+    }
+    .toggle{
+      position: absolute;
+      right: 50px;
+      top: 30px;
+    }
+    .fas{
+      font-size: 30px;
+      color: #BABABA
+    }
+    .body{
+      display: none;
+    }
+
+  // app_contractors
+    .icon, .details{
+      display: inline-block;
+      align-items: middle;
+      vertical-align: middle;
+      .from{
+        margin: 10px 0;
+        display: inline-block;
+      }
+    }
+    .icon{
+      height: 80px;
+      width: 80px;
+      background-color: black;
+      border-radius: 40px;
+      margin-right: 30px;
+    }
+    .details span, .date{
+      color: #848484;
+    }
+
+    // solved_questions
+    .labels p{
+      background-color: #BABABA;
+      padding: 5px;
+      color: white;
+    }
+    h3, .status, .date{
+      margin-top: 20px;
+    }
+    h3{
+      font-size: 25px;
+      text-align: left;
+    }
+    .status p{
+      display: inline-block;
+      margin-right: 30px;
+      padding: 5px;
+    }
+    .date p{
+      display: inline-block;
+    }
+
+    // unsolved_quiestion
+    .attention{
+      margin-bottom: 10px;
+      color: rgb(223, 86, 86);
+      font-weight: bold;
+    }
+  }
+  li + li{
+    border-top: solid 1px #DEDEDE;
+  }
+  // reviews
+  .stats{
+    text-align: center;
+    .rate, .stars, .counts{
+      margin: 20px 0;
+      font-size: 30px;
+    }
+  }
+  .counts{
+    color:#BABABA;
+  }
+  .left, .right{
+    display:inline-block;
+    width: 49.7%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #D3D3D3;
+  }
+  .swich{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 40px;
+    .status, .stars{
+      margin: 0 5px;
+      height: 100px;
+    }
+    .rate{
+      padding-top: 20px;
+    }
+  }
+  .fa-star{
+    padding-top: 30px;
+    font-size: 30px;
+    color: gold;
+  }
+
+  .selected{
+    background-color: white;
+  }
+  // sales-header
+  .header, h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0 50px;
+  }
+  .header img{
+    height: 100px;
+    width: 100px;
+    margin: 20px 0;
+  }
+  .pngs{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    p{
+      font-size: 15px;
+    }
+  }
+  img + .int{
+    font-size: 25px;
+  }
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button{
+      width: 70%;
+      padding: 10px;
+      margin: 15px 0;
+      background-color: #006600;
+      color: white;
+    }
+    .nega{
+      background-color: #BABABA;
+    }
+  }
+  // modal
+  #modal{
+    width: 600px;
+    display: none;
+    max-height: 70vh;
+    position: fixed;
+    .notice{
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+  .modal{
+    margin: 0 60px;
+  }
+  .modal li{
+    display: flex;
+    padding: 30px 0;
+    span{
+      background-color: red;
+      color: white;
+    }
+    label{
+      margin-right: auto;
+      width: 150px;
+    }
+    input{
+      height: 40px;
+      border: solid 2px #BABABA;
+    }
+  }
+  // charges
+  .nonborder{
+    border: none;
+    input[type="checkbox"], .coin, p{
+      display: flex;
+      align-items: center;
+      text-align: right;
+    }
+    img, p{
+      margin-left: 30px;
+      span{
+        color:#A32838;
+      }
+    }
+  }
+  // cards
+  .card .modal{
+      display: inline-block;
+      align-items: center;
+      text-align: left;
+      p{
+        display: inline-block;
+      }
+      span{
+        background-color: #A32838;
+        color: white;
+      }
+    }
+  .credit{
+    height: 35px;
+    width: 50px;
+  }
+}

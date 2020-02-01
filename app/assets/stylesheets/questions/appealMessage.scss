@@ -1,4 +1,4 @@
-.questionPolicy2{
+.appealMessage{
   height: 550px;
   position: absolute;
   width: 100%;
@@ -8,7 +8,7 @@
   top: 50%;
   transform: translate(-50%,-50%);
   width: 60%;
-
+  // background-color: grey;
   &Body{
     &Header{
       height: 80px;
@@ -19,7 +19,7 @@
       border-bottom: 1px solid #ECECEC;
       &1{
         color: black;
-        font-size: 13px;
+        font-size: 15px;
         font-weight: bold;
         margin-bottom: 1px;
         text-align: center;
@@ -28,57 +28,40 @@
       }
       &2{
         color: black;
-        font-size: 5px;
+        font-size: 15px;
         font-weight: bold;
+        margin-bottom: 1px;
         text-align: center;
+        line-height: 25px;
+        margin-top: 2px;
       }
     }
     &Main{
       display: flex;
       flex-direction: column;
-      &Text{
-        color: black;
-        font-size: 13px;
-        margin-bottom: 1px;
-        text-align: center;
-        line-height: 25px;
-        margin-top: 5px;
-      }
+      padding: 50px;
       &Box{
         overflow: auto;
-        width: 25vw;
+        width: 30vw;
         height: 250px;
         margin: 0 auto;
-        padding: 10px 40px 10px 40px;
-        border: 1px solid #D5D5D5;
+        padding: 10px;
+        border: 1px solid #B2B2B2;
         color: #D5D5D5;
-
-        &Title{
-          text-align: center;
-          margin-top: 3vh;
-          margin-bottom: 3vh;
-        }
-        &Policy{
-          font-size: 13px;
-          line-height: 4vh;
-        }
-      }
-      &Check{
-        margin-top: 4vh;
-        text-align: center;
-        font-size: 6px;
+        font-size: 13px;
+        line-height: 4vh;
       }
       &Button{
         width: 15vw;
         height: 45px;
         font-size: 6px;
-        background-color: #C9C9C9;
+        background-color: #016600;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-        margin-top: 10px;
-        .policyBtn2{
+        margin-top: 30px;
+        .appealMessageBtn{
           text-decoration: none;
           color: white;
         }
@@ -87,7 +70,7 @@
   }
 }
 
-#questionPolicy2Overlay {
+#appealMessageOverlay {
     background: rgba(0, 0, 0, 0.6);
     display: none;
     height: 100vh;

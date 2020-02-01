@@ -1,0 +1,27 @@
+%wrapper.mypage
+  = render partial: "sidebar"
+  %wrapper.contents
+    %h2 お知らせ一覧
+    %ul.content
+      - 10.times do
+        %li
+          .date 2019/3/28
+          %br
+          %br
+          .title サーバーが復旧しました
+          .toggle
+            = fa_icon "fas fa-chevron-down", class: "fas fa-chevron-down"
+            = fa_icon "fas fa-chevron-up", class: "fas fa-chevron-up", style: "display: none"
+          .body
+            %br
+            いつも、4Qodeをご利用いただきありがとうございます。
+            %br
+            %br
+            %br
+            ユーザーの皆様にご不便をおかけしていたサーバーのダウンですが、本日
+            20:34頃に復旧いたしましたことをお知らせいたします。
+            %br
+            %br
+            今後とも、4Qodeを何卒よろしくお願い致します。
+            %br
+            %br

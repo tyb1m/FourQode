@@ -35,6 +35,7 @@
       .toppage_index_contents
         .toppage_index_tag
           質問をタグから探す
+          = link_to 'answersページ', page_path('answers')
         .toppage_index_category
           = form_with(local: true) do |form|
             - %w(未解決 Ruby PHP Java JS Python C++ 未解決 Ruby PHP Java JS Python C++).each do |r,i|

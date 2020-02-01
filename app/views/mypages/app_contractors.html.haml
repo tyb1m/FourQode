@@ -1,0 +1,67 @@
+%wrapper.mypage
+  = render partial: "sidebar"
+  %wrapper.contents
+    %h2 請負申請者一覧
+    %ul
+      - 10.times do
+        %li
+          .icon{ style: "margin-right:10px;"}
+          .details
+            .date 2019/3/28　20:30
+            %br
+            .from Hiromu Takeda
+            %span さんから
+            %br
+            .title インクリメンタルサーチができません
+            %span への請負申請依頼がありました。
+
+    #modal.app1
+      .appContractorModal1
+        .head
+          %h2
+            Hiromu Ichikawaさんから
+            %br
+            請負申請が届いています
+        .content
+          .title インクリメンタルサーチができません。
+          .status
+            %p 解答受付中
+            %p 閲覧数　7
+            %p 回答数　0
+          .message
+            %br
+            %p 私はこれまで、Railsを10年間開発し続けてきました。
+            %P Jsも当然やっており、インクリメンタルサーチ、ajaxなどの操作はお手のものです。
+            %br
+            %br
+            %p 間違いなく１時間以内に解決できる自信があります。
+            %p 期待に添います。よろしくお願いします。
+            %br
+            %br
+          %p.fontBold Hiromu Ichikawaさんに回答を依頼しますか？
+          %p (24時間後に田中さんからの請負依頼は取り消されます)
+          .links
+            .cancel いいえ
+            .apply 依頼する
+        -# TODO
+          -# = link_to "いいえ", "#(app_contract: "yes")"
+          -# = link_to "はい", "#(app_contract: "no")"
+
+      -# 依頼を選択後
+    #modal.app2
+      .appContractorModal2
+        .head
+          %h2
+            Hiromu Ichikawaさんから
+            %br
+            請負申請が届いています。
+        .content
+          .title インクリメンタルサーチができません。
+          %p.fontBold
+            Hiromu Ichikawaさんに
+            %br
+            回答依頼を送信しました。
+          .icon= fa_icon "fas fa-check", class: "fas fa-check"
+          .links
+            .cancel 閉じる
+            .apply 質問ページへ
