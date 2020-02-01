@@ -1,0 +1,95 @@
+.advice_modal{
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  .advice_modal_bg{
+    background: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+  }
+  .advice_content{
+    background: #fff;
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+  }
+}
+.advice_header{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 5px solid #ECECEC;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin: 1vh 0;
+}
+.advice_body{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  .advice_body_detail{
+    display: flex;
+    justify-content: center;
+    margin: 2vh 0;
+    .advice_body_text{
+      color: black;
+      font-size: 15px;
+      line-height: 25px;
+      p {
+        margin-bottom: 25px;
+      }
+      ul {
+        list-style-position: inside;
+      }
+    }
+    .advice_body_profile {
+      img{
+        margin-left: 40px;
+        width: 180px;
+      }
+    }
+  }
+  .advice_body_detail2{
+    display: flex;
+    justify-content: center;
+    margin: 1vh 0;
+    .advice_body_text2 {
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+  // advice_buttonと同じ
+  .advice_button{
+    display: flex;
+    font-size: 13px;
+    margin: 4vh auto;
+    .btn_advice{
+      width: 15vw;
+      height: 45px;
+      margin: 10px;
+      text-decoration: none;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn1 {
+      @extend .btn_advice;
+      background-color: #dcdcdc;
+    }
+    .btn2 {
+      @extend .btn_advice;
+      background-color: #0C5601;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+%section.toppage_index_card
+  %h2 検索結果
+.toppage_index_card
+  .toppage_index_card_wrapper_margin_bottom
+    - 21.times do
+      = render 'shared/questionCard'
+.pager
+  = paginate @pages

@@ -1,3 +1,8 @@
-%wrapper.toppageBodyFooter
-  .toppageBodyFooterBtn
-    質問する
+%wrapper
+  .question_btn
+    .question_btn_detail
+      = link_to '質問する', '#', class: "js_card_registration_open"
+.card_registration_modal.js_card_registration_model
+  .card_registration_modal_bg.js_card_registration_close
+  .card_registration_content
+    = render "users/card_registration_pop_up"
