@@ -1,52 +1,52 @@
-.newMain
-  %h1 新規登録
-  = form_for(@user, html: {class: 'newMainMail'}) do |f|
-    = render "devise/shared/error_messages", resource: resource
-    %h2.newMainMailTitle
-      = image_tag 'gmail.png'
-      %p メールアドレスで登録
-    .newMainMailName
-      %p ユーザー名
-      = f.text_field :name, autofocus: true, autocomplete: "name", class: 'newMainMailNameBox'
-    .newMainMailAddress
-      %p メールアドレス
-      = f.email_field :email, autofocus: true, autocomplete: "email", class: 'newMainMailAddressBox'
-    .newMainMailPassword
-      %p パスワード　　　※半角英数字6~20文字
-      = f.password_field :password, autocomplete: "new-password", class: 'newMainMailPasswordBox'
-    .newMainMailPassword
-      %p 確認のためもう一度ご入力ください
-      = f.password_field :password_confirmation, autocomplete: "new-password", class: 'newMainMailPasswordBox'
+= render 'shared/header'
+#newUser
+  %h1 新規会員登録
+  #newUser__content
+    #newUser__sns
+      %h2 SNSアカウントで登録
+      %ul.newMainSnsBox
+        %li
+          = link_to do
+            = image_tag 'twitter.png'
+            Twitterで登録
+        %li
+          = link_to do
+            = image_tag 'facebook.png'
+            Facebookで登録
+        %li
+          = link_to do
+            = image_tag 'github.png'
+            Githubで登録
+        %li
+          = link_to do
+            = image_tag 'google.png'
+            Googleで登録
+        %li
+          = link_to do
+            = image_tag 'google.png'
+            はてなで登録
+      %p ※4QodeがSNSに投稿することはありません。
+    = form_for(@user, html: {id: 'newUser__mail'}) do |f|
+      = render "devise/shared/error_messages", resource: resource
+      %h2 メールアドレスで登録
+      .newUser__input
+        %p ユーザー名
+        = f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "4Qode", class: 'newUser__box', required: true
+      .newUser__input
+        %p メールアドレス
+        = f.email_field :email, autofocus: true, autocomplete: "email",placeholder: "4Qode@example.com", class: 'newUser__box', required: true
+      .newUser__input
+        %p パスワード
+        = f.password_field :password, autocomplete: "new-password",placeholder: "半角英数字20文字以内", class: 'newUser__box', required: true
+      .newUser__input
+        %p 確認のためもう一度ご入力ください
+        = f.password_field :password_confirmation, autocomplete: "new-password", class: 'newUser__box', required: true
 
-    %p.text
-      = link_to "利用規約", ''
-      及び
-      = link_to "個人情報"
-      の取り扱いに関する要項をご確認の上、同意いただける場合は、「同意して登録」ボタンを押してください。
-    .newMainMailSend
-      = f.submit "同意して登録", class: 'button'
-
-  .newMainSns
-    %h2.newMainSnsTitle
-      = image_tag 'sns.png'
-      %p SNSで登録
-    .newMainSnsBox
-      %li
-        = link_to do
-          = image_tag 'facebook.png'
-          %p Facebook
-      %li 
-        = link_to do
-          = image_tag 'twitter.png'
-          %p Twitter
-      %li
-        = link_to do
-          = image_tag 'google.png' 
-          %p google
-      %li
-        = link_to do
-          = image_tag 'github.png'
-          %p Github
-  .clearfix
-
-= render 'default/footer'
+      %p
+        %span>= link_to "利用規約", ''
+        および
+        %span>= link_to "個人情報", ''
+        の取り扱いに関する要項をご確認の上、ご登録ください。
+      #newMainMailSend
+        = f.submit "同意して登録する", class: 'send'
+= render 'shared/footer'

@@ -1,0 +1,99 @@
+= render "shared/header"
+
+%wrapper.mypageReview
+  .mypageReviewBody
+    .mypageReviewBody1
+      .mypageReviewBody1Back
+        .mypageReviewBody1BackImage
+        .mypageReviewBody1BackUser
+          Hironori Tsukishima
+        .mypageReviewBody1BackText
+          .mypageReviewBody1BackTextEdit
+            みなさんの課題解決に役に立てば嬉しいです！
+            %i.fas.fa-pen-alt
+          .mypageReviewBody1BackTextBox
+            %i.fas.fa-home
+            マイページへ
+    .mypageReviewBody2
+      .mypageReviewBody2Title
+        自己紹介文
+      .mypageReviewBody2Input
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      .mypageReviewBody2Revise
+        =link_to "", class: "reviseBtn" do
+          更新する
+    .mypageReviewBody3
+      .mypageReviewBody3Title
+        ランキング
+      .mypageReviewBody3Lank
+        18321位 / 356012人中
+      .mypageReviewBody3Text
+        %i.fas.fa-crown
+        上位3%にランキングしました！
+    .mypageReviewBody4
+      %ul.mypageReviewBody4List
+        %li.mypageReviewBody4ListGood#mypageUnselected
+          .mypageReviewBody4ListGoodTitle#mypageUnselectedTitle
+            いいね
+          .mypageReviewBody4ListGoodCount#mypageUnselectedCount
+            300
+
+        %li.mypageReviewBody4ListReview#mypageSelected
+          .mypageReviewBody4ListReviewTitle#mypageSelectedTitle
+            レビュー
+          .mypageReviewBody4ListReviewCount#mypageSelectedCount
+            300
+
+        %li.mypageReviewBody4ListQuestion#mypageUnselected
+          .mypageReviewBody4ListQuestionTitle#mypageUnselectedTitle
+            質問数
+          .mypageReviewBody4ListQuestionCount#mypageUnselectedCount
+            300
+
+        %li.mypageReviewBody4ListSolution#mypageUnselected
+          .mypageReviewBody4ListSolutionTitle#mypageUnselectedTitle
+            解決数
+          .mypageReviewBody4ListSolutionCount#mypageUnselectedCount
+            300
+
+        %li.mypageReviewBody4ListProfit#mypageUnselected
+          .mypageReviewBody4ListProfitTitle#mypageUnselectedTitle
+            得金額
+          .mypageReviewBody4ListProfitCount#mypageUnselectedCount
+            300
+
+        %li.mypageReviewBody4ListFollow#mypageUnselected
+          .mypageReviewBody4ListFollowTitle#mypageUnselectedTitle
+            フォロー
+          .mypageReviewBody4ListFollowCount#mypageUnselectedCount
+            300
+
+        %li.mypageReviewBody4ListFollower#mypageUnselected
+          .mypageReviewBody4ListFollowerTitle#mypageUnselectedTitle
+            フォロワー
+          .mypageReviewBody4ListFollowerCount#mypageUnselectedCount
+            300
+
+    / 15 table
+    .mypageReviewBody5
+      = render partial: "mypages/reviewBox"
+      = render partial: "mypages/reviewBox"
+      = render partial: "mypages/reviewBox"
+      = render partial: "mypages/reviewBox"
+      = render partial: "mypages/reviewBox"
+      = render partial: "mypages/reviewBox"
+      = render partial: "mypages/reviewBox"
+      = render partial: "mypages/reviewBox"
+      = render partial: "mypages/reviewBox"
+      = render partial: "mypages/reviewBox"
+      = render partial: "mypages/reviewBox"
+      = render partial: "mypages/reviewBox"
+      = render partial: "mypages/reviewBox"
+      = render partial: "mypages/reviewBox"
+      = render partial: "mypages/reviewBox"
+    .mypageReviewBody6
+      <<  1  2  3  4  5  6  >>
+
+= render 'shared/footer'
+
+= render 'shared/questionButton'

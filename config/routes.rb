@@ -1,19 +1,25 @@
 Rails.application.routes.draw do
 
-  devise_for :users, :controllers => {
-    :registrations => 'users/registrations',
-    :sessions => 'users/sessions'
+  devise_for :users, controllers: {
+    registrations: 'users/registrations',
+    comfirmations: 'users/confirmations',
+    sessions: 'users/sessions'
   }
+
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
+  end
 
   devise_scope :user do
     get "user/:id", :to => "users/registrations#detail"
     get "signup", :to => "users/registrations#new"
+    post "create", :to => "users/registrations#create"
     get "login", :to => "users/sessions#new"
     get "logout", :to => "users/sessions#destroy"
-    post "create", :to => "users/registrations#create"
   end
 
   resources :users do
+    resource :tags, only: %i(new create edit destroy update), module: :users
     collection do
       get :index1
       get :index2
@@ -25,11 +31,9 @@ Rails.application.routes.draw do
 
   resources :items , only: [:new , :create, :destroy, :update]
   resources :questions, only: [:show, :new]
-  # get 'questions/new/markdown'
-  # get 'questions/new/preview'
 
   resources :mypages do
-    collection do
+    member do
       get :index1
       get :index2
       get :index3
@@ -40,6 +44,10 @@ Rails.application.routes.draw do
       get :notification
       get :profile
       get :card
+      get :review2_1_1
+      get :review2_2_1
+      get :review2_2_2
+      get :review2_2_3
     end
   end
 

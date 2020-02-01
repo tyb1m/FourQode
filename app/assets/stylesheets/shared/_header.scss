@@ -1,108 +1,197 @@
-.header {
-  height: 50px;
-  width: 100%;
-  background: #2D2D2D;
-  .header_row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 3%;
-    height: 50px;
-    // width: 100%;
-    .header_logo {
-      img {
-        height: 50px;
-      }
-    }
-    .header_search{
+// .header {
+//   height: 50px;
+//   width: 100%;
+//   background: #2D2D2D;
+//   .header_row {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     margin: 0 3%;
+//     height: 50px;
+//     // width: 100%;
+//     .header_logo {
+//       img {
+//         height: 50px;
+//       }
+//     }
+//     .header_search{
+//       display: flex;
+//       align-self: center;
+//       .header_form {
+//         border: none;
+//         background: #f5f5f5;
+//         height: 30px;
+//         width: 370px;
+//         // margin: 10px 0;
+//         padding-left: 10px;
+//         font-size: 15px;
+//       }
+//       .header_submit{
+//         border: none;
+//         background: #0B5601;
+//         height: 30px;
+//         width: 30px;
+//         margin: auto 0;
+//         font-size: 20px;
+//         color: #FFFFFF;
+
+//         i{
+//           display: inline-block;
+//           vertical-align: middle;
+//           color: #FFFFFF;
+//         }
+
+//         .fa.fa-search{
+//           font-size: 30px;
+//           color: #FFFFFF;
+//         }
+//       }
+//     }
+//     .header_regist{
+//       padding-top: 4px;
+//       color: #FFFFFF;
+//       // text-decoration: none;
+//       align-self: center;
+//       i{
+//         font-size: 35px;
+//         display: inline-block;
+//         vertical-align: middle;
+//         color: #FFFFFF;
+//       }
+//       .fa.fa-sign-in{
+//         font-size: 45px;
+//       }
+//       .badge1 {
+//         position:relative;
+//       }
+//       .badge1[data-badge]:after {
+//         content:attr(data-badge);
+//         position:absolute;
+//         top:-10px;
+//         right:-10px;
+//         font-size:.7em;
+//         background:green;
+//         color:white;
+//         width:18px;height:18px;
+//         text-align:center;
+//         line-height:18px;
+//         border-radius:50%;
+//         box-shadow:0 0 1px #333;
+//       }
+//       .badge1[data-badge=""]:after {
+//         content: none;
+//       }
+//       .fa-user-plus {
+//         font-size: 37px;
+//       }
+//       a:active {
+//         text-decoration:none;
+//       }
+//       .header_user {
+//         display: flex;
+//         align-items: center;
+//         padding: 0 0 0 20px;
+//         .header_user_icon {
+//           img {
+//             width: 40px;
+//             height: 40px;
+//             border-radius: 50%;
+//             box-shadow: 0 0 0 3px #006600;
+//           }
+//         }
+//         .header_user_name {
+//           color: #FFFFFF;
+//           font-size: 18px;
+//           padding: 0 30px 0 10px;
+
+header{
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background: #3b3b3b;
+  position: fixed;
+  padding: 10px 30px;
+  .header{
+    &_main{
       display: flex;
-      align-self: center;
-      .header_form {
-        border: none;
-        background: #f5f5f5;
-        height: 30px;
-        width: 370px;
-        // margin: 10px 0;
-        padding-left: 10px;
-        font-size: 15px;
+      align-items: center;
+      img{
+        width: 100px;
+        object-fit: cover;
+        margin-right: 80px;
       }
-      .header_submit{
-        border: none;
-        background: #0B5601;
-        height: 30px;
-        width: 30px;
-        margin: auto 0;
-        font-size: 20px;
-        color: #FFFFFF;
-
-        i{
-          display: inline-block;
-          vertical-align: middle;
-          color: #FFFFFF;
-        }
-
-        .fa.fa-search{
-          font-size: 30px;
-          color: #FFFFFF;
-        }
-      }
-    }
-    .header_regist{
-      padding-top: 4px;
-      color: #FFFFFF;
-      // text-decoration: none;
-      align-self: center;
-      i{
-        font-size: 35px;
-        display: inline-block;
-        vertical-align: middle;
-        color: #FFFFFF;
-      }
-      .fa.fa-sign-in{
-        font-size: 45px;
-      }
-      .badge1 {
-        position:relative;
-      }
-      .badge1[data-badge]:after {
-        content:attr(data-badge);
-        position:absolute;
-        top:-10px;
-        right:-10px;
-        font-size:.7em;
-        background:green;
-        color:white;
-        width:18px;height:18px;
-        text-align:center;
-        line-height:18px;
-        border-radius:50%;
-        box-shadow:0 0 1px #333;
-      }
-      .badge1[data-badge=""]:after {
-        content: none;
-      }
-      .fa-user-plus {
-        font-size: 37px;
-      }
-      a:active {
-        text-decoration:none;
-      }
-      .header_user {
+      .search_form{
         display: flex;
-        align-items: center;
-        padding: 0 0 0 20px;
-        .header_user_icon {
-          img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            box-shadow: 0 0 0 3px #006600;
+        form{
+          color: #bababa;
+          input.search_text_area{
+            width: 250px;
+            height: 35px;
+            -webkit-appearance: textfield;
+            border: none;
+            border-radius: 2px 0 0 2px;
+            padding: 0 10px;
           }
         }
-        .header_user_name {
-          color: #FFFFFF;
-          font-size: 18px;
-          padding: 0 30px 0 10px;
+        button{
+          height: 35px;
+          color: #fff;
+          border-radius: 0 2px 2px 0;
+          background: #006600;
+          padding: 0 10px;
+          .fa{
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    &_user_status{
+      display: flex;
+      align-items: center;
+      .fa-bell-o, .current_user_detail{
+        margin-right: 50px;
+      }
+      .fa-bell-o{
+        font-size: 25px;
+        cursor: pointer;
+      }
+      .current_user_detail{
+        img{
+          width: 40px;
+          object-fit: cover;
+          vertical-align: middle;
+          margin-right: 5px;
+        }
+        a{
+          display: inline-block;
+          font-size: 14px;
+          vertical-align: middle;
+        }
+      }
+      a{
+        color: #fff;
+        font-size: 14px;
+        list-style: none;
+        text-decoration: none;
+        margin-right: 50px;
+        &:last-of-type{
+          margin: 0;
+        }
+        .fa{
+          vertical-align: middle;
+          margin: 0;
+          &-sign-in, &-sign-out{
+            font-size: 36px;
+          }
+          &-user-plus{
+            font-size: 30px;
+          }
+        }
+        p{
+          display: inline-block;
+          vertical-align: middle;
         }
       }
       .header_regist_text{

@@ -19,4 +19,14 @@ class MypagesController < ApplicationController
   end
   def card
   end
+  def review2_1_1
+    # @user = User.find(params[:id])
+  end
+  def review2_2_1
+  end
+  def review2_2_2
+  end
+  def review2_2_3
+  end
+
 end
