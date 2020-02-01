@@ -1,0 +1,80 @@
+.appealMessage{
+  height: 550px;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  left: 50%;
+  padding: 40px;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
+  // background-color: grey;
+  &Body{
+    &Header{
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-bottom: 1px solid #ECECEC;
+      &1{
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 1px;
+        text-align: center;
+        line-height: 25px;
+        margin-top: 2px;
+      }
+      &2{
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 1px;
+        text-align: center;
+        line-height: 25px;
+        margin-top: 2px;
+      }
+    }
+    &Main{
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+      &Box{
+        overflow: auto;
+        width: 30vw;
+        height: 250px;
+        margin: 0 auto;
+        padding: 10px;
+        border: 1px solid #B2B2B2;
+        color: #D5D5D5;
+        font-size: 13px;
+        line-height: 4vh;
+      }
+      &Button{
+        width: 15vw;
+        height: 45px;
+        font-size: 6px;
+        background-color: #016600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 30px;
+        .appealMessageBtn{
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+#appealMessageOverlay {
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

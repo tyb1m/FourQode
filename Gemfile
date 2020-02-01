@@ -16,30 +16,36 @@ group :development, :test do
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano3-unicorn'
+  gem 'factory_bot_rails'
+  gem 'pry-rails'
 end
 
-  gem 'devise'
-  gem 'pry-rails'
-  gem 'carrierwave'
-  gem 'fog-aws'
-  gem 'mini_magick'
-  gem 'rspec-rails'
-  gem 'haml-rails'
-  gem 'font-awesome-rails'
-  gem 'erb2haml'
-  gem 'factory_bot_rails'
-  gem 'kaminari'
-  gem 'nokogiri'
-  gem 'seed_dump'
-  gem 'seed-fu'
-  gem 'gretel'
+# view
+gem 'haml-rails'
+gem 'erb2haml'
+gem 'font-awesome-rails'
+gem 'high_voltage'
+gem 'redcarpet', '~> 2.3.0'
+gem 'coderay'
+
+# active record
+gem 'devise'
+gem 'carrierwave'
+gem 'fog-aws'
+gem 'mini_magick'
+gem 'rspec-rails'
+gem 'kaminari'
+gem 'nokogiri'
+gem 'seed_dump'
+gem 'seed-fu'
+gem 'gretel'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.1.6'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.3.18', '< 0.6.0'
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 3.12'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

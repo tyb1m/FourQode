@@ -6,9 +6,10 @@ Rails.application.routes.draw do
     sessions: 'users/sessions'
   }
 
-  if Rails.env.development?
-    mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
-  end
+# TODO: 一旦、コメントアウトをさせてください
+  # if Rails.env.development?
+  #   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
+  # end
 
   devise_scope :user do
     get "user/:id", :to => "users/registrations#detail"
@@ -23,20 +24,28 @@ Rails.application.routes.draw do
     resource :tags, only: %i(new create edit destroy update), module: :users
   end
   resources :items , only: [:new , :create, :destroy, :update]
-  resources :questions, only: [:show, :new]
+  resources :questfouions, only: %i(new show edit create delete) do
+    resources :answers, only: %i(show)
+  end
+
 
   resources :mypages do
-    member do
-      get :index1
-      get :index2
-      get :index3
-      get :index4
-      get :index5
-      get :logout
-      get :mail_password
-      get :notification
-      get :profile
-      get :card
+    collection do
+      get :notifications
+      get :app_contractors
+      get :solved_questions
+      get :unsolved_questions
+      get :leaded_questions
+      get :reviews
+      get :guid
+      get :comments
+      get :contact
+      get :sales
+      get :charges
+      get :profiles
+      get :mail_passwords
+      get :cards
+      get :my_infos
       get :review2_1_1
       get :review2_2_1
       get :review2_2_2
@@ -44,6 +53,20 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :starts do
+    collection do
+      get :guide
+      get :question
+      get :solution
+      get :coin
+      get :regist
+      get :cancel
+      get :agreement
+      get :policy
+      get :trademark
+      get :inquiry
+    end
+  end
   # 仮置き
   root 'users#index'
 

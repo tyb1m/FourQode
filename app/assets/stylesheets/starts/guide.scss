@@ -1,0 +1,225 @@
+.start{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding: 30px;
+  padding-top: 50px;
+  margin: 0 auto;
+  background-color: #F0F0F0;
+}
+
+//Sidebar
+.startSideBars{
+  width: 30vw;
+  margin-top: 80px;
+  padding-bottom: 150px;
+  &Title{
+    margin-top: 50px;
+    height: 40px;
+    width: 300px;
+    font-weight: bold;
+  }
+  ul{
+    list-style: none;
+    width: 330px;
+    .SideBarSub_firstGuide{
+      display: none;
+      line-height: 5px;
+      a{
+      font-weight: 100;
+      }
+    }
+    .SideBarSub_questions{
+      display: none;
+      line-height: 5px;
+      a{
+      font-weight: 100;
+      }
+    }
+    .SideBarSub_solution{
+      display: none;
+      line-height: 5px;
+      a{
+      font-weight: 100;
+      }
+    }
+    .SideBarSub_coin{
+      display: none;
+      line-height: 5px;
+      a{
+      font-weight: 100;
+      }
+    }
+    .SideBarSub_register{
+      display: none;
+      line-height: 5px;
+      a{
+      font-weight: 100;
+      }
+    }
+    .SideBarSub_cancel{
+      display: none;
+      line-height: 5px;
+      a{
+      font-weight: 100;
+      }
+    }
+
+
+
+    li{
+      background-color: white;
+      height: 40px;
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &:hover{
+        background: gray;
+      }
+      a{
+        display: block;
+        text-decoration: none;
+        font-size: 12px;
+        color: black;
+        font-weight: bold;
+        white-space: nowrap;
+      }
+      #fa-firstGuide{
+        display: inline-block;
+        font-size: 30px;
+        color: #DEDEDE;
+      }
+      #fa-questions{
+        display: inline-block;
+        font-size: 30px;
+        color: #DEDEDE;
+      }
+      #fa-solution{
+        display: inline-block;
+        font-size: 30px;
+        color: #DEDEDE;
+      }
+      #fa-coin{
+        display: inline-block;
+        font-size: 30px;
+        color: #DEDEDE;
+      }
+      #fa-register{
+        display: inline-block;
+        font-size: 30px;
+        color: #DEDEDE;
+      }
+      #fa-cancel{
+        display: inline-block;
+        font-size: 30px;
+        color: #DEDEDE;
+      }
+
+
+
+
+
+
+      .fa-angle-right{
+        display: inline-block;
+        font-size: 30px;
+        color: #DEDEDE;
+      }
+
+    }
+    #borderLine1{
+      border-bottom: solid 1px #DEDEDE;
+    }
+    .selectedList{
+      background-color: #AAD300;
+      // a{
+      //   display: block;
+      //   text-decoration: none;
+      //   font-size: 12px;
+      //   color: black;
+      //   font-weight: bold;
+      //   white-space: nowrap;
+      // }
+      &:hover{
+        background: gray;
+      }
+    }
+  }
+}
+
+//Main
+.startBodyMain{
+  width: 55vw;
+  &Title{
+    margin-top: 80px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+  }
+  &List{
+    list-style: none;
+    margin-top: 65px;
+    display: flex;
+    flex-direction : row;
+    flex-wrap: wrap;
+    &Guide{
+      width: 350px;
+      height: 250px;
+      background-color: white;
+      padding: 10px;
+      margin-bottom: 40px;
+      margin-right: 40px;
+      &Title{
+        padding: 10px;
+        height: 50px;
+        display: table-cell;
+        vertical-align: middle;
+        font-weight: bold;
+      }
+      &Box{
+        padding: 10px;
+        border-top: solid 0.5px #c0c0c0;
+        font-size: 12px;
+        &1{
+          margin-top: 25px;
+          a{
+            display: block;
+            text-decoration: none;
+            color: black;
+          }
+        }
+        &2{
+          margin-top: 40px;
+          a{
+            display: block;
+            text-decoration: none;
+            color: black;
+          }
+        }
+        &3{
+          margin-top: 40px;
+          a{
+            display: block;
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+.is-active {
+  background-color: red;
+}
+
+.fa-angle-down{
+  font-size: 30px;
+  color: #DEDEDE;
+  position: absolute;
+  left: 330px;
+}
+
+.startBody{
+  width: 70vw;
+}

@@ -1,0 +1,81 @@
+#registration_tags{
+  background: #F0F0F0;
+  padding-top: 100px;
+  #search_tag{
+    width: 420px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    h1{
+      font-size: 24px;
+      font-weight: 600;
+      padding-bottom: 10px;
+    }
+    span{
+      color: #3b3b3b;
+      font-size: 14px;
+    }
+    #search_form{
+      color: #BABABA;
+      font-size: 14px;
+      text-align: left;
+      background: #fff;
+      padding: 13px 10px;
+      margin: 30px 0 40px;
+    }
+    #selected_tags{
+      display: flex;
+      justify-content: space-between;
+      color: #3b3b3b;
+      font-size: 12px;
+      vertical-align: middle;
+      #text{
+        min-width: 130px;
+        margin-top: 5px;
+      }
+      ul{
+        text-align: left;
+        li{
+          display: inline-block;
+          color: #fff;
+          list-style: none;
+          border-radius: 2px;
+          background: #BABABA;
+          padding: 5px;
+          margin: 0 5px 20px 0;
+        }
+      }
+    }
+  }
+  #select_card{
+    ul{
+      text-align: center;
+      margin: 0 15% 60px;
+      li{
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        color: #006600;
+        text-align: center;
+        line-height: 120px;
+        border-radius: 50%;
+        list-style: none;
+        background: #fff;
+        margin: 15px;
+      }
+    }
+  }
+  #submit_tags{
+    text-align: center;
+    padding-bottom: 80px;
+    margin: 0 auto;
+    button{
+      color: #fff;
+      font-size: 12px;
+      border-radius: 2px;
+      background: #006600;
+      padding: 10px 60px;
+    }
+  }
+}
