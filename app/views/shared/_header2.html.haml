@@ -1,0 +1,27 @@
+%header
+  .header
+    .header_row
+      .header_logo
+        = link_to '# 'do
+          = image_tag "logo2.png", class: "logo_icon"
+      .header_search
+        = form_with url: '#' do |f|
+          = f.text_field :user, autocomplete: "off", placeholder: '質問を検索', class: "header_form"
+          = button_tag type: 'submit', class: "header_submit" do
+            %i.fa.fa-search
+      .header_regist
+        = link_to '#', { href: "" , class: "badge1", data: { badge: "22"}} do
+          %i.fa.fa-sign-in
+      .header_regist
+        = link_to '#' do
+          .header_user
+            .header_user_icon
+              = image_tag "user_icon01.png"
+            .header_user_name
+              Hironori Tsukishima
+      .header_regist
+        = link_to '#' do
+          %i.fa.fa-user-plus
+          .header_regist_text
+            .test
+              ログアウト

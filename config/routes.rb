@@ -19,10 +19,17 @@ Rails.application.routes.draw do
     get "logout", :to => "users/sessions#destroy"
   end
 
-
   resources :users do
     resource :tags, only: %i(new create edit destroy update), module: :users
+    collection do
+      get :index1
+      get :index2
+      get :index3
+      get :index4
+      get :index5
+    end
   end
+
   resources :items , only: [:new , :create, :destroy, :update]
   resources :questfouions, only: %i(new show edit create delete) do
     resources :answers, only: %i(show)
