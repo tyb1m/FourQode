@@ -44,6 +44,20 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :starts do
+    collection do
+      get :guide
+      get :question
+      get :solution
+      get :coin
+      get :regist
+      get :cancel
+      get :agreement
+      get :policy
+      get :trademark
+      get :inquiry
+    end
+  end
   # 仮置き
   root 'users#index'
 
