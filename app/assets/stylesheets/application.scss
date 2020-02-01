@@ -47,7 +47,8 @@
 @import url(toppage.scss) screen and (min-width: 1025px);
 @import "shared/header";
 @import "shared/flash_message";
-@import "shared/footer";
+// @import "shared/footer";
+@import "default/footer/footer";
 @import "shared/questionButton";
 @import "shared/questionCard";
 @import "questions/questionsEntry";
