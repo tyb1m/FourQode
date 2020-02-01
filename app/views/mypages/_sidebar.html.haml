@@ -1,39 +1,42 @@
 %nav.mypageSideBar
-  %ul.mypageSideBarLists
-    %li.mypageSideBarList
+  %h4{style: "margin:0"} 一般
+  %ul
+    %li
       = link_to "マイページ",  class: "mypageNavList"
-    %li.mypageSideBarList
-      = link_to "お知らせ", index1_mypages_path, class: "mypageNavList"
-    %li.mypageSideBarList
-      = link_to "請負申請者一覧", index1_mypages_path, class: "mypageNavList"
-    %li.mypageSideBarList
-      = link_to "質問する", class: "mypageNavList"
-    %li.mypageSideBarList
-      = link_to "解決した質問(質問側)", index2_mypages_path, class: "mypageNavList"
-    %li.mypageSideBarList
-      = link_to "未解決の質問(質問側)", index2_mypages_path, class: "mypageNavList"
-    %li.mypageSideBarList
-      = link_to "解決した質問(解決側)", index3_mypages_path, class: "mypageNavList"
-    %li.mypageSideBarList
-      = link_to "評価一覧", index4_mypages_path,class: "mypageNavList"
-    %li.mypageSideBarList
-      = link_to "コメント一覧",class: "mypageNavList"
-    %li.mypageSideBarList
-      = link_to "ガイド", class: "mypageNavList"
-    %li.mypageSideBarList
-      = link_to "お問い合わせ", class: "mypageNavList"
-  %ul.mypageSideBarLists
-    %li.mypageSideBarList
-      = link_to "売上", index5_mypages_path,class: "mypageNavList"
-    %li.mypageSideBarList
-      = link_to "コインチャージ", index5_mypages_path, class: "mypageNavList"
-  %ul.mypageSideBarLists
-    %li.mypageSideBarList
-      = link_to "プロフィール", profile_mypages_path, class: "mypageNavList"
-    %li.mypageSideBarList
-      = link_to "アドレス/パスワード", mail_password_mypages_path, class: "mypageNavList"
-    %li.mypageSideBarList
-      = link_to "支払い方法登録/変更", card_mypages_path, class: "mypageNavList"
-  %ul.mypageSideBarLists
-    %li.mypageSideBarList
-      = link_to "ログアウト",logout_mypages_path, class: "mypageNavList"
+    %li
+      = link_to "お知らせ", notifications_mypages_path, class: "mypageNavList"
+    %li
+      = link_to "請負申請者一覧", app_contractors_mypages_path, class: "mypageNavList"
+    %li
+      = link_to "解決した質問(質問側)", solved_questions_mypages_path, class: "mypageNavList"
+    %li
+      = link_to "未解決の質問(質問側)", unsolved_questions_mypages_path, class: "mypageNavList"
+    %li
+      = link_to "解決した質問(解決側)", leaded_questions_mypages_path, class: "mypageNavList"
+    %li
+      = link_to "総合評価", reviews_mypages_path,class: "mypageNavList"
+    %li
+      = link_to "ガイド", guid_mypages_path,class: "mypageNavList"
+    %li
+      = link_to "コメント一覧", comments_mypages_path,class: "mypageNavList"
+    %li
+      = link_to "お問い合わせ", contact_mypages_path,class: "mypageNavList"
+  %h4 売り上げ管理
+  %ul
+    %li
+      = link_to "売上", sales_mypages_path,class: "mypageNavList"
+    %li
+      = link_to "コインチャージ", charges_mypages_path, class: "mypageNavList"
+  %h4 設定
+  %ul
+    %li
+      = link_to "プロフィール", profiles_mypages_path, class: "mypageNavList"
+    %li
+      = link_to "アドレス/パスワード", mail_passwords_mypages_path, class: "mypageNavList"
+    %li
+      = link_to "支払い方法登録/変更", cards_mypages_path, class: "mypageNavList"
+    %li
+      = link_to "本人情報登録/変更", my_infos_mypages_path, class: "mypageNavList"
+  %ul{ style: "margin-top:30px"}
+    %li
+      = link_to "ログアウト",logout_path, class: "mypageNavList"

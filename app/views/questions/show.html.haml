@@ -1,0 +1,13 @@
+%wrapper.toppageHeader
+  = render "shared/header"
+- if request.from_pc?
+  %wrapper.questionsDetail
+    = render "questions/questionsDetail"
+- elsif request.from_ipad?
+  %wrapper.questionsDetailTb
+    = render "questions/questionsDetailTb"
+- elsif request.from_smartphone?
+  %wrapper.questionsDetailSp
+    = render "questions/questionsDetailSp"
+%wrapper.toppageFooter
+  = render 'default/footer'

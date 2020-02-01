@@ -1,0 +1,78 @@
+%wrapper.questionsDetail
+  .questionsDetailBody
+    .questionsDetailBodyBox
+      .questionsDetailBodyBoxTop
+        .questionsDetailBodyBoxTopLeft
+          .questionsDetailBodyBoxTopLeftTag
+            .questionsDetailBodyBoxTopLeftTagSkill1#languageSkill
+              PHP
+            .questionsDetailBodyBoxTopLeftTagSkill2#languageSkill
+              Android
+          .questionsDetailBodyBoxTopLeftTitle
+            インクリメンタルサーチができません
+          .questionsDetailBodyBoxTopLeftCount
+            .questionsDetailBodyBoxTopLeftCountIng
+              回答受付中
+            .questionsDetailBodyBoxTopLeftCountViewing
+              .questionsDetailBodyBoxTopLeftCountViewingTitle
+                閲覧数
+              .questionsDetailBodyBoxTopLeftCountViewingNum
+                7
+            .questionsDetailBodyBoxTopLeftCountReply
+              .questionsDetailBodyBoxTopLeftCountReplyTitle
+                回答数
+              .questionsDetailBodyBoxTopLeftCountReplyNum
+                0
+          .questionsDetailBodyBoxTopLeftDate
+            .questionsDetailBodyBoxTopLeftDateLeft
+              .questionsDetailBodyBoxTopLeftDateLeftTitle
+                投稿日
+              .questionsDetailBodyBoxTopLeftDateLeftDate
+                2019/07/04
+              .questionsDetailBodyBoxTopLeftDateLeftTime
+                23:46
+            .questionsDetailBodyBoxTopLeftDateRight
+              .questionsDetailBodyBoxTopLeftDateRightTitle
+                回答期限
+              .questionsDetailBodyBoxTopLeftDateRightDate
+                2019/07/11
+              .questionsDetailBodyBoxTopLeftDateRightTime
+                23:46
+
+        .questionsDetailBodyBoxTopRight
+          .questionsDetailBodyBoxTopRightBox
+            .questionsDetailBodyBoxTopRightBoxLeft
+              .questionsDetailBodyBoxTopRightBoxLeftImage
+              / = image_tag user.image, size:"213x213", id:"user-image"
+            .questionsDetailBodyBoxTopRightBoxRight
+              .questionsDetailBodyBoxTopRightBoxRightSkill
+                .questionsDetailBodyBoxTopRightBoxRightSkill1#languageSkill
+                  PHP
+                .questionsDetailBodyBoxTopRightBoxRightSkill2#languageSkill
+                  Android
+                .questionsDetailBodyBoxTopRightBoxRightSkill3#languageSkill
+                  未経験
+              %p.questionsDetailBodyBoxTopRightBoxRightUser
+                Hirono Tsukishima
+              .questionsDetailBodyBoxTopRightBoxRightBottom
+                .questionsDetailBodyBoxTopRightBoxRightBottomGood
+                  %p いいね
+                  %p 300
+                .questionsDetailBodyBoxTopRightBoxRightBottomSolution
+                  %p 解決数
+                  %p 1000
+                .questionsDetailBodyBoxTopRightBoxRightBottomFollow
+                  +フォロー中
+
+
+      .questionsDetailBodyBoxBottom
+    .questionsDetailBodyReply
+      .questionsDetailBodyReplyTitle
+        受取金額
+      .questionsDetailBodyReplyPrice
+        ¥4,250
+      .questionsDetailBodyReplyText#js-appeal-open
+        質問に回答する
+
+  #appealMessageOverlay
+    = render "questions/appealMessage"
