@@ -1,0 +1,222 @@
+%wrapper.mypage
+  = render partial: "sidebar"
+  %wrapper.contents
+    = render partial: "head"
+    .link
+      %h3 履歴確認・売り上げ申請
+      .buttons
+        %button 売り上げ履歴
+        %button 振り込み申請をして現金を受け取る
+        %button 売上金振込申請期限
+    #modal
+      %h3 振込申請
+      %ul.modal
+        %li
+          %label 振込先
+          .change
+            = image_tag 'pencil.png', size: '15x15'
+            振込先を変更する
+        -# - form_with　'#' do |f|
+        %li
+          %label 銀行名
+          %p みずほ銀行
+        %li
+          %label 講座種別
+          %p 普通講座
+        %li
+          %label 支店コード
+          %p 003
+        %li
+          %label 口座番号
+          %p 12345678
+        %li
+          %label 口座名義(セイ)
+          %p ウエノ
+        %li
+          %label 口座名義(メイ)
+          %p ヒデナリ
+        %li
+          %label 銀行名
+          %p みずほ銀行
+        %li
+          %label 住所氏名
+          %p
+            東京都荒川区西奥11-8-2
+            %br
+            モンテネグロ4182
+            %br
+            %br
+            上野　秀成
+        %li
+          %label 生年月日
+          %p 1989/02/29
+      .buttons{ style: "margin-top: 30px"}
+        %button 振込申請をする
+        %button.nega キャンセル
+
+    #modal
+      %h3 振込申請
+      %ul.modal
+        %li.tl
+          %label 振込先
+        -# - form_with　'#' do |f|
+        %li.tl{ style: "vertical-align: center;"}
+          %label 銀行名
+          %span 必須
+          %input{ placeholder: "銀行名を入力", value: "みずほ銀行" }
+        %li.nonborder
+          %label 講座種別
+          %span 必須
+          %input{ placeholder: "口座種別を選択" }
+        %li.nonborder
+          %label 支店コード
+          %span 必須
+          %input{ placeholder: "支店コードを入力" }
+        %li.nonborder
+          %label 口座番号
+          %span 必須
+          %input{ placeholder: "口座番号を入力" }
+        %li.nonborder
+          %label 口座名義(セイ)
+          %span 必須
+          %input{ placeholder: "口座名義(セイ)" }
+        %li.nonborder
+          %label 口座名義(メイ)
+          %span 必須
+          %input{ placeholder: "口座名義(メイ)" }
+        %li.tl
+          %label 住所氏名
+          %p
+            東京都荒川区西奥11-8-2
+            %br
+            モンテネグロ4182
+            %br
+            %br
+            上野　秀成
+        %li.tl
+          %label 生年月日
+          %p 1989/02/29
+      .buttons{ style: "margin-top: 30px"}
+        %button 振込先口座を設定する
+        %button.nega キャンセル
+
+    #modal
+      %h3 振込申請
+      %ul.modal
+        %li
+          %label 振込申請金額
+          %span 必須
+          %input{ placeholder: "金額を入力"}
+        %p{ style: "color: #D3D3D3;margin: 0 30px;"} 手数料に関する注意事項はここに書くよーん
+        %li
+          %label 現在の売り上げ金額
+          %p ¥26.200
+        %li
+          %label 振込手数料
+          %p -
+        %li
+          %label 振込金
+          %p -
+        .buttons{ style: "margin-top: 30px"}
+          %button 振込申請をする
+          %button.nega キャンセル
+
+    #modal
+      %h3 振込申請
+      %p.notice 振込申請を受付ました。
+      .buttons{ style: "margin-top: 30px"}
+        %button 戻る
+
+    #modal
+      %h3 売り上げ履歴
+      %ul.modal
+        - 3.times do
+          %li{ style: "border-top:  solid 1px #DEDEDE;"}
+            %label{ style: "margin-right:auto;"}
+              .date{style: "margin: 0 0 20px;"} 2019/07/04
+              %br
+              .from 事務局より
+            %p
+              %br
+              %br ¥4,300
+      .buttons{ style: "margin-top: 30px"}
+        %button 戻る
+
+    #modal
+      %h3 売上申請履歴
+      %ul.modal
+        - 3.times do
+          %li{ style: "border-top:  solid 1px #DEDEDE;"}
+            %label{ style: "margin-right:auto;"}　2019/07/04
+            %p ¥4,300
+      .buttons{ style: "margin-top: 30px"}
+        %button 戻る
+
+    #modal
+      %h3 売上申請期限
+      %ul.modal
+        - 3.times do
+          %li{ style: "border-top:  solid 1px #DEDEDE;"}
+            %label{ style: "margin-right:auto;"}　2019/07/04
+            %p ¥4,300
+      .buttons{ style: "margin-top: 30px"}
+        %button 戻る
+
+
+
+
+
+
+-# %wrapper.mypageHeaders
+-#   = render partial: "head"
+-# .mypageHeaderBars
+-#   %h4.mypageHeaderLeftbar
+-#     獲得売上
+-#   %h4.mypageHeaderRightbar
+-#     コインチャージ
+-# %ul.coinInfomation
+-#   %li.dataList
+-#     獲得総売上　￥339,500
+-#   %li.dataList
+-#     解決数　30
+-#   %li.dataList
+-#     獲得単価 ¥2980
+-#   %li.dataList
+-#     支払い金額　¥172,000
+-#   %li.dataList
+-#     4Qode コイン残高 ¥39800
+-# %ul.coinHistory
+-#   %li.dataList
+-#     獲得履歴
+-#   %li.dataList
+-#     売上金の振り込み申請取得
+-# %ul.coinTransfer
+-#   %li.dataList
+-#     振り込み申請して現金を受け取る
+-#   %li.dataList
+-#     振り込み申請履歴
+-# %ul.coinCharge
+-#   %li.dataList
+-#     = fa_icon "fab fa-contao", class: "fab fa-contao"
+-#     %P.coins 5200  200コインお得
+-#     %p.pay ¥5000
+-#   %li.dataList
+-#     = fa_icon "fab fa-contao", class: "fab fa-contao"
+-#     %P.coins 10200  400コインお得
+-#     %p.pay ¥9800
+-#   %li.dataList
+-#     = fa_icon "fab fa-contao", class: "fab fa-contao"
+-#     %P.coins 20700  900コインお得
+-#     %p.pay ¥19800
+-#   %li.dataList
+-#     = fa_icon "fab fa-contao", class: "fab fa-contao"
+-#     %P.coins 31200  1400コインお得
+-#     %p.pay ¥29800
+-#   %li.dataList
+-#     = fa_icon "fab fa-contao", class: "fab fa-contao"
+-#     %P.coins 41700  1900コインお得
+-#     %p.pay ¥39800
+-#   %li.dataList
+-#     = fa_icon "fab fa-contao", class: "fab fa-contao"
+-#     %P.coins 52300  2500コインお得
+-#     %p.pay ¥49800

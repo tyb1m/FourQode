@@ -1,9 +1,24 @@
-.mypageHeader
-  .mypagePhotoIcon
-  %p.mypageUserName
-    Ukulele Takeo
-    .mypageReport
-      %p.mypageGood
-        いいね 35
-      %p.mypageLeaded
-        解決数 35
+%h2 売り上げ
+.header
+  %h3 売り上げ詳細
+  .pngs
+    .amount
+      %p 獲得総売上
+      = image_tag 'amount.png'
+      %p.int 224,200
+    .leaded
+      %p 解決数
+      = image_tag 'leaded.png'
+      %p.int 30
+    .sales
+      %p 獲得単価
+      = image_tag 'sales.png'
+      %p.int 5,290
+    .paid
+      %p 支払金額
+      = image_tag 'paid.png'
+      %p.int 177,200
+    .balance
+      %p コイン残高
+      = image_tag 'balance.png'
+      %p.int 52,00

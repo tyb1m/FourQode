@@ -1,0 +1,41 @@
+%wrapper.mypage
+  = render partial: "sidebar"
+  %wrapper.contents
+    %h2 総合評価
+    .stats
+      .rate 4.6
+      .stars
+        = fa_icon "fas fa-star", class: "fas fa-star"
+        = fa_icon "fas fa-star", class: "fas fa-star"
+        = fa_icon "fas fa-star", class: "fas fa-star"
+        = fa_icon "fas fa-star", class: "fas fa-star"
+      .counts 全52件の評価
+    .left.selected 質問側
+    .right 回答側
+    .swich
+      .status
+        .rate
+          4.2
+          %br
+          %br
+          全31件の評価
+      .stars
+        = fa_icon "fas fa-star", class: "fas fa-star"
+        = fa_icon "fas fa-star", class: "fas fa-star"
+        = fa_icon "fas fa-star", class: "fas fa-star"
+        = fa_icon "fas fa-star", class: "fas fa-star"
+    %ul
+    - 10.times do
+      %li{ style: "border-top: solid 1px #DEDEDE;"}
+        .details
+          .from{ style: "margin-right: 20px;"} Norihiro Akishima
+          .date
+            %p 投稿日
+            %p{ style: "margin: 0 20px 0 10px;"} 2019/07/04　23:47
+          %h3{ style: "font-size:20px;margin-top:10px;"} インクリメンタルサーチができません
+        .icon
+        .details
+          .from Norihiro Akishima
+          .stars
+          - 4.times do
+            = fa_icon "fas fa-star", class: "fas fa-star", style: "padding:0px;color:gold;"
