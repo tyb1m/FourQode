@@ -1,107 +1,100 @@
-= render 'shared/header'
+%main
+  .toppage_index_block
+    .toppage_index_regist
+      .toppage_index_box
+        .toppage_index_descrpt
+          %p.toppage_index_descrpt_name
+            全てのエンジニアのための[副業]Q&Aサイト
+          %p.toppage_index_descrpt_who
+            4Qode
+          %p.toppage_index_descrpt_how
+            画面共有と通話で
+            %br あなたの質問解消にコミットする
+          %p.toppage_index_descrpt_what
+            4Qodeでは、あなたの質問の売り買いを通して、
+            %br スピーディで温かみある質問解消を実現します
+        .toppage_index_inputs
+          .toppage_index_user
+            = link_to '#', class: "btn-social-long-twitter" do
+              %i.fa.fa-twitter-square
+              %span Twitterでログイン
+            = link_to '#', class: "btn-social-long-facebook" do
+              %i.fa.fa-facebook-square
+              %span Facebookでログイン
+            = link_to '#', class: "btn-social-long-github" do
+              %i.fa.fa-github-square
+              %span Githubでログイン
+          .toppage_index_text
+            OR
+          .toppage_index_signup
+            = form_with url: '#' do |f|
+              =f.text_field :user, placeholder: 'ユーザー名'
+              =f.text_field :email, placeholder: 'メールアドレス'
+              =f.submit "無料で登録する", class: 'submit'
+    %section
+      .toppage_index_contents
+        .toppage_index_tag
+          質問をタグから探す
+        .toppage_index_category
+          = form_with(local: true) do |form|
+            - %w(未解決 Ruby PHP Java JS Python C++ 未解決 Ruby PHP Java JS Python C++).each do |r,i|
+              = form.check_box :checkbox, {id: "checkbox_#{r}", class: "toppage_index_checkbox", multiple: true}, r
+              = form.label(:checkbox, r, for: "checkbox_#{r}", class: "toppage_index_label")
+        %section.toppage_index_card
+          %h2 新着Questions
+        .toppage_index_card
+          %h3 Ruby新着Questions
+          .toppage_index_card_wrapper_margin_bottom
+            = render 'shared/questionCard'
+            = render 'shared/questionCard'
+            = render 'shared/questionCard'
+            = render 'shared/questionCard'
+          .toppage_index_more
+            = link_to "もっとみる>>", '#'
 
-%main.toppageBodyMain
-  .toppageBodyMainRegist
-    .toppageBodyMainRegistBox
-      .toppageBodyMainRegistBoxDscrpt
-        %h2.toppageBodyMainRegistBoxDscrptName
-          全てのエンジニアのため
-          の[副業]Q&Aサイト
-        %p.toppageBodyMainRegistBoxDscrptWho
-          4Qode
-        %p.toppageBodyMainRegistBoxDscrptHow
-          画面共有と通話で
-          %br あなたの質問解消にコミットする
-        %p.toppageBodyMainRegistBoxDscrptWhat
-          4Qodeでは、あなたの質問の売り買いを通して、
-          %br スピーディで温かみある質問解消を実現します
-        %p.toppageBodyMainRegistBoxDscrptUpdates
-          5分前に〇〇が〇〇さんの質問を解決しました
-      .toppageBodyMainRegistBoxInputs
-        .toppageBodyMainRegistBoxInputsUser
-          / %form
-          /   %input{type: "text", autocomplete: "off", value: "", placeholder: "ユーザー名"}
-          /   %input{type: "text", autocomplete: "off", value: "", placeholder: "メールアドレス"}
-          /   %input{type: "password", autocomplete: "off", value: "", placeholder: "パスワード"}
-          %button Twitterでログイン
-          %button Facebookでログイン
-          %button Githubでログイン
-          %button Googleでログイン
-          %button はてなでログイン
-        .toppageBodyMainRegistBoxInputsText
-          OR
-        .toppageBodyMainRegistBoxInputsSignup
-          %form
-            %input{type: "text", autocomplete: "off", value: "", placeholder: "ユーザー名"}
-            %input{type: "text", autocomplete: "off", value: "", placeholder: "メールアドレス"}
-          %button 無料で登録する
-        / .toppageBodyMainRegistInputsIcon
-        /   %i.fa.fa-facebook-square
-        /   %i.fa.fa-twitter-square
-        /   %i.fa.fa-google
-        /   %i.fa.fa-github-square
-  %section.toppageBodyContents
-    .toppageBodyContentsTag
-      質問をタグから探す
-    %ul
-      %li 未解決
-      %li Ruby
-      %li PHP
-      %li Java
-      %li JS
-      %li Python
-      %li C++
-      %li 未解決
-      %li Ruby
-      %li PHP
-      %li Java
-      %li JS
-      %li Python
-      %li C++
-    %section.toppageBodyContentsCategory
-      %h2 新着Questions
-    .toppageBodyContentsCategory
-      %h3 Ruby新着Questions
-      .toppageBodyContentsCategoryWrapper
-        = render 'shared/questionCard'
-        = render 'shared/questionCard'
-      %p もっとみる>>
+        .toppage_index_card
+          %h3 Ruby新着Questions
+          .toppage_index_card_wrapper_margin_bottom
+            = render 'shared/questionCard'
+            = render 'shared/questionCard'
+            = render 'shared/questionCard'
+            = render 'shared/questionCard'
+          .toppage_index_more
+            = link_to "もっとみる>>", '#'
 
-    .toppageBodyContentsCategory
-      %h3 Ruby新着Questions
-      .toppageBodyContentsCategoryWrapper
-        = render 'shared/questionCard'
-        = render 'shared/questionCard'
-      %p もっとみる>>
+        .toppage_index_card
+          %h3 Ruby新着Questions
+          .toppage_index_card_wrapper_margin_bottom
+            = render 'shared/questionCard'
+            = render 'shared/questionCard'
+            = render 'shared/questionCard'
+            = render 'shared/questionCard'
+          .toppage_index_more
+            = link_to "もっとみる>>", '#'
 
-    .toppageBodyContentsCategory
-      %h3 Ruby新着Questions
-      .toppageBodyContentsCategoryWrapper
-        = render 'shared/questionCard'
-        = render 'shared/questionCard'
-      %p もっとみる>>
+        %section.toppage_index_card
+          %h2 高単価Questions
+        .toppage_index_card
+          %h3 Ruby新着Questions
+          .toppage_index_card_wrapper_margin_bottom
+            = render 'shared/questionCard'
+            = render 'shared/questionCard'
+            = render 'shared/questionCard'
+            = render 'shared/questionCard'
+          .toppage_index_more
+            = link_to "もっとみる>>", '#'
 
-    %section.toppageBodyContentsCategory
-      %h2 高単価Questions
-    .toppageBodyContentsCategory
-      %h3 Ruby新着Questions
-      .toppageBodyContentsCategoryWrapper
-        = render 'shared/questionCard'
-        = render 'shared/questionCard'
-      %p もっとみる>>
+        .toppage_index_card
+          %h3 Ruby新着Questions
+          .toppage_index_card_wrapper_margin_bottom
+            = render 'shared/questionCard'
+            = render 'shared/questionCard'
+            = render 'shared/questionCard'
+            = render 'shared/questionCard'
+          .toppage_index_more
+            = link_to "もっとみる>>", '#'
 
-    .toppageBodyContentsCategory
-      %h3 Ruby新着Questions
-      .toppageBodyContentsCategoryWrapper
-        = render 'shared/questionCard'
-        = render 'shared/questionCard'
-
-      %p もっとみる>>
-    .toppageBodyContentsSelect
-      .toppageBodyContentsSelectPageup
-        %br PAGE TOP
+    .toppage_index_select
+      = link_to '#', class: "toppage_index_pageup" do
+        %span PAGE TOP
         %i.fas.fa-arrow-up
-
-= render 'default/footer'
-
-= render 'shared/questionButton'

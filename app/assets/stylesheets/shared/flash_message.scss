@@ -1,0 +1,44 @@
+.flash {
+    background-color: #ADD300;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.heading2{
+	position:relative;
+	padding-left:30px;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 38px;
+}
+
+.heading2:after, .heading2:before{
+	content:'';
+	height:18px;
+	width:4px;
+	display:block;
+	background:#FFFFFF;
+	position:absolute;
+	top:8px;
+	left:15px;
+	transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+}
+
+.heading2:before{
+	height:10px;
+	transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	top:16px;
+	left:7px
+}

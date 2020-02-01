@@ -1,0 +1,8 @@
+%wrapper
+  .question_btn
+    .question_btn_detail
+      = link_to '質問する', '#', class: "js_advice_open"
+.advice_modal.js_advice_model
+  .advice_modal_bg.js_advice_close
+  .advice_content
+    = render "users/advice_pop_up"

@@ -7,6 +7,12 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  def index2
+    @users = User.all
+    @pages = User.page(params[:page]).per(1)
+    flash.now[:success] = '質問を受け付けました。ありがとうございます！'
+  end
+
   # GET /users/1
   # GET /users/1.json
   def show

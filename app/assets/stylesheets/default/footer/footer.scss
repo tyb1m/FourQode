@@ -1,11 +1,18 @@
+.logo_icon2 {
+  width: 10%;
+  // padding-right: 20px;
+}
+.footer_contact {
+  padding-left: 20px;
+  font-size: 15px;
+}
 .footer {
   height: 250px;
   background-color: #464D56;
-  // position: absolute;
-  // overflow: hidden;
   &Box{
     margin: 0 auto;
-    width: 1240px;;
+    width: 100%;
+    position: absolute;
 
     &Contact {
       float: left;
@@ -18,34 +25,13 @@
         background-color: #2B6419;
 
         &Logo {
-          padding: 30px;
+          padding: 30px 0 10px 40px;
           align-items: center;
           display: flex;
-          justify-content: space-between;
+          // justify-content: space-between;
           color: #FFFFFF;
           font-size: 40px;
-          // border-radius: 20px;
-          // height: 150px;
-          // padding: 5%;
-          // box-sizing: border-box;
-          // padding-left: 30px;
-          // float: left;
-          // font-size: 100px;
         }
-
-        // &Submit {
-        //   font-size: 20px;
-        //   // margin: 5% 0;
-        //   // background-color: #3DD043;
-        //   // border-radius: 20px;
-        //   // padding: 3%;
-        //   // box-sizing: border-box;
-        //   // color: #fff;
-        //   // width: auto;
-        //   // text-align: center;
-        //   padding-right: 30px;
-        //   float: right;
-        // }
 
         &Text {
           color: #fff;
@@ -66,9 +52,10 @@
           margin-top: 70px;
 
           li {
+            width: 170px;
             display: inline-block;
             line-height: 2.3;
-            margin-right: 62px;
+            margin-right: 10px;
 
             a {
               text-decoration: none;
@@ -85,24 +72,6 @@
           }
         }
       }
-
-      &Copyright{
-        margin-top: 50px;
-        text-align: right;
-        color: #FFFFFF;
-      }
-      @media screen and (min-width: 480px){
-        .contact {
-          display: none;
-        }
-      }
     }
-
-    // &Copyright {
-    //   // margin: 5% 7% 3% 7%;
-    //   color: #fff;
-    //   font-size: 13px;
-    //   text-align: right;
-    // }
   }
 }

@@ -13,7 +13,16 @@ Rails.application.routes.draw do
     post "create", :to => "users/registrations#create"
   end
 
-  resources :users
+  resources :users do
+    collection do
+      get :index1
+      get :index2
+      get :index3
+      get :index4
+      get :index5
+    end
+  end
+
   resources :items , only: [:new , :create, :destroy, :update]
   resources :questions, only: [:show, :new]
   # get 'questions/new/markdown'

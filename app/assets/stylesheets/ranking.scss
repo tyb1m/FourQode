@@ -1,0 +1,102 @@
+.ranking{
+  border: 1px solid #ccc;
+  font-size: 0.99em;
+  height: 150px;
+  display: flex;
+}
+
+.rankingNamber{
+  background-color: #DBB400;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: #FFFFFF
+}
+
+.rankingNamberNo{
+  width: 100px;
+}
+
+.rankingIcon{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  &Flame{
+  }
+  img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #006600;
+  }
+}
+
+.rankingText{
+    width: 950px;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-size: 0.99em;
+    height: 220px;
+    padding: 10px;
+}
+
+.rankingTabRow{
+  display: flex;
+  padding: 5px 0 5px 0;
+  justify-content: flex-end;
+}
+
+.rankingTab{
+  background-color: #ACACAC;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 2px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  margin: 5px;
+  line-height: 1.8;
+  color: #FFFFFF;
+}
+
+.rankingUserName{
+  display: flex;
+  padding: 5px 0 5px 0;
+  font-size: 1.7em;
+  justify-content: flex-end;
+  color: #848484;
+}
+
+.rankingStatus{
+  display: flex;
+  padding: 5px 0 5px 0;
+  font-size: 0.8em;
+  justify-content: flex-end;
+  color: #ACACAC;
+}
+
+.rankingNice{
+  padding: 10px;
+}
+
+.rankingFollow{
+  padding: 10px;
+}
+
+.rankingFollowBtn{
+  padding: 10px;
+}
+
+.rankingStatusNumber{
+  padding: 5px;
+}
+
+.rankingFollowBtn{
+  color: #ADD300;
+  border: 1.2px solid;
+  padding: 10px 0 0 0;
+  margin: 10px;
+  height: 30px;
+}

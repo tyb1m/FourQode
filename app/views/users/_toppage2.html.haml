@@ -1,0 +1,18 @@
+%main.toppage_index_block
+  %section.toppage_index_contents
+    .toppage_index_tag
+      質問をタグから探す
+    .toppage_index_category
+      = form_with(local: true) do |form|
+        - %w(未解決 Ruby PHP Java JS Python C++ 未解決 Ruby PHP Java JS Python C++).each do |r,i|
+          = form.check_box :checkbox, {id: "checkbox_#{r}", class: "toppage_index_checkbox", multiple: true}, r
+          = form.label(:checkbox, r, for: "checkbox_#{r}", class: "toppage_index_label")
+    .toppage_index_main
+      %section.toppage_index_left
+        = render 'toppage_body'
+      %section.toppage_index_right
+        = render 'serch'
+    .toppage_index_select
+      = link_to '#', class: "toppage_index_pageup" do
+        %span PAGE TOP
+        %i.fas.fa-arrow-up
