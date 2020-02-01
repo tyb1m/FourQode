@@ -16,25 +16,15 @@
 @import url(users/create/createTb.scss) screen and (min-width: 480px);
 @import url(users/create/create.scss) screen and (min-width: 1025px);
 
+// ダッシュボード
 @import "mypagesPc/sidebar";
-@import "mypagesPc/head";
-@import "mypagesPc/index1";
-@import "mypagesPc/index2";
-// @import "mypagesPc/index3";
-@import "mypagesPc/index4";
-@import "mypagesPc/index5";
-@import "mypagesPc/notification";
-@import "mypagesPc/profile";
-@import "mypagesPc/mail_password";
-@import url(mypagesSp/sidebar.scss) screen and (max-width: 480px);
-@import url(mypagesSp/head.scss) screen and (max-width: 480px);
-@import url(mypagesSp/index1.scss) screen and (max-width: 480px);
-@import url(mypageSp/index2.scss) screen and (max-width: 480);
+@import "mypagesPc/dashbord";
+
+// TODO: have to check as noted bellow 4 files
 @import "mypagesPc/review2_1_1";
 @import "mypagesPc/review2_2_1";
 @import "mypagesPc/review2_2_2";
 @import "mypagesPc/review2_2_3";
-// @import url(mypageSp/index2.scss) screen and (max-width: 480);
 
 // トップページ
 @import url(toppageSp.scss) screen and (max-width: 480px);

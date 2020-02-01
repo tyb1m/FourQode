@@ -1,0 +1,78 @@
+%wrapper.mypage
+  = render partial: "sidebar"
+  %wrapper.contents{ style: "text-align:center;"}
+    %h2 支払い方法
+    %h3 クレジットカード一覧
+    %p 登録済みのクレジットカードはありません
+    .buttons{ style: "margin-top:30px;"}
+      %button クレジットカードを追加
+
+    %h2 支払い方法
+    %h3 登録済みのクレジットカード一覧
+    %ul
+      - 3.times do
+        %li.nonborder.swich{ style: "padding: 0;margin-bottom: 20px;"}
+          %input{ type: "checkbox", style: "margin-top: 15px;"}
+          =image_tag "coin.png", style: "width:40px;height:40px;"
+          %p　●●●● ●●●● ●●●● 0000
+          %p 19/07
+      .buttons{ style: "margin-top:30px;"}
+        %button クレジットカードを追加
+
+    #modal.card
+      %h2 クレジットカード情報入力
+      .modal
+        %p カード番号
+        %span 必須
+        %br
+        %input{ placeholder: "0000 0000 0000" }
+        .labelBox
+          =image_tag "visa.png", class: "credit"
+          =image_tag "master.png", class: "credit"
+          =image_tag "saison.png", class: "credit"
+          =image_tag "jcb.png", class: "credit"
+          =image_tag "americanexpress.png", class: "credit"
+          =image_tag "dinersclub.png", class: "credit"
+          =image_tag "discover.png", class: "credit"
+        %p 有効期限
+        %span 必須
+        %br
+        %input{ placeholder: "00", style: "display:inline-block;"}月
+        %input{ placeholder: "00", style: "display:inline-block;"}日
+        %br
+        %p セキュリティコード
+        %span 必須
+        %br
+        %input{ placehoolder: "カード背面4桁または3桁の番号" }
+        %br
+        %p{ style: "text-align: right;font-size:15px;"} セキュリティコードとは？
+      .buttons{ style: "margin-top:30px;"}
+        %button 確認画面へ
+        %button.nega　キャンセル
+
+    #modal
+      %h2 入力内容確認
+      %ul.modal
+        %li
+          %label{ style: "width:160px;"} クレジットカード情報
+        -# - form_with　'#' do |f|
+        %li
+          %label{ style: "text-align:left;"} カード番号
+          %p 0000 0000 0000
+        %li
+          %label{ style: "text-align:left;"} 有効期限
+          %p 2020/08
+        %li
+          %label{ style: "text-align:left;"} セキュリティコード
+          %p ●●●
+      .buttons{ style: "margin-top:30px;"}
+        %button この内容で登録する
+        %button.nega　戻って内容を修正
+
+    #modal
+      %h2 支払い方法
+      .modal
+        %h3 カード登録が完了しました
+        = image_tag "card.png"
+      .buttons{ style: "margin-top:30px;"}
+        %button クレジットカード一覧へ

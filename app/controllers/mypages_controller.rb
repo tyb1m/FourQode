@@ -1,23 +1,36 @@
 class MypagesController < ApplicationController
-  def index1
+  def notifications
   end
-  def index2
+  def app_contractors
   end
-  def index3
+  def solved_questions
+    @labels = ["Ruby", "Javascript"]
   end
-  def index4
+  def unsolved_questions
+    @labels = ["Ruby", "Javascript", "HTML"]
   end
-  def index5
+  def leaded_questions
   end
-  def logout
+  def reviews
   end
-  def mail_password
+  def guid
   end
-  def notification
+  def comments
+  end
+  def contacts
+  end
+  def sales
+  end
+  def charges
+    @price = { "5200": [ 200, "¥5,000" ], "10200": [ 400, "¥9,800" ], "20700": [ 900, "¥19,800" ], "31200": [ 1400, "¥29,800" ], "41700": [ 1900, "¥39,800" ], "52300": [ 2500, "¥49,800" ] }
   end
   def profile
   end
-  def card
+  def mail_passwords
+  end
+  def cards
+  end
+  def my_infos
   end
   def review2_1_1
     # @user = User.find(params[:id])

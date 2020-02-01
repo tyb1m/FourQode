@@ -1,0 +1,18 @@
+%wrapper.mypage
+  = render partial: "sidebar"
+  %wrapper.contents
+    %h2 解決した質問一覧
+    %ul
+      - 10.times do
+        %li
+          .icon
+          .details
+            .from{ style: "margin-right: 20px;"} Norihiro Akishima
+            .date
+              %p 投稿日
+              %p{ style: "margin: 0 20px 0 10px;"} 2019/07/04　23:47
+            %h3 インクリメンタルサーチができません
+            .status
+              %p{ style: "background-color: red;color: white;"} 解決済
+              %p 解決数 ７
+              %p 回答数 ３
