@@ -1,0 +1,115 @@
+= render 'shared/header'
+
+%main.toppageBodyMain
+  .toppageBodyMainRegist
+    .toppageBodyMainRegistBox
+      .toppageBodyMainRegistBoxDscrpt
+        %h2.toppageBodyMainRegistBoxDscrptName
+          全てのエンジニアのため
+          の[副業]Q&Aサイト
+        %p.toppageBodyMainRegistBoxDscrptWho
+          4Qode
+        %p.toppageBodyMainRegistBoxDscrptHow
+          画面共有と通話で
+          %br あなたの質問解消にコミットする
+        %p.toppageBodyMainRegistBoxDscrptWhat
+          4Qodeでは、あなたの質問の売り買いを通して、
+          %br スピーディで温かみある質問解消を実現します
+        %p.toppageBodyMainRegistBoxDscrptUpdates
+          5分前に〇〇が〇〇さんの質問を解決しました
+      .toppageBodyMainRegistBoxInputs
+        .toppageBodyMainRegistBoxInputsUser
+          / %form
+          /   %input{type: "text", autocomplete: "off", value: "", placeholder: "ユーザー名"}
+          /   %input{type: "text", autocomplete: "off", value: "", placeholder: "メールアドレス"}
+          /   %input{type: "password", autocomplete: "off", value: "", placeholder: "パスワード"}
+          %button Twitterでログイン
+          %button Facebookでログイン
+          %button Githubでログイン
+          %button Googleでログイン
+          %button はてなでログイン
+        .toppageBodyMainRegistBoxInputsText
+          OR
+        .toppageBodyMainRegistBoxInputsSignup
+          %form
+            %input{type: "text", autocomplete: "off", value: "", placeholder: "ユーザー名"}
+            %input{type: "text", autocomplete: "off", value: "", placeholder: "メールアドレス"}
+          %button 無料で登録する
+        / .toppageBodyMainRegistInputsIcon
+        /   %i.fa.fa-facebook-square
+        /   %i.fa.fa-twitter-square
+        /   %i.fa.fa-google
+        /   %i.fa.fa-github-square
+  %section.toppageBodyContents
+    .toppageBodyContentsTag
+      質問をタグから探す
+    %ul
+      %li 未解決
+      %li Ruby
+      %li PHP
+      %li Java
+      %li JS
+      %li Python
+      %li C++
+      %li 未解決
+      %li Ruby
+      %li PHP
+      %li Java
+      %li JS
+      %li Python
+      %li C++
+    %section.toppageBodyContentsCategory
+      %h2 新着Questions
+    .toppageBodyContentsCategory
+      %h3 Ruby新着Questions
+      .toppageBodyContentsCategoryWrapper
+        = render 'shared/questionCard'
+        = render 'shared/questionCard'
+      %p もっとみる>>
+
+    .toppageBodyContentsCategory
+      %h3 Ruby新着Questions
+      .toppageBodyContentsCategoryWrapper
+        = render 'shared/questionCard'
+        = render 'shared/questionCard'
+      %p もっとみる>>
+
+    .toppageBodyContentsCategory
+      %h3 Ruby新着Questions
+      .toppageBodyContentsCategoryWrapper
+        = render 'shared/questionCard'
+        = render 'shared/questionCard'
+      %p もっとみる>>
+
+    %section.toppageBodyContentsCategory
+      %h2 高単価Questions
+    .toppageBodyContentsCategory
+      %h3 Ruby新着Questions
+      .toppageBodyContentsCategoryWrapper
+        = render 'shared/questionCard'
+        = render 'shared/questionCard'
+      %p もっとみる>>
+
+    .toppageBodyContentsCategory
+      %h3 Ruby新着Questions
+      .toppageBodyContentsCategoryWrapper
+        = render 'shared/questionCard'
+        = render 'shared/questionCard'
+
+      %p もっとみる>>
+    .toppageBodyContentsSelect
+      .toppageBodyContentsSelectPageup
+        %br PAGE TOP
+        %i.fas.fa-arrow-up
+- if user_signed_in?
+  #tag_modal_overlay
+  #setting_tag_modal
+    %span タグが未登録です
+    #registration_tag
+      %span タグを登録することで質問を受けやすくなります
+      = link_to '登録ページへ', new_user_tags_path(current_user)
+    #tag_modal_close あとで登録する
+
+= render 'shared/footer'
+
+= render 'shared/questionButton'

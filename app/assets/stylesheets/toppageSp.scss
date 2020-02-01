@@ -1,0 +1,232 @@
+// .toppageBody{
+//   &Header {
+
+//     &Navbar{
+//       height: 6vh;
+//       position: fixed;
+//       width: 100%;
+//       background: #FFFFFF;
+//       z-index: 1000;
+
+//       &Logo{
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+//         margin: 0 2.5vw;
+
+//         img {
+//           max-height: 5.5vh;
+//         }
+
+//         &Left{
+//           input {
+//             display: none;
+//           }
+
+//           i{
+//             padding: 1.8vh 0;
+//             font-size: 1.3em;
+//           }
+//         }
+//       }
+
+//       &Right{
+//         float: right;
+//         margin-right: 4.5vw ;
+//         padding: 1.8vh 0;
+//         font-size: 1em;
+
+//         &Login {
+//           display: inline-block;
+//           margin-right: 3vw;
+//         }
+
+//         &Regist{
+//           display: inline-block;
+//         }
+
+//         .fa.fa-sign-in{
+//           display: none;
+//         }
+
+//         i{
+//           display: none;
+//         }
+//       }
+//     }
+//   }
+
+//   &Main{
+
+//     &Regist{
+//     display: none;
+//     }
+//   }
+
+//   &Contents{
+//     padding-top: 6vh;
+//     height: 500vh;
+//     background-color: #ffffff;
+
+//      ul{
+//       align-items: center;
+//       display: flex;
+//       flex-wrap: wrap;
+//       justify-content: space-between;
+//       margin: 1vh 4.5vw;
+//       }
+
+//       .movie{
+//         display:none;
+
+//         i {
+//           font-size: 3em;
+//           padding-left: 1vw;
+//         }
+
+//         p{
+//           font-size: 1em;
+//           line-height: 2;
+//           text-align: left;
+//           padding-left: 1vw;
+//         }
+//       }
+
+//       li{
+//         font-size: 1.0em;
+//       }
+
+//       li:nth-child(n+6){
+//         display:none ;
+//       }
+
+//       &Qstn{
+//         &Category {
+//           display:none;
+//         }
+
+//         &Subcategory{
+//           h3 {
+//             display:none;
+//           }
+
+//           &Wrapper{
+//             width: 92vw;
+//             margin: 4.5vw;
+//             display: flex;
+//             flex-wrap: wrap;
+//             justify-content: space-between;
+
+//             &Card{
+//               border: 1px solid #ccc;
+//               margin: 0 1vw 1vh 0;
+//               font-size: 1em;
+//               height: 22vh;
+//               width: 43vw;
+
+//             // PC画面の横幅設定により、カード枚数設定予定
+//             // @media screen and (max-width: 1500px){
+//             //     height: 400px;
+//             //     width: 300px;
+//             // }
+
+//             // @media screen and (max-width: 1200px){
+//             //     height: 500px;
+//             //     width: 400px;
+//             // }
+
+//               &Top{
+//                 height: 7.5vh;
+//                 background-color: #96C7BE;
+//                 color: #597EE3;
+//                 font-size: 0.9rem;
+//                 line-height: 1.5;
+//                 padding: 0.5vh 0.5vw;
+//               }
+
+//               &Middle{
+//                 height: 3.5vh;
+//                 padding: 0.5vh 0.5vw;
+
+//                 &Avater{
+//                   position: relative;
+
+//                   img{
+//                   border: 1px solid #ccc;
+//                   border-radius: 50%;
+//                   height: 6vh;
+//                   width: 6vh;
+//                   }
+//                 }
+
+//                 &Name{
+//                   position: absolute;
+//                   float: right;
+//                   bottom: 0.3vh;
+//                   right: 0.5vw;
+
+//                 }
+//               }
+
+//               &Bottom{
+//                 height: 10vh;
+//                 padding: 0.5vh 2.5vw;
+//                 font-size: 0.7em;
+//                 align-items: center;
+//                 display: flex;
+//                 flex-wrap: wrap;
+//                 justify-content: space-between;
+
+//                 &Box{
+//                   text-align: center;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+
+
+//   &Footer{
+
+//     &Btn{
+//       display: none;
+//     }
+//   }
+//   &Spfooter{
+//     position: fixed;
+//     padding: 0 2.5vw;
+//     height: 6vh;
+//     width: 95%;
+//     border: 1px solid #ccc;
+//     bottom: 0;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+//     font-size: 0.8em;
+//     align-items: center;
+//     text-align: center;
+
+//     &Qstn{
+//       width: 5.5vh;
+//       height: 5.5vh;
+//       border-radius: 50%;
+//       background: #96C7BE;
+//       border: 1px solid #ccc;
+//       color: #fff;
+//     }
+
+//     i{
+//       display: flex;
+//       flex-direction: column;
+//       font-size: 2em;
+//     }
+//   }
+// }
+
+// .clearfix:after {
+//   content: "";
+//   clear: both;
+//   display: block;
+// }

@@ -1,0 +1,11 @@
+%wrapper.toppageHeader
+  = render "shared/header"
+- if request.from_pc?
+  %wrapper.questionsEntry
+    = render "questions/newPc"
+- elsif request.from_ipad?
+  %wrapper.questionsEntryTb
+    = render "questions/newTb"
+- elsif request.from_smartphone?
+  %wrapper.questionsEntrySp
+    = render "questions/newSp"
