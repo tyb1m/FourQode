@@ -31,7 +31,7 @@ Rails.application.routes.draw do
   end
 
   resources :items , only: [:new , :create, :destroy, :update]
-  resources :questfouions, only: %i(new show edit create delete) do
+  resources :questions, only: %i(new show edit create delete) do
     resources :answers, only: %i(show)
   end
 
