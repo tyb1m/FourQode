@@ -13,4 +13,8 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 
   %body
+    -# フラッシュメッセージの共有化(仮
+    .notifications
+      - flash.each do |key, value|
+        = content_tag(:div, value, class: key)
     = yield

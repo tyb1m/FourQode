@@ -39,26 +39,30 @@ Rails.application.routes.draw do
   resources :mypages do
     collection do
       get :notification
-      get :appContractor
-      get :solvedQuestion
-      get :unsolvedQuestion
-      get :leadedQuestion
+      get :app_contractor
+      get :solved_question
+      get :unsolved_question
+      get :leaded_question
       get :review
       get :guid
       get :comment
       get :contact
       get :sale
-      get :salesHistory
-      get :transferApp
-      get :registrationCard
-      get :transferConfirm
-      get :transferCompleted
-      get :salesTerm
+      get :sales_history
+      get :transfer_app
+      get :registration_card
+      get :transfer_confirm
+      get :transfer_completed
+      get :sales_term
       get :charge
+      get :charge_completed
       get :profile
-      get :mailPassword
+      get :mail_password
       get :card
-      get :myInfo
+      get :card_registration
+      get :card_confirm
+      get :card_completed
+      get :my_info
       get :review2_1_1
       get :review2_2_1
       get :review2_2_2

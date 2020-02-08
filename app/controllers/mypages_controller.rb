@@ -1,15 +1,15 @@
 class MypagesController < ApplicationController
   def notification
   end
-  def appContractor
+  def app_contractor
   end
-  def solvedQuestion
+  def solved_question
     @labels = ["Ruby", "Javascript"]
   end
-  def unsolvedQuestion
+  def unsolved_question
     @labels = ["Ruby", "Javascript", "HTML"]
   end
-  def leadedQuestion
+  def leaded_question
   end
   def review
   end
@@ -21,28 +21,39 @@ class MypagesController < ApplicationController
   end
   def sale
   end
-  def salesHistory
+  def sales_history
   end
-  def transferApp
+  def transfer_app
+    @card = true
   end
-  def registrationCard
+  def registration_card
   end
-  def transferConfirm
+  def transfer_confirm
   end
-  def transferComppleted
+  def transfer_comppleted
+    flash.now[:notice] = 'コインのチャージが完了しました。'
   end
-  def salesTerm
+  def sales_term
   end
   def charge
     @price = { "5200": [ 200, "¥5,000" ], "10200": [ 400, "¥9,800" ], "20700": [ 900, "¥19,800" ], "31200": [ 1400, "¥29,800" ], "41700": [ 1900, "¥39,800" ], "52300": [ 2500, "¥49,800" ] }
   end
+  def charge_completed
+  end
   def profile
   end
-  def mailPassword
+  def mail_password
   end
   def card
+    @card = true
   end
-  def myInfo
+  def registration_credit
+  end
+  def confirm_credit
+  end
+  def credit_completed
+  end
+  def my_info
   end
   def review2_1_1
     # @user = User.find(params[:id])
