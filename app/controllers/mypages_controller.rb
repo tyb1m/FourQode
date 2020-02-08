@@ -1,36 +1,59 @@
 class MypagesController < ApplicationController
-  def notifications
+  def notification
   end
-  def app_contractors
+  def app_contractor
   end
-  def solved_questions
+  def solved_question
     @labels = ["Ruby", "Javascript"]
   end
-  def unsolved_questions
+  def unsolved_question
     @labels = ["Ruby", "Javascript", "HTML"]
   end
-  def leaded_questions
+  def leaded_question
   end
-  def reviews
+  def review
   end
   def guid
   end
-  def comments
+  def comment
   end
-  def contacts
+  def contact
   end
-  def sales
+  def sale
   end
-  def charges
+  def sales_history
+  end
+  def transfer_app
+    @card = true
+  end
+  def registration_card
+  end
+  def transfer_confirm
+  end
+  def transfer_comppleted
+    flash.now[:notice] = 'コインのチャージが完了しました。'
+  end
+  def sales_term
+  end
+  def charge
     @price = { "5200": [ 200, "¥5,000" ], "10200": [ 400, "¥9,800" ], "20700": [ 900, "¥19,800" ], "31200": [ 1400, "¥29,800" ], "41700": [ 1900, "¥39,800" ], "52300": [ 2500, "¥49,800" ] }
+  end
+  def charge_completed
   end
   def profile
   end
-  def mail_passwords
+  def mail_password
   end
-  def cards
+  def card
+    @card = true
   end
-  def my_infos
+  def registration_credit
+  end
+  def confirm_credit
+  end
+  def credit_completed
+  end
+  def my_info
   end
   def review2_1_1
     # @user = User.find(params[:id])

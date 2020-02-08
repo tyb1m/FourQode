@@ -1,0 +1,25 @@
+%wrapper.mypage
+  = render partial: "sidebar"
+  %wrapper.contents
+    = render partial: "head"
+    %h3 振込申請
+    %ul.transfer
+      %li
+        %label 振込申請金額
+        %span 必須
+        %input{ placeholder: "金額を入力"}
+      %p{ style: "color: #D3D3D3;margin: 0 30px;"} 手数料に関する注意事項はここに書くよーん
+      %li
+        %label 現在の売り上げ金額
+        %p ¥26.200
+      %li
+        %label 振込手数料
+        %p -
+      %li
+        %label 振込金
+        %p -
+      .buttons{ style: "margin-top: 30px"}
+        %button
+          = link_to "振込申請をする", transfer_completed_mypages_path
+        %button.nega
+          = link_to "キャンセル", :back

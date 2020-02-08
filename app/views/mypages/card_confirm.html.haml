@@ -1,0 +1,23 @@
+%wrapper.mypage
+  = render partial: "sidebar"
+  %wrapper.contents{ style: "text-align:center;"}
+    .card
+      %h2 入力内容確認
+      %ul.transfer
+        %li
+          %label{ style: "width:160px;"} クレジットカード情報
+        -# - form_with　'#' do |f|
+        %li
+          %label{ style: "text-align:left;"} カード番号
+          %p 0000 0000 0000
+        %li
+          %label{ style: "text-align:left;"} 有効期限
+          %p 2020/08
+        %li
+          %label{ style: "text-align:left;"} セキュリティコード
+          %p ●●●
+      .buttons{ style: "margin-top:30px;"}
+        %button
+          = link_to "この内容で登録する", card_completed_mypages_path
+        %button.nega
+          = link_to "戻って内容を修正", :back

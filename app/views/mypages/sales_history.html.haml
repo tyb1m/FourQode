@@ -1,0 +1,18 @@
+%wrapper.mypage
+  = render partial: "sidebar"
+  %wrapper.contents
+    = render partial: "head"
+    %h3 売り上げ履歴
+    %ul.modal
+      - 3.times do
+        %li{ style: "border-top:  solid 1px #DEDEDE;"}
+          %label{ style: "margin-right:auto;"}
+            .date{style: "margin: 0 0 20px;"} 2019/07/04
+            %br
+            .from 事務局より
+          %p
+            %br
+            %br ¥4,300
+    .buttons{ style: "margin-top: 30px"}
+      %button
+        = link_to "戻る", :back

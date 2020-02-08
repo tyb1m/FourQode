@@ -1,0 +1,11 @@
+%wrapper.mypage
+  = render partial: "sidebar"
+  %wrapper.contents
+    = render partial: "head"
+    %h3 コインチャージ
+    =image_tag "coins.png"
+    %p{ style: "font-size:25px;font-wight:bold;"} チャージが完了しました。
+    .buttons{ style: "margin-top: 30px"}
+      -# TODO:戻るボタンで戻すページの確認
+      %button
+        = link_to "戻る", :back
