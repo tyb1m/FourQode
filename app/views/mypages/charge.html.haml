@@ -14,11 +14,8 @@
             コインお得！
           %p= v[1]
     .buttons{ style: "margin-top: 30px"}
-      %button 次へ
-      %button.nega 戻る
-    #modal{ style: "text-align:center;"}
-      %h3 コインチャージ
-      =image_tag "coins.png"
-      %p{ style: "font-size:25px;font-wight:bold;"} チャージが完了しました。
-      .buttons{ style: "margin-top: 30px"}
-        %button 戻る
+      %button
+        = link_to "次へ", charge_completed_mypages_path
+      -# TODO:戻るボタンの意味を確認
+      %button.nega
+        = link_to "戻る", :back

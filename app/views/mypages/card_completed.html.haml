@@ -1,0 +1,9 @@
+%wrapper.mypage
+  = render partial: "sidebar"
+  %wrapper.contents{ style: "text-align:center;"}
+    %h2 支払い方法
+    %h3 カード登録が完了しました
+    = image_tag "card.png"
+    .buttons{ style: "margin-top:30px;"}
+      %button
+        = link_to "クレジットカード一覧へ", card_mypages_path
