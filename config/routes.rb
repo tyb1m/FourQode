@@ -7,9 +7,9 @@ Rails.application.routes.draw do
   }
 
 # TODO: 一旦、コメントアウトをさせてください
-  # if Rails.env.development?
-  #   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
-  # end
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
+  end
 
   devise_scope :user do
     get "user/:id", :to => "users/registrations#detail"
@@ -38,21 +38,27 @@ Rails.application.routes.draw do
 
   resources :mypages do
     collection do
-      get :notifications
-      get :app_contractors
-      get :solved_questions
-      get :unsolved_questions
-      get :leaded_questions
-      get :reviews
+      get :notification
+      get :appContractor
+      get :solvedQuestion
+      get :unsolvedQuestion
+      get :leadedQuestion
+      get :review
       get :guid
-      get :comments
+      get :comment
       get :contact
-      get :sales
-      get :charges
-      get :profiles
-      get :mail_passwords
-      get :cards
-      get :my_infos
+      get :sale
+      get :salesHistory
+      get :transferApp
+      get :registrationCard
+      get :transferConfirm
+      get :transferCompleted
+      get :salesTerm
+      get :charge
+      get :profile
+      get :mailPassword
+      get :card
+      get :myInfo
       get :review2_1_1
       get :review2_2_1
       get :review2_2_2

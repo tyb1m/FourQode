@@ -1,0 +1,51 @@
+
+%wrapper.mypage
+  = render partial: "sidebar"
+  %wrapper.contents
+    = render partial: "head"
+    %h3 振込申請
+    %ul.transfer
+      %li
+        %label 振込先
+      -# - form_with　'#' do |f|
+      %li.tl{ style: "vertical-align: center;"}
+        %label 銀行名
+        %span 必須
+        %input{ placeholder: "銀行名を入力", value: "みずほ銀行" }
+      %li.nonborder
+        %label 講座種別
+        %span 必須
+        %input{ placeholder: "口座種別を選択" }
+      %li.nonborder
+        %label 支店コード
+        %span 必須
+        %input{ placeholder: "支店コードを入力" }
+      %li.nonborder
+        %label 口座番号
+        %span 必須
+        %input{ placeholder: "口座番号を入力" }
+      %li.nonborder
+        %label 口座名義(セイ)
+        %span 必須
+        %input{ placeholder: "口座名義(セイ)" }
+      %li.nonborder
+        %label 口座名義(メイ)
+        %span 必須
+        %input{ placeholder: "口座名義(メイ)" }
+      %li.tl
+        %label 住所氏名
+        %p
+          東京都荒川区西奥11-8-2
+          %br
+          モンテネグロ4182
+          %br
+          %br
+          上野　秀成
+      %li.tl
+        %label 生年月日
+        %p 1989/02/29
+    .buttons{ style: "margin-top: 30px"}
+      %button
+        = link_to "振込口座を指定する", transferConfirm_mypages_path
+      %button.nega
+        = link_to "キャンセル", :back
