@@ -1,40 +1,37 @@
 %header
-  .header
-    .header_row
-      .header_logo
-        = link_to '# 'do
-          = image_tag "logo2.png", class: "logo_icon"
-      .header_search
-        = form_with url: '#' do |f|
-          = f.text_field :user, autocomplete: "off", placeholder: '質問を検索', class: "header_form"
-          = button_tag type: 'submit', class: "header_submit" do
-            %i.fa.fa-search
-      .header_regist
+  .header_main
+    = link_to '# 'do
+      = image_tag 'logo2'
+    .search_form
+      = form_with url: '#' do |f|
+        = f.search_field :user, autocomplete: "off", placeholder: '質問を検索', class: "search_text_area"
+        = f.button type: 'submit' do
+          = fa_icon 'search'
+      -# %form
+      -#   %input.search_text_area{type: "search", placeholder: "質問を検索"}
+      -# %button
+      -#   = fa_icon 'search'
+  .header_user_status
+    - if user_signed_in?
+      .current_user_notice
+        = link_to '#', { href: "" , class: "badge1", data: { badge: "22"}} do
+          = fa_icon 'bell-o', class: 'fa-fw'
+      .current_user_detail
         = link_to '#' do
-          %i.fa.fa-sign-in
-          .header_regist_text 新規会員登録
+          .header_user
+            .header_user_icon
+              = image_tag "user_icon01.png"
+            .header_user_name
+              = "#{current_user.name}"
+      = link_to destroy_user_session_path, method: :delete do
+        = fa_icon 'sign-out', class: 'fa-fw'
+        %p ログアウト
+    -else
+      = link_to new_user_session_path do
+        = fa_icon 'sign-in', class: 'fa-fw'
+        %p ログイン
+      = link_to new_user_registration_path do
+        = fa_icon 'user-plus', class: 'fa-fw'
+        %p 新規登録
 
-  -# .header_main
-  -#   = image_tag 'logo2'
-  -#   .search_form
-  -#     %form
-  -#       %input.search_text_area{type: "search", placeholder: "質問を検索"}
-  -#     %button
-  -#       = fa_icon 'search'
-  -# .header_user_status
-  -#   - if user_signed_in?
-  -#     = fa_icon 'bell-o', class: 'fa-fw'
-  -#     -# TODO: mypageできたらlinkへ
-  -#     .current_user_detail
-  -#       = image_tag 'sns'
-  -#       = link_to "#{current_user.name}" , ''
-  -#     = link_to destroy_user_session_path, method: :delete do
-  -#       = fa_icon 'sign-out', class: 'fa-fw'
-  -#       %p ログアウト
-  -#   -else
-  -#     = link_to new_user_session_path do
-  -#       = fa_icon 'sign-in', class: 'fa-fw'
-  -#       %p ログイン
-  -#     = link_to new_user_registration_path do
-  -#       = fa_icon 'user-plus', class: 'fa-fw'
-  -#       %p 新規登録
+
