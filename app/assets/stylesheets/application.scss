@@ -32,9 +32,8 @@
 // @import url(toppageSp.scss) screen and (max-width: 480px);
 // @import url(toppageTb.scss) screen and (min-width: 480px);
 @import url(toppage.scss) screen and (min-width: 1025px);
-@import "shared/header";
+@import "default/header";
 @import "shared/flash_message";
-// @import "shared/footer";
 @import "default/footer/footer";
 @import "shared/questionButton";
 @import "shared/questionCard";

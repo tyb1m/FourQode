@@ -1,7 +1,7 @@
 footer{
   color: #fff;
   box-shadow: 0 -5px 5px rgba(59, 59, 59, .5);
-  background: #3b3b3b;
+  background: #464D56;
   position: relative;
   #contact_information{
     border-radius: 2px 2px 0 0;
@@ -9,7 +9,7 @@ footer{
     position: absolute;
     left: 30px;
     bottom: 0;
-    padding: 80px 100px 50px 50px;
+    padding: 50px 100px 40px 70px;
     .information_title{
       display: flex;
       align-items: center;
@@ -31,7 +31,7 @@ footer{
     }
   }
   #site_map{
-    padding: 40px 0 100px;
+    padding: 60px 0 70px;
     margin-left: 400px;
     ul{
       li{
@@ -40,6 +40,7 @@ footer{
         line-height: 3.0;
         list-style: none;
         margin-right: 40px;
+        width: 160px;
       }
       a{
         color: #fff;
