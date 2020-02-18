@@ -7,18 +7,18 @@
   background-color: #F0F0F0;
 }
 .mypageSideBar{
-  width: 20%;
+  width: 350px;
   padding: 30px;
   box-sizing: border-box;
   h4{
     margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
   }
   ul{
     border:none;
   }
   li{
-    padding:15px 20px;
-    height: 40px;
     list-style: none;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -27,14 +27,17 @@
   li + li{
     border-top:solid 0.5px #F0F0F0;
   }
-  li:hover{
+  a:hover, .active{
     background-color: #AAD300;
   }
-  a {
+  a{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     color: black;
     font-style:bold;
     white-space: nowrap;
+    display: block;
+    height: 40px;
+    padding: 15px 20px;
   }
 }

@@ -16,3 +16,9 @@ $(function () {
     return false;
   });
 });
+
+$(function() {
+  $(document).on('click', '.notice', function() {
+    $(this).find('.noticeContent, .showDown').toggle();
+  });
+});

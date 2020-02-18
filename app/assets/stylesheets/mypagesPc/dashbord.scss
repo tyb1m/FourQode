@@ -17,6 +17,7 @@
   // notifications
     .date, .title, .toggle, .labels p{
       display: inline-block;
+      font-size: 14px;
     }
     .toggle{
       position: absolute;
@@ -39,17 +40,19 @@
       .from{
         margin: 10px 0;
         display: inline-block;
+        font-size: 14px;
       }
     }
     .icon{
-      height: 80px;
-      width: 80px;
+      height: 60px;
+      width: 60px;
       background-color: black;
-      border-radius: 40px;
+      border-radius: 30px;
       margin-right: 30px;
     }
     .details span, .date{
       color: #848484;
+      font-size: 14px;
     }
 
     // solved_questions
@@ -57,21 +60,28 @@
       background-color: #BABABA;
       padding: 5px;
       color: white;
+      font-size: 14px;
+      border-radius: 5px;
+      + p {
+        margin-left: 15px;
+      }
     }
     h3, .status, .date{
       margin-top: 20px;
     }
     h3{
-      font-size: 25px;
+      font-size: 30px;
       text-align: left;
     }
     .status p{
       display: inline-block;
       margin-right: 30px;
       padding: 5px;
+      font-size: 14px;
     }
     .date p{
       display: inline-block;
+      font-size: 14px;
     }
 
     // unsolved_quiestion
@@ -182,8 +192,9 @@
     display: flex;
     padding: 30px 0;
     span{
-      background-color: red;
+      background-color: #A32828;
       color: white;
+      font-size: 14px;
     }
     label{
       margin-right: auto;
@@ -222,7 +233,7 @@
         color: white;
       }
     }
-  .credit{
+  .c#A32828it{
     height: 35px;
     width: 50px;
   }
