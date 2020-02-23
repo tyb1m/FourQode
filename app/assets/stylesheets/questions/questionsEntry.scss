@@ -1,16 +1,15 @@
 .questionsEntry{
   // z-index: 1;
   &Warning1{
-    // display: none!important;
     width: vmax;
-    height: 60px;
+    height: 120px;
     background-color: #9BCE08;
     color: white;
     font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding-top: 50px;
   }
   .fa-check{
     color: white;
@@ -21,7 +20,7 @@
   &Warning2{
     display: none!important;
     width: vmax;
-    height: 60px;
+    height: 120px;
     background-color: #ECECEC;
     color: black;
     font-size: 15px;
@@ -34,7 +33,7 @@
   &Warning3{
     display: none!important;
     width: vmax;
-    height: 60px;
+    height: 120px;
     background-color: #90171F;
     color: white;
     font-size: 15px;

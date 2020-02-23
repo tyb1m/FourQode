@@ -1,17 +1,12 @@
 .questionsEntryWarning1
   = fa_icon "fas.fa-check", class: "fa-check"
-  %p= flash[:warning1]
-
-  / クレジットカードの登録が完了いたしました。最速質問してみましょう！
-
+  クレジットカードの登録が完了いたしました。最速質問してみましょう！
 .questionsEntryWarning2
-  %p= flash[:warning2]
-  / 新規質問作成
+  新規質問作成
 
 .questionsEntryWarning3
   = fa_icon "fas.fa-exclamation-triangle", class: "fa-exclamation-triangle"
-  %p= flash[:warning3]
-  / 金額が未入力です。
+  金額が未入力です。
 
 .questionsEntryWarning4
   = fa_icon "fas.fa-exclamation-triangle", class: "fa-exclamation-triangle"
@@ -164,7 +159,7 @@
           掲載価格
         .questionsEntryBodyEstimateInfo2Price
           ー
-    .questionsEntryBodyEstimateButton
+    .questionsEntryBodyEstimateButton#js-policy-open
       =link_to "", class: "questionsBtn" do
         質問を出品する
 
