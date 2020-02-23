@@ -1,7 +1,7 @@
 .mypageReview{
   // display: block;
   &Body{
-    padding-top: 50px;
+    // padding-top: 50px;
     width: 100%;
     background-color: #F0F0F0;
     &1{
@@ -292,9 +292,10 @@
   font-size: 10px;
   margin-left: 10px;
 }
-.fa-home{
-  font-size: 20px;
-  margin-right: 20px;
+// .fa-home{
+.fa-cog{
+  font-size: 25px;
+  margin-right: 10px;
 }
 .fa-crown{
   font-size: 15px;
