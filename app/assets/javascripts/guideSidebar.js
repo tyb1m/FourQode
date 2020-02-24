@@ -1,53 +1,35 @@
 $(function() {
-    $('.firstGuide').click(function(){
-        $('.SideBarSub_firstGuide').slideDown();
-        $('#fa-firstGuide').css({
-          "transform" : "rotate(90deg)"
-        });
-    });
-});
+  // turbolins対応
+  $(document).on('click', 'li', function(){
+    // iconのスタイルを取得
+    var getStyle = $(this).find('.fa-angle-right').css('transform');
+    if ( $(this).hasClass('firstGuide') ) {
+      // 初めてガイド
+      $('.SideBarSub_firstGuide').slideToggle();
+    } else if ( $(this).hasClass('questionGuide') ) {
+      // 質問に関して
+      $('.SideBarSub_questions').slideToggle();
+    } else if ( $(this).hasClass('solutionGuide') ) {
+      // 解決に関して
+      $('.SideBarSub_solution').slideToggle();
+    } else if ( $(this).hasClass('coinGuide') ) {
+      // サイト内コインに関して
+      $('.SideBarSub_coin').slideToggle();
+    } else if ( $(this).hasClass('registerGuide') ) {
+      // 登録/ログイン/通知に関して
+      $('.SideBarSub_register').slideToggle();
+    } else if ($(this).hasClass('cancelGuide') ) {
+      // キャンセル/返金に関して
+      $('.SideBarSub_cancel').slideToggle();
+    }
 
-$(function() {
-    $('.questionGuide').click(function(){
-        $('.SideBarSub_questions').slideDown();
-        $('#fa-questions').css({
-          "transform" : "rotate(90deg)"
-        });
-    });
-});
-
-$(function() {
-    $('.solutionGuide').click(function(){
-        $('.SideBarSub_solution').slideDown();
-        $('#fa-solution').css({
-          "transform" : "rotate(90deg)"
-        });
-    });
-});
-
-$(function() {
-    $('.coinGuide').click(function(){
-        $('.SideBarSub_coin').slideDown();
-        $('#fa-coin').css({
-          "transform" : "rotate(90deg)"
-        });
-    });
-});
-
-$(function() {
-    $('.registerGuide').click(function(){
-        $('.SideBarSub_register').slideDown();
-        $('#fa-register').css({
-          "transform" : "rotate(90deg)"
-        });
-    });
-});
-
-$(function() {
-    $('.cancelGuide').click(function(){
-        $('.SideBarSub_cancel').slideDown();
-        $('#fa-cancel').css({
-          "transform" : "rotate(90deg)"
-        });
-    });
+    // クリックしたliの子要素のiconを取得しスタイルの変更
+    if ( getStyle == 'matrix(1, 0, 0, 1, 0, 0)' ) {
+      $(this).find('.fa-angle-right').css({ "transform": "rotate(90deg)" });
+    } else if ( getStyle == 'matrix(6.12323e-17, 1, -1, 6.12323e-17, 0, 0)' ) {
+      $(this).find('.fa-angle-right').css({ "transform": "rotate(0deg)" });
+    } else if ( getStyle == 'none') {
+      $(this).find('.fa-angle-right').css({ "transform": "rotate(90deg)" });
+    }
+  });
 });

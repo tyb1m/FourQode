@@ -19,6 +19,7 @@ $(function () {
 
 $(function() {
   $(document).on('click', '.notice', function() {
-    $(this).find('.noticeContent, .showDown').toggle();
+    $(this).find('.showDown').toggle();
+    $(this).find('.noticeContent').slideToggle();
   });
 });
