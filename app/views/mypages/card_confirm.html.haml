@@ -1,9 +1,9 @@
 %wrapper.mypage
   = render partial: "sidebar"
-  %wrapper.contents{ style: "text-align:center;"}
+  %wrapper.contents
     .card
       %h2 入力内容確認
-      %ul.transfer
+      %ul.cards
         %li
           %label{ style: "width:160px;"} クレジットカード情報
         -# - form_with　'#' do |f|
