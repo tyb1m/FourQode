@@ -23,3 +23,11 @@ $(function() {
     $(this).find('.noticeContent').slideToggle();
   });
 });
+
+$(function(){
+  $(document).on('click', '.icon', function(){
+    console.log('clicked');
+    $('.appContractorModal1').fadeIn();
+    return false;
+  });
+});
