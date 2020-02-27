@@ -2,8 +2,6 @@
   %h4{style: "margin-top:0"} 一般
   %ul
     %li.mypageNavList
-      = link_to "マイページ", review2_1_1_mypages_path
-    %li.mypageNavList
       = link_to "お知らせ", notification_mypages_path
     %li.mypageNavList
       = link_to "請負申請者一覧", app_contractor_mypages_path
@@ -15,12 +13,6 @@
       = link_to "解決した質問(解決側)", leaded_question_mypages_path
     %li.mypageNavList
       = link_to "総合評価", review_mypages_path
-    %li.mypageNavList
-      = link_to "ガイド", guide_starts_path
-    %li.mypageNavList
-      = link_to "コメント一覧", comment_mypages_path
-    %li.mypageNavList
-      = link_to "お問い合わせ", contact_mypages_path
   %h4 売り上げ管理
   %ul
     %li.mypageNavList
@@ -33,11 +25,6 @@
       = link_to "タグ登録の編集", "#"
       -# edit_user_tagsprofile_mypages_path
     %li.mypageNavList
-      = link_to "アドレス/パスワード", mail_password_mypages_path
+      = link_to "アドレス/パスワードの変更", mail_password_mypages_path
     %li.mypageNavList
       = link_to "支払い方法登録/変更", card_mypages_path
-    %li.mypageNavList
-      = link_to "本人情報登録/変更", my_info_mypages_path
-  %ul{ style: "margin-top:30px"}
-    %li.mypageNavList
-      = link_to "ログアウト",logout_path
