@@ -29,7 +29,7 @@
     }
     .message{
       margin-top: 30px;
-      border: solid 2px #BABABA;
+      border: solid 2px $darkgray;
     }
     .fontBold:first-of-type{
       margin-top: 50px;
@@ -49,12 +49,12 @@
         justify-content: center;
       }
       .cancel{
-        background: #D3D3D3;
+        background: $gray;
         color: white;
       }
       .apply{
         margin-left: 20px;
-        background-color: #006600;
+        background-color: $green;
         color: white;
       }
     }

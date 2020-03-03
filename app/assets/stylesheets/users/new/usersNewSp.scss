@@ -23,7 +23,7 @@
           width: 100%;
           list-style: none;
           border-radius: 2px;
-          background: #A32828;
+          background: $red;
           margin: 20px auto;
           a{
             display: flex;
@@ -76,7 +76,7 @@
       p{
         font-size: 12px;
         a{
-          color: #3683FF;
+          color: $blue;
           text-decoration: none;
         }
       }
@@ -88,12 +88,12 @@
           cursor: pointer;
           border: none;
           border-radius: 2px;
-          background: #006600;
+          background: $green;
           padding: 10px 30px;
           margin: 20px 0;
           &[disabled]{
             color: #fff;
-            background: #D3D3D3;
+            background: $gray;
           }
         }
       }

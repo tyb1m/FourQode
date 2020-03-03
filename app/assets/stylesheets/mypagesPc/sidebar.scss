@@ -28,12 +28,12 @@
     border-top:solid 0.5px #F0F0F0;
   }
   a:hover, .active{
-    background-color: #AAD300;
+    background-color: $lightgreen;
   }
   a{
     text-decoration: none;
     font-size: 14px;
-    color: black;
+    color: $black;
     font-style:bold;
     white-space: nowrap;
     display: block;

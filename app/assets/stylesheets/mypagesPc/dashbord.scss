@@ -26,7 +26,7 @@
     }
     .fas{
       font-size: 30px;
-      color: #BABABA
+      color: $darkgray
     }
     .body{
       display: none;
@@ -46,7 +46,7 @@
     .icon{
       height: 60px;
       width: 60px;
-      background-color: black;
+      background-color: $black;
       border-radius: 30px;
       margin-right: 30px;
     }
@@ -57,7 +57,7 @@
 
     // solved_questions
     .labels p{
-      background-color: #BABABA;
+      background-color: $darkgray;
       padding: 5px;
       color: white;
       font-size: 14px;
@@ -103,7 +103,7 @@
     }
   }
   .counts{
-    color:#BABABA;
+    color:$darkgray;
   }
   .left, .right{
     display:inline-block;
@@ -112,7 +112,7 @@
     font-weight: bold;
     text-align: center;
     padding: 10px 0;
-    background-color: #D3D3D3;
+    background-color: $gray;
   }
   .swich{
     display: flex;
@@ -170,7 +170,7 @@
       width: 70%;
       padding: 10px;
       margin: 15px 0;
-      background-color: #006600;
+      background-color: $green;
       color: white;
       a{
         color: white;
@@ -178,7 +178,7 @@
       }
     }
     .nega{
-      background-color: #BABABA;
+      background-color: $darkgray;
     }
   }
   // modal
@@ -212,7 +212,7 @@
     padding: 30px 0;
     align-items: center;
     span{
-      background-color: #A32828;
+      background-color: $red;
       color: white;
       font-size: 14px;
       padding: 3px 5px;
@@ -223,7 +223,7 @@
     }
     input{
       height: 40px;
-      border: solid 2px #BABABA;
+      border: solid 2px $darkgray;
     }
   }
   // charges
@@ -254,7 +254,7 @@
         color: white;
       }
     }
-  .c#A32828it{
+  .c$redit{
     height: 35px;
     width: 50px;
   }
