@@ -8,11 +8,11 @@ $lightgreen: #AAD300;
 $red: #A32828;
 $blue: #3683FF;
 
-@mixin button($color:#fff){
+@mixin button{
   width: 105px;
   height: 25px;
   color: white;
   padding: 0 20px;
   border-radius: 2px;
-  background-color: $color;
+  background-color: $green;
 }

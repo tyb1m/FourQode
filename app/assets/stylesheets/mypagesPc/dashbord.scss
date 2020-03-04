@@ -167,11 +167,8 @@
     flex-direction: column;
     align-items: center;
     button{
-      width: 70%;
-      padding: 10px;
+      @include button;
       margin: 15px 0;
-      background-color: $green;
-      color: white;
       a{
         color: white;
         text-decoration: none;
@@ -254,7 +251,7 @@
         color: white;
       }
     }
-  .c$redit{
+  .credit{
     height: 35px;
     width: 50px;
   }
