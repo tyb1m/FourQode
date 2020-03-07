@@ -19,7 +19,7 @@ header{
       .search_form{
         display: flex;
         form{
-          color: #bababa;
+          color: $darkgray;
           input.search_text_area{
             width: 250px;
             height: 35px;
@@ -33,7 +33,7 @@ header{
           height: 35px;
           color: #fff;
           border-radius: 0 2px 2px 0;
-          background: #006600;
+          background: $green;
           padding: 0 10px;
           .fa{
             font-size: 15px;
@@ -83,7 +83,7 @@ header{
               vertical-align: middle;
               margin-right: 5px;
               border-radius: 50%;
-              box-shadow: 0 0 0 3px #006600;
+              box-shadow: 0 0 0 3px $green;
             }
           }
           .header_user_name {

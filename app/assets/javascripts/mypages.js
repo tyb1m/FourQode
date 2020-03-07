@@ -16,3 +16,18 @@ $(function () {
     return false;
   });
 });
+
+$(function() {
+  $(document).on('click', '.notice', function() {
+    $(this).find('.showDown').toggle();
+    $(this).find('.noticeContent').slideToggle();
+  });
+});
+
+$(function(){
+  $(document).on('click', '.icon', function(){
+    console.log('clicked');
+    $('.appContractorModal1').fadeIn();
+    return false;
+  });
+});

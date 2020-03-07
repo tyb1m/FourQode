@@ -1,42 +1,30 @@
 %nav.mypageSideBar
-  %h4{style: "margin:0"} 一般
+  %h4{style: "margin-top:0"} 一般
   %ul
-    %li
-      = link_to "マイページ",  class: "mypageNavList"
-    %li
-      = link_to "お知らせ", notification_mypages_path, class: "mypageNavList"
-    %li
-      = link_to "請負申請者一覧", app_contractor_mypages_path, class: "mypageNavList"
-    %li
-      = link_to "解決した質問(質問側)", solved_question_mypages_path, class: "mypageNavList"
-    %li
-      = link_to "未解決の質問(質問側)", unsolved_question_mypages_path, class: "mypageNavList"
-    %li
-      = link_to "解決した質問(解決側)", leaded_question_mypages_path, class: "mypageNavList"
-    %li
-      = link_to "総合評価", review_mypages_path,class: "mypageNavList"
-    %li
-      = link_to "ガイド", guid_mypages_path,class: "mypageNavList"
-    %li
-      = link_to "コメント一覧", comment_mypages_path,class: "mypageNavList"
-    %li
-      = link_to "お問い合わせ", contact_mypages_path,class: "mypageNavList"
+    %li.mypageNavList
+      = link_to "お知らせ", notification_mypages_path
+    %li.mypageNavList
+      = link_to "請負申請者一覧", app_contractor_mypages_path
+    %li.mypageNavList
+      = link_to "解決した質問(質問側)", solved_question_mypages_path
+    %li.mypageNavList
+      = link_to "未解決の質問(質問側)", unsolved_question_mypages_path
+    %li.mypageNavList
+      = link_to "解決した質問(解決側)", leaded_question_mypages_path
+    %li.mypageNavList
+      = link_to "総合評価", review_mypages_path
   %h4 売り上げ管理
   %ul
-    %li
-      = link_to "売上", sale_mypages_path,class: "mypageNavList"
-    %li
-      = link_to "コインチャージ", charge_mypages_path, class: "mypageNavList"
-  %h4 設定
+    %li.mypageNavList
+      = link_to "売り上げ", sale_mypages_path
+    %li.mypageNavList
+      = link_to "コインチャージ", charge_mypages_path
+  %h4 個人設定
   %ul
-    %li
-      = link_to "プロフィール", profile_mypages_path, class: "mypageNavList"
-    %li
-      = link_to "アドレス/パスワード", mail_password_mypages_path, class: "mypageNavList"
-    %li
-      = link_to "支払い方法登録/変更", card_mypages_path, class: "mypageNavList"
-    %li
-      = link_to "本人情報登録/変更", my_info_mypages_path, class: "mypageNavList"
-  %ul{ style: "margin-top:30px"}
-    %li
-      = link_to "ログアウト",logout_path, class: "mypageNavList"
+    %li.mypageNavList
+      = link_to "タグ登録の編集", "#"
+      -# edit_user_tagsprofile_mypages_path
+    %li.mypageNavList
+      = link_to "アドレス/パスワードの変更", mail_password_mypages_path
+    %li.mypageNavList
+      = link_to "支払い方法登録/変更", card_mypages_path

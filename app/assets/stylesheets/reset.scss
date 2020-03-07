@@ -100,3 +100,27 @@ input, select {
         -ms-box-sizing: border-box;
             box-sizing: border-box;
 }
+// グループタイトル
+h2 {
+    font-size: 24px;
+}
+// サブタイトル
+h3 {
+    font-size: 18px;
+}
+// モーダルタイトル
+h4 {
+    font-size: 14px;
+}
+// 本文
+p {
+    font-size: 10px;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+    font-size: 10px;
+    padding: 0 10px;
+    color: $darkgray;
+}

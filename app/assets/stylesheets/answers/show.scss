@@ -16,7 +16,7 @@
           font-size: 12px;
           list-style: none;
           border-radius: 2px;
-          background: #BABABA;
+          background: $darkgray;
           padding: 5px;
           margin-right: 5px;
         }
@@ -36,7 +36,7 @@
           color: #FFF;
           font-size: 14px;
           border-radius: 2px;
-          background: #AAD300;
+          background: $lightgreen;
           padding: 5px 20px;
         }
       }
@@ -57,7 +57,7 @@
           img{
             width: 60px;
             height: 60px;
-            border: 2px solid #006600;
+            border: 2px solid $green;
             border-radius: 50%;
             margin-right: 30px;
           }
@@ -126,7 +126,7 @@
         margin-left: 30px;
       }
       .chat_element{
-        background: #AAD300;
+        background: $lightgreen;
       }
     }
     .post_user{
@@ -134,7 +134,7 @@
         margin-right: 30px;
       }
       .chat_element{
-        background: #D3D3D3;
+        background: $gray;
       }
     }
   }
@@ -144,7 +144,7 @@
     font-size: 14px;
     text-align: center;
     border-radius: 2px;
-    background: #A32828;
+    background: $red;
     padding: 30px 100px;
     margin: 50px auto;
     span{

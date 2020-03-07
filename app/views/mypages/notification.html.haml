@@ -3,16 +3,16 @@
   %wrapper.contents
     %h2 お知らせ一覧
     %ul.content
-      - 10.times do
-        %li
+      - 10.times do |num|
+        %li.notice
           .date 2019/3/28
           %br
           %br
           .title サーバーが復旧しました
           .toggle
-            = fa_icon "fas fa-chevron-down", class: "fas fa-chevron-down"
-            = fa_icon "fas fa-chevron-up", class: "fas fa-chevron-up", style: "display: none"
-          .body
+            = fa_icon "fas fa-chevron-down", class: "fas fa-chevron-down showDown"
+            = fa_icon "fas fa-chevron-up", class: "fas fa-chevron-up showDown", style: "display: none"
+          .body.noticeContent
             %br
             いつも、4Qodeをご利用いただきありがとうございます。
             %br

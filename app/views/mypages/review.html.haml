@@ -5,10 +5,8 @@
     .stats
       .rate 4.6
       .stars
-        = fa_icon "fas fa-star", class: "fas fa-star"
-        = fa_icon "fas fa-star", class: "fas fa-star"
-        = fa_icon "fas fa-star", class: "fas fa-star"
-        = fa_icon "fas fa-star", class: "fas fa-star"
+        - 4.times do
+          = fa_icon "fas fa-star", class: "fas fa-star", style: "margin:0 20px;font-size:60px;"
       .counts 全52件の評価
     .left.selected 質問側
     .right 回答側
@@ -18,12 +16,10 @@
           4.2
           %br
           %br
-          全31件の評価
+          %p 全31件の評価
       .stars
-        = fa_icon "fas fa-star", class: "fas fa-star"
-        = fa_icon "fas fa-star", class: "fas fa-star"
-        = fa_icon "fas fa-star", class: "fas fa-star"
-        = fa_icon "fas fa-star", class: "fas fa-star"
+        - 4.times do
+          = fa_icon "fas fa-star", class: "fas fa-star", style: "padding-top:25px;font-size:30px;margin:0 5px;"
     %ul
     - 10.times do
       %li{ style: "border-top: solid 1px #DEDEDE;"}
@@ -32,10 +28,10 @@
           .date
             %p 投稿日
             %p{ style: "margin: 0 20px 0 10px;"} 2019/07/04　23:47
-          %h3{ style: "font-size:20px;margin-top:10px;"} インクリメンタルサーチができません
+          %h3{ style: "font-size:20px;margin:10px 0 30px;"} インクリメンタルサーチができません
         .icon
         .details
-          .from Norihiro Akishima
+          .from{style: "margin-top:0;"} Norihiro Akishima
           .stars
           - 4.times do
-            = fa_icon "fas fa-star", class: "fas fa-star", style: "padding:0px;color:gold;"
+            = fa_icon "fas fa-star", class: "fas fa-star", style: "font-size:25px;margin:0 5px;color: gold;"

@@ -1,24 +1,24 @@
 .mypage{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 100vw;
-  padding: 10px;
+  padding: 0 60px;
   margin: 0 auto;
   background-color: #F0F0F0;
 }
 .mypageSideBar{
-  width: 20%;
-  padding: 30px;
+  width: 360px;
+  margin-top: 80px;
   box-sizing: border-box;
   h4{
-    margin-top: 30px;
+    margin-top: 60px;
+    font-size: 20px;
+    margin-bottom: 10px;
   }
   ul{
     border:none;
   }
   li{
-    padding:15px 20px;
-    height: 40px;
     list-style: none;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -27,14 +27,18 @@
   li + li{
     border-top:solid 0.5px #F0F0F0;
   }
-  li:hover{
-    background-color: #AAD300;
+  a:hover, .active{
+    background-color: $lightgreen;
   }
-  a {
+  a{
     text-decoration: none;
-    font-size: 15px;
-    color: black;
+    font-size: 14px;
+    color: $black;
     font-style:bold;
     white-space: nowrap;
+    display: block;
+    height: 40px;
+    padding: 20px 0 0 16px;
+    height: 50px;
   }
 }
