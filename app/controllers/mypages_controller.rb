@@ -2,16 +2,19 @@ class MypagesController < ApplicationController
   def notification
   end
   def app_contractor
+    @title = "「インクリメンタルサーチ」"
   end
   def solved_question
-    @labels = ["Ruby", "Javascript"]
+    labels
   end
   def unsolved_question
-    @labels = ["Ruby", "Javascript", "HTML"]
+    labels
   end
   def leaded_question
+    labels
   end
   def review
+    labels
   end
   def guid
   end
@@ -63,6 +66,9 @@ class MypagesController < ApplicationController
   def review2_2_2
   end
   def review2_2_3
+  end
+  def labels
+    @labels = ["Ruby", "Javascript", "HTML"]
   end
 
 end

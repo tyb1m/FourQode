@@ -16,3 +16,86 @@ $blue: #3683FF;
   border-radius: 2px;
   background-color: $green;
 }
+
+@mixin content($color){
+  width: 700px;
+  border: solid 2px $color;
+  display: flex;
+  margin: 20px auto;
+  .status {
+    height: 100px;
+    width: 60px;
+    background-color: $color;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: normal;
+  }
+  .body {
+    padding: 0 10px;
+    height: 100px;
+    .title {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 630px;
+      margin: 10px 0;
+    }
+    .labels {
+      display: flex;
+      justify-content: flex-end;
+      .label {
+        width: 64px;
+        height: 15px;
+        background-color: $gray;
+        text-align: right;
+        border: solid 1px $gray;
+        border-radius: 2px;
+        p {
+          display: inline-block;
+          width: 50px;
+          text-align: center;
+          vertical-align: top;
+          height: 13px;
+          background-color: white;
+          border-radius: 2px;
+        }
+        + .label  {
+          margin-left: 10px;
+        }
+      }
+    }
+    .smallbody {
+      display: flex;
+      .text {
+        width: 400px;
+        height: 50px;
+        overflow-wrap: break-word;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        // white-space: nowrap;∫
+        display: inline-block;
+      }
+      .info {
+        margin-left: 20px;
+        width: 200px;
+        display: flex;
+        height: 50px;
+        align-items: center;
+        .icon {
+          width: 30px;
+          height: 30px;
+          background-color: $black;
+          border-radius: 15px;
+        }
+        .username {
+          width: 160px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

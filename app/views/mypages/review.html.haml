@@ -1,6 +1,6 @@
 %wrapper.mypage
   = render partial: "sidebar"
-  %wrapper.contents
+  %wrapper.main
     %h2 総合評価
     .stats
       .rate 4.6
@@ -8,8 +8,9 @@
         - 4.times do
           = fa_icon "fas fa-star", class: "fas fa-star", style: "margin:0 20px;font-size:60px;"
       .counts 全52件の評価
-    .left.selected 質問側
-    .right 回答側
+    #tabs.reviewtabs
+      %h3.left.selected{data_type: "q_side"} 質問側
+      %h3.right{data_type: "a_side"} 回答側
     .swich
       .status
         .rate
@@ -20,18 +21,42 @@
       .stars
         - 4.times do
           = fa_icon "fas fa-star", class: "fas fa-star", style: "padding-top:25px;font-size:30px;margin:0 5px;"
-    %ul
-    - 10.times do
-      %li{ style: "border-top: solid 1px #DEDEDE;"}
-        .details
-          .from{ style: "margin-right: 20px;"} Norihiro Akishima
-          .date
-            %p 投稿日
-            %p{ style: "margin: 0 20px 0 10px;"} 2019/07/04　23:47
-          %h3{ style: "font-size:20px;margin:10px 0 30px;"} インクリメンタルサーチができません
-        .icon
-        .details
-          .from{style: "margin-top:0;"} Norihiro Akishima
-          .stars
-          - 4.times do
-            = fa_icon "fas fa-star", class: "fas fa-star", style: "font-size:25px;margin:0 5px;color: gold;"
+    #body.bodies
+      - 10.times do
+        こっちは質問側だよ
+        #q_side.content.solved
+          %h4.status
+            解決策
+            %br
+            %br
+            7回答
+          .body
+            %h4.title インクリメンタルサーチができませんああああああああああああああああああああああああああああああああああああ
+            .labels
+              - @labels.each do |label|
+                .label
+                  %p= label
+            .smallbody
+              .text aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              .info
+                .icon{ style: "width:30px;height:30px;"}
+                %p.username ユーザー名(字数制限２０文字まで入る？)
+      - 10.times do
+        こっちは回答側だよー
+        #a_side.content.solved
+          %h4.status
+            解決策
+            %br
+            %br
+            7回答
+          .body
+            %h4.title インクリメンタルサーチができませんああああああああああああああああああああああああああああああああああああ
+            .labels
+              - @labels.each do |label|
+                .label
+                  %p= label
+            .smallbody
+              .text aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              .info
+                .icon{ style: "width:30px;height:30px;"}
+                  %p.username ユーザー名(字数制限２０文字まで入る？)
