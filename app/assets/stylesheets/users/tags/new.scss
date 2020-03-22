@@ -16,7 +16,7 @@
       font-size: 14px;
     }
     #search_form{
-      color: #BABABA;
+      color: $darkgray;
       font-size: 14px;
       text-align: left;
       background: #fff;
@@ -40,7 +40,7 @@
           color: #fff;
           list-style: none;
           border-radius: 2px;
-          background: #BABABA;
+          background: $darkgray;
           padding: 5px;
           margin: 0 5px 20px 0;
         }
@@ -56,7 +56,7 @@
         width: 120px;
         height: 120px;
         overflow: hidden;
-        color: #006600;
+        color: $green;
         text-align: center;
         line-height: 120px;
         border-radius: 50%;
@@ -74,7 +74,7 @@
       color: #fff;
       font-size: 12px;
       border-radius: 2px;
-      background: #006600;
+      background: $green;
       padding: 10px 60px;
     }
   }

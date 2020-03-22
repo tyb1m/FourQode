@@ -233,7 +233,7 @@
     .serch_head{
       width: 300px;
       margin: auto;
-      background-color: #006600;
+      background-color: $green;
       color: #FFFFFF;
       padding: 15px;
       font-size: 15px;
@@ -265,7 +265,7 @@
           flex-wrap:wrap;
           .field_label{
             font-size: 12px;
-            color: #333333;
+            color: $black;
             width: 50%;
             padding-bottom: 20px;
             input[type="checkbox"] {

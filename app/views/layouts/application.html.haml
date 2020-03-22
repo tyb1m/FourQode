@@ -14,9 +14,5 @@
 
   %body
     = render 'default/header'
-    -# フラッシュメッセージの共有化(仮
-    .notifications
-      - flash.each do |key, value|
-        = content_tag(:div, value, class: key)
     = yield
     = render 'default/footer'

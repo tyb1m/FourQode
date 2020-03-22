@@ -1,0 +1,18 @@
+$black: #333333;
+$darkgray: #BABABA;
+$gray: #D3D3D3;
+$lightgray: #FAFAFA;
+$green: #006600;
+$darkgreeen: #074107;
+$lightgreen: #AAD300;
+$red: #A32828;
+$blue: #3683FF;
+
+@mixin button{
+  width: 105px;
+  height: 25px;
+  color: white;
+  padding: 0 20px;
+  border-radius: 2px;
+  background-color: $green;
+}

@@ -1,3 +1,5 @@
+// カラー等の共通化
+@import "shared/common";
 // リセット
 @import "reset";
 
@@ -59,4 +61,3 @@
 // @import url(users/tags/newSp.scss) screen and (max-width: 480px);
 // @import url(users/tags/newTb.scss) screen and (min-width: 480px);
 @import url(users/tags/new.scss) screen and (min-width: 1025px);
-
