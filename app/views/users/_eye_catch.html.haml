@@ -1,0 +1,27 @@
+.toppage_index_block
+  .toppage_index_regist
+    .toppage_index_box
+      .toppage_index_descrpt
+        %p.toppage_index_descrpt_name
+          全てのエンジニアのための[副業]Q&Aサイト
+        %p.toppage_index_descrpt_who
+          4 Qode
+        %p.toppage_index_descrpt_how
+          画面共有と通話であなたの質問解消にコミットする
+          %br 4Qodeでは、あなたの質問の売り買いを通して、スピーディで温かみある質問解消を実現します
+      .toppage_index_inputs
+        .toppage_index_user
+          .toppage_index_register_text
+            新規会員登録
+          = link_to '#', class: "btn-social-long-twitter" do
+            %span Twitterでログイン
+          = link_to '#', class: "btn-social-long-facebook" do
+            %span Facebookでログイン
+          = link_to '#', class: "btn-social-long-github" do
+            %span Githubでログイン
+          .toppage_index_text
+            OR
+          = link_to new_user_registration_path, class: 'toppage_index_signup' do
+            %span メールで新規登録
+    .image_tag
+      = image_tag "PAK86_smonitatocode.jpg", class: 'image_tag'

@@ -1,24 +1,7 @@
-.serch_head
-  現在の検索条件
-.serch_form
-  .serch_tag
-    タグ: PHP
-  .serch_tag
-    キーワードから探す: placeholder/jp
-  .serch_tag
-    絞り込み: フォロー以外
 = form_with(local: true) do |form|
   .serch_head
     検索条件を変更
   .serch_form
-    .serch_p
-      .serch_name
-        タグから探す
-      .serch_tags_flex
-        = form_with(local: true) do |form|
-          - %w(未解決 Ruby PHP Java JS Python C++ 未解決 Ruby PHP Java JS Python C++).each do |r,i|
-            = form.check_box :checkbox, {id: "checkbox1_#{r}", class: "toppage_index_checkbox", multiple: true}, r
-            = form.label(:checkbox, r, for: "checkbox1_#{r}", class: "serch_tags")
     .serch_p
       .serch_name
         キーワードから探す
