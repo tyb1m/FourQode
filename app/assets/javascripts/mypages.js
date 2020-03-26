@@ -38,8 +38,10 @@ $(function() {
       $('.right').removeClass('selected');
     }
     $(this).addClass('selected');
-  })
-})
+    $('#a_side').hide();
+    $('#q_side').show();
+  });
+});
 
 $(function() {
   $(document).on('click', '.reviewtabs .right', function () {
@@ -47,6 +49,8 @@ $(function() {
       $('.left').removeClass('selected');
     }
     $(this).addClass('selected');
+    $('#q_side').hide();
+    $('#a_side').show();
   });
 });
 

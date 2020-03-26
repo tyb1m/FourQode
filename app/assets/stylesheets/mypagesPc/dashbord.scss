@@ -93,7 +93,7 @@
   .counts{
     color:$darkgray;
   }
-  .reviewtab{
+  .reviewtabs{
     display: flex;
     .left, .right{
       width: 50%;
@@ -117,6 +117,9 @@
         color: #848484;
     }
     }
+  }
+  #a_side {
+    display: none;
   }
   .fa-star{
     color: gold;

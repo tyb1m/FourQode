@@ -21,17 +21,16 @@
       .stars
         - 4.times do
           = fa_icon "fas fa-star", class: "fas fa-star", style: "padding-top:25px;font-size:30px;margin:0 5px;"
-    #body.bodies
+    #q_side.bodies
       - 10.times do
-        こっちは質問側だよ
-        #q_side.content.solved
+        .content.solved
           %h4.status
             解決策
             %br
             %br
             7回答
           .body
-            %h4.title インクリメンタルサーチができませんああああああああああああああああああああああああああああああああああああ
+            %h4.title 質問側だよ
             .labels
               - @labels.each do |label|
                 .label
@@ -41,16 +40,16 @@
               .info
                 .icon{ style: "width:30px;height:30px;"}
                 %p.username ユーザー名(字数制限２０文字まで入る？)
+    #a_side.bodies
       - 10.times do
-        こっちは回答側だよー
-        #a_side.content.solved
+        .content.solved
           %h4.status
             解決策
             %br
             %br
             7回答
           .body
-            %h4.title インクリメンタルサーチができませんああああああああああああああああああああああああああああああああああああ
+            %h4.title 回答側だよ
             .labels
               - @labels.each do |label|
                 .label
@@ -59,4 +58,4 @@
               .text aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
               .info
                 .icon{ style: "width:30px;height:30px;"}
-                  %p.username ユーザー名(字数制限２０文字まで入る？)
+                %p.username ユーザー名(字数制限２０文字まで入る？)
