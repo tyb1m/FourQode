@@ -1,8 +1,10 @@
-%section.toppage_index_card
-  %h2 検索結果
-.toppage_index_card
-  .toppage_index_card_wrapper_margin_bottom
-    - 21.times do
-      = render 'shared/questionCard'
-.pager
-  = paginate @pages
+.toppage_index_tag
+  タグから探す
+.toppage_index_category
+  = form_with(local: true) do |form|
+    - %w(未解決 Ruby PHP Java JS Python C++ 未解決 Ruby PHP Java JS Python C++).each do |r,i|
+      = form.check_box :checkbox, {id: "checkbox_#{r}", class: "toppage_index_checkbox", multiple: true}, r
+      = form.label(:checkbox, r, for: "checkbox_#{r}", class: "toppage_index_label")
+= render 'users/toppage_content'
+-# .pager
+-#   = paginate @pages

@@ -53,11 +53,11 @@
 @import "starts/guide";
 
 // answerページ
-@import url(answers/showSp.scss) screen and (max-width: 480px);
-@import url(answers/showTb.scss) screen and (min-width: 480px);
+// @import url(answers/showSp.scss) screen and (max-width: 480px);
+// @import url(answers/showTb.scss) screen and (min-width: 480px);
 @import url(answers/show.scss) screen and (min-width: 1025px);
 
 // タグ登録
-@import url(users/tags/newSp.scss) screen and (max-width: 480px);
-@import url(users/tags/newTb.scss) screen and (min-width: 480px);
+// @import url(users/tags/newSp.scss) screen and (max-width: 480px);
+// @import url(users/tags/newTb.scss) screen and (min-width: 480px);
 @import url(users/tags/new.scss) screen and (min-width: 1025px);

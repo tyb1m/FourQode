@@ -1,9 +1,5 @@
 .body
-  = render 'default/header'
+  - unless user_signed_in?
+    = render 'users/eye_catch'
   = render 'users/toppage'
-  = render 'shared/questionButton'
-  = render 'default/footer'
--# .card_registration_modal.js_card_registration_model
--#   .card_registration_modal_bg.js_card_registration_close
--#   .card_registration_content
--#     = render "users/card_registration_pop_up"
+  = render 'shared/questionButton2'
