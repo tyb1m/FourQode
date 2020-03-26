@@ -1,19 +1,19 @@
 %wrapper.mypage
   = render partial: "sidebar"
-  %wrapper.contents
+  %wrapper.main
     %h2 請負申請者一覧
     %ul
       - 10.times do
         %li{ style: "padding:20px 20px;"}
-          .icon{ style: "margin-right:10px;"}
-          .details
-            .date{ style: "margin:0;"} 2019/3/28　20:30
-            %br
-            .from Hiromu Takeda
-            %span さんから
-            %br
-            .title インクリメンタルサーチができません
-            %span への請負申請依頼がありました。
+          %p.date{ style: "margin-bottom:10px;"}　2019/3/28   20:30
+          %br
+          %p.title #{@title}への依頼申請がありました。
+          .content
+            %h3.status フォロー中
+            .icon
+            .detail
+              %h4.username Hiromu Takeda
+              %p.text aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
     .modalBg
     .appContractorModal1

@@ -1,24 +1,22 @@
 %wrapper.mypage
   = render partial: "sidebar"
-  %wrapper.contents
+  %wrapper.main
     %h2 未解決の質問一覧
-    %ul
-      - 10.times do |num|
-        %li
-          - if num%4 == 0
-            .attention
-              =image_tag 'extramation-mark.png', size: '20x20', alt: "ビックリマーク", style: "vertical-align: bottom;"
-              請負申請が３件あります。
+    - 10.times do |num|
+      .content.unsolved
+        %h4.status
+          受付中
+          %br
+          %br
+          7回答
+        .body
+          %h4.title インクリメンタルサーチができませんああああああああああああああああああああああああああああああああああああ
           .labels
             - @labels.each do |label|
-              %p= label
-          %h3{ style: "margin-bottom:0;"} インクリメンタルサーチができません
-          .status
-            %p{ style: "background-color: #848484;color: white;border-radius:5px;"} 解決済
-            %p 解決数 ７
-            %p 回答数 ３
-          .date
-            %p 投稿日
-            %p{ style: "margin: 0 50px 0 10px;"} 2019/07/04　23:47
-            %p 回答期限
-            %p{ style: "margin-left: 10px;" } 2019/07/11　23:47
+              .label
+                %p= label
+          .smallbody
+            .text aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            .info
+              .icon{ style: "width:30px;height:30px;"}
+              %p.username ユーザー名(字数制限２０文字まで入る？)
