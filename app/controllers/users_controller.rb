@@ -5,11 +5,13 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    @labels = ["Ruby", "Javascript", "HTML"]
   end
 
   def index2
     @users = User.all
     @pages = User.page(params[:page]).per(1)
+    @labels = ["Ruby", "Javascript", "HTML"]
     flash.now[:success] = '質問を受け付けました。ありがとうございます！'
   end
 
