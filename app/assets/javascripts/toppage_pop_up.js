@@ -33,3 +33,21 @@ $(function(){
     return false;
   });
 });
+
+$(function(){
+  $('.answer_submit').on('click',function(){
+      $('.js_answer_model').fadeIn();
+      return false;
+  });
+  $('.js_answer_close').on('click',function(){
+      $('.js_answer_model').fadeOut();
+      return false;
+  });
+});
+
+$(function(){
+  $('.btn1').on('click', function(){
+    $('.js_answer_model').fadeOut();
+    return false;
+  });
+});
