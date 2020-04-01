@@ -15,9 +15,11 @@
 @import url(default/footer/footerTb.scss) screen and (min-width: 480px);
 @import url(users/new/usersNewSp.scss) screen and (max-width: 480px);
 @import url(users/new/usersNewTb.scss) screen and (min-width: 480px);
+@import "users/new/usersNew";
 @import url(users/new/usersNew.scss) screen and (min-width: 1025px);
 // @import url(users/create/createSp.scss) screen and (max-width: 480px);
 // @import url(users/create/createTb.scss) screen and (min-width: 480px);
+@import "users/create/create";
 @import url(users/create/create.scss) screen and (min-width: 1025px);
 
 // ダッシュボード
@@ -63,3 +65,4 @@
 // @import url(users/tags/newSp.scss) screen and (max-width: 480px);
 // @import url(users/tags/newTb.scss) screen and (min-width: 480px);
 @import url(users/tags/new.scss) screen and (min-width: 1025px);
+@import "users/tags/new";

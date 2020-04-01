@@ -22,11 +22,19 @@
     #newUser__sns{
       ul.newMainSnsBox{
         margin: 0 10%;
+        li:nth-child(1){
+          background: #1DA1F2;
+        }
+        li:nth-child(2){
+          background: #3C5A99;
+        }
+        li:nth-child(3){
+          background: #5279E7;
+        }
         li{
           width: 100%;
           list-style: none;
           border-radius: 2px;
-          background: $red;
           margin: 20px auto;
           a{
             display: flex;
@@ -83,6 +91,7 @@
       #newMainMailSend{
         text-align: center;
         .send{
+          height: 60px;
           color: #fff;
           font-size: 13px;
           cursor: pointer;
