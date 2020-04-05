@@ -12,7 +12,6 @@ class UsersController < ApplicationController
     @users = User.all
     @pages = User.page(params[:page]).per(1)
     @labels = ["Ruby", "Javascript", "HTML"]
-    flash.now[:success] = '質問を受け付けました。ありがとうございます！'
   end
 
   # GET /users/1

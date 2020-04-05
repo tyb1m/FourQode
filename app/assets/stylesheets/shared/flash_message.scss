@@ -8,7 +8,7 @@
     color: #FFFFFF;
 }
 
-.heading2{
+.notice{
 	position:relative;
 	padding-left:30px;
 	font-weight: bold;
@@ -16,7 +16,7 @@
 	line-height: 38px;
 }
 
-.heading2:after, .heading2:before{
+.notice:after, .notice:before{
 	content:'';
 	height:18px;
 	width:4px;
@@ -32,7 +32,7 @@
 	-ms-transform:rotate(45deg);
 }
 
-.heading2:before{
+.notice:before{
 	height:10px;
 	transform:rotate(-45deg);
 	-webkit-transform:rotate(-45deg);

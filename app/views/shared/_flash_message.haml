@@ -1,4 +1,3 @@
-.flash
-  - flash.each do |message_type, messagesddd|
-    .heading2
-      = messagesddd
+- flash.each do |key, value|
+  .flash
+    = content_tag(:div, value, class: key)
