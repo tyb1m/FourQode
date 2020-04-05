@@ -2,9 +2,11 @@
   タグから探す
 .toppage_index_category
   = form_with(local: true) do |form|
-    - %w(未解決 Ruby PHP Java JS Python C++ 未解決 Ruby PHP Java JS Python C++).each do |r,i|
+    - %w(HTML5 MySQL Git Go iOS Python  未解決 Ruby PHP Java JS Parl).each do |r,i|
       = form.check_box :checkbox, {id: "checkbox_#{r}", class: "toppage_index_checkbox", multiple: true}, r
       = form.label(:checkbox, r, for: "checkbox_#{r}", class: "toppage_index_label")
+= render 'users/toppage_content'
+= render 'users/toppage_content'
 = render 'users/toppage_content'
 -# .pager
 -#   = paginate @pages

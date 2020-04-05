@@ -1,17 +1,100 @@
-%section.question_card
-  = link_to '#' do
-    .question_card_top
-      .question_card_top_title
-        急募！環境構築ができません！最大文字数を超えたら三点リーダを使ってくだ…
-    .question_card_top_middle
-      .question_card_top_middle_waiting
-        回答受付中
-      .question_card_top_middle_peple
-        7人
-    .question_card_bottom
-      .question_card_bottom_price
-        ¥300,000
-      .question_card_bottom_avater
-        = image_tag "S59981830.png", class: "logo_icon"
-      .question_card_bottom_name
-        Yamada
+-# %section.question_card
+-#   = link_to '#' do
+-#     .question_card_top
+-#       .question_card_top_title
+-#         急募！環境構築ができません！最大文字数を超えたら三点リーダを使ってくだ…
+-#     .question_card_top_middle
+-#       .question_card_top_middle_waiting
+-#         回答受付中
+-#       .question_card_top_middle_peple
+-#         7人
+-#     .question_card_bottom
+-#       .question_card_bottom_price
+-#         ¥300,000
+-#       .question_card_bottom_avater
+-#         = image_tag "S59981830.png", class: "logo_icon"
+-#       .question_card_bottom_name
+-#         Yamada
+
+-# %section.question_card2
+-#   = link_to '#' do
+-#     .container
+-#       .question_left
+-#         .settle
+-#           解決済
+-#           %br
+-#           7回答
+-#       .question_right
+-#         .title
+-#           タイトルは文字数何文字までああああああ全部で37文字あとは三点リーダで...
+-#         .tag_line
+-#           .tag
+-#             タグ名
+-#           .tag
+-#             タグ名
+-#           .tag
+-#             タグ名
+-#         .main
+-#           .text
+-#             本文本文本文本文本文本文本文本文本文本文本文本文本文本
+-#           .user
+-#             ユーザー名
+
+
+%wrapper.main
+  .content.solved
+    %h4.status
+      解決策
+      %br
+      %br
+      7回答
+    .body
+      %h4.title インクリメンタルサーチができませんああああああああああああああああああああああああああああああああああああ
+      .labels
+        - @labels.each do |label|
+          .label
+            %p= label
+      .smallbody
+        .text aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        .info
+          .icon{ style: "width:30px;height:30px;"}
+          %p.username ユーザー名(字数制限２０文字まで入る？)
+
+
+%wrapper.main
+  .content.unsolved
+    %h4.status
+      受付中
+      %br
+      %br
+      7回答
+    .body
+      %h4.title インクリメンタルサーチができませんああああああああああああああああああああああああああああああああああああ
+      .labels
+        - @labels.each do |label|
+          .label
+            %p= label
+      .smallbody
+        .text aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        .info
+          .icon{ style: "width:30px;height:30px;"}
+          %p.username ユーザー名(字数制限２０文字まで入る？)
+
+%wrapper.main
+  .content.unsolved
+    %h4.status
+      受付中
+      %br
+      %br
+      7回答
+    .body
+      %h4.title インクリメンタルサーチができませんああああああああああああああああああああああああああああああああああああ
+      .labels
+        - @labels.each do |label|
+          .label
+            %p= label
+      .smallbody
+        .text aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        .info
+          .icon{ style: "width:30px;height:30px;"}
+          %p.username ユーザー名(字数制限２０文字まで入る？)

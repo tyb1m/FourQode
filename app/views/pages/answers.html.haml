@@ -1,4 +1,3 @@
--# = render 'shared/header'
 #main_container
   #questions_show_container
     #questions_show_detail
@@ -71,4 +70,42 @@
   %button.answer_submit
     質問が解決しました！
     %span 終了する
-= render 'default/footer'
+
+#communication_means
+  .test
+    .call
+      %span
+        .fas.fa-phone-volume
+        %br/
+        通話
+  .test
+    .screen_sharing
+      %span
+        .fas.fa-desktop
+        %br/
+        画面共有
+
+.answer_modal.js_answer_model
+  .answer_modal_bg.js_answer_close
+  .answer_content
+    .answer_header
+      お疲れ様でした！
+      %br/
+      Hironori Tsukisima さんを評価しましょう！
+    .answer_body
+      .answer_body_detail2
+        .answer_body_text2
+          %p 星をクリックで入力
+          .stats
+            .stars
+              - 5.times do
+                = fa_icon "fas fa-star", class: "fas fa-star", style: "margin:0 20px;font-size:60px;"
+          %p お礼メッセージを送ると喜ばれます。
+      .search_form
+        = form_with url: '#' do |f|
+          = f.text_area :comment, autocomplete: "off", placeholder: '&#13;&#10;メッセージ例&#13;&#10;&#13;&#10;ずっと悩んでいた課題が解決さあれました！&#13;&#10;&#13;&#10;初心者の自分にもわかりやすく、素早く解決してくれて助かりました。&#13;&#10;またよろしくお願いします。'.html_safe, class: "search_text_area"
+      .answer_button
+        = link_to "#", class: "btn1" do
+          キャンセル
+        = link_to "#", class: "btn2" do
+          評価する

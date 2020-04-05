@@ -1,17 +1,18 @@
-= form_with(local: true) do |form|
-  .serch_head
-    検索条件を変更
-  .serch_form
-    .serch_p
-      .serch_name
-        キーワードから探す
-      = form_with(local: true) do |form|
-        = form.text_field :key_word, class: "toppage_index_serch_keyword"
-    .serch_p
-      .serch_name
-        絞り込み
-      .field
-        - %w(フォロー中 フォロー中以外 回答なし 回答あり 未解決 解決済み).each do |r,i|
-          .field_label
-            = form.check_box :checkbox, {id: "checkbox_#{r}", multiple: true}, r
-            = form.label(:checkbox, r, value: r, class: "checkbox_form")
+#serch_position
+  = form_with(local: true) do |form|
+    .serch_head
+      検索条件を変更
+    .serch_form
+      .serch_p
+        .serch_name
+          キーワードから探す
+        = form_with(local: true) do |form|
+          = form.text_field :key_word, class: "toppage_index_serch_keyword"
+      .serch_p
+        .serch_name
+          絞り込み
+        .field
+          - %w(フォロー中 フォロー中以外 回答なし 回答あり 未解決 解決済み).each do |r,i|
+            .field_label
+              = form.check_box :checkbox, {id: "checkbox_#{r}", multiple: true}, r
+              = form.label(:checkbox, r, value: r, class: "checkbox_form")

@@ -3,3 +3,31 @@
     = render 'users/eye_catch'
   = render 'users/toppage'
   = render 'shared/questionButton2'
+
+- if user_signed_in?
+  #tag_modal_overlay
+  #setting_tag_modal
+    %span タグが未登録です
+    #registration_tag
+      %span タグを登録することで質問を受けやすくなります
+      = link_to '登録ページへ', new_user_tags_path(current_user)
+    #tag_modal_close あとで登録する
+
+:javascript
+  $(document).ready(function(){
+    var py = window.pageYOffset + document.getElementById("serch_position").getBoundingClientRect().top;
+    $(window).on("scroll", function(){
+      var scrollPosition = $(window).scrollTop();
+      if (py - scrollPosition  > 50){
+        $("#serch_position").css({
+          "position":"relative",
+          "top": "0px"
+        });
+      } else {
+        $("#serch_position").css({
+          "position":"fixed",
+          "top": "50px"
+        });
+      }
+    });
+  });

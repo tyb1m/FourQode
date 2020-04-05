@@ -144,21 +144,23 @@
       display: none;
     }
     input[type="checkbox"].toppage_index_checkbox:checked + label {
-      background: #B3D042;
-      color: #FFFFFF;
+      // background: #B3D042;
+      // color: #FFFFFF;
+      border: 2px solid #B3D042;
+      border-left: solid 30px #B3D042;
     }
     .toppage_index_label:hover {
-      background-color: #99CC99	;
+      // background-color: #99CC99	;
     }
     .toppage_index_label {
       display: block;
       float: left;
-      margin: 5px;
+      margin: 10px;
       width: 105px;
-      height: 40px;
-      font-size: 15px;
+      height: 30px;
+      font-size: 10px;
       text-align: center;
-      line-height: 40px;
+      line-height: 30px;
       padding-left: 5px;
       padding-right: 5px;
       cursor: pointer;
@@ -166,6 +168,7 @@
       border: 2px solid #ccc;
       border-radius: 5px;
       background-color: #FFFFFF;
+      border-left: solid 30px #ccc;
     }
     .toppage_index_card{
       .toppage_index_card_wrapper_margin_bottom{
@@ -182,8 +185,7 @@
       h3 {
         text-align: center;
         font-size: 1.5em;
-        color: #597EE3;
-        padding: 15px 0 50px;
+        padding: 20px 0;
       }
       .toppage_index_more{
         width: 950px;
@@ -221,13 +223,13 @@
     padding: 10px;
   }
   .toppage_index_left{
-    width: 70%;
+    width: 900px;
     padding: 30px;
     box-sizing: border-box;
   }
   .toppage_index_right{
     padding: 30px;
-    width: 30%;
+    width: 200px;
     box-sizing: border-box;
 
     .serch_head{

@@ -16,14 +16,6 @@
           = link_to do
             = image_tag 'github.png'
             Githubで登録
-        %li
-          = link_to do
-            = image_tag 'google.png'
-            Googleで登録
-        %li
-          = link_to do
-            = image_tag 'google.png'
-            はてなで登録
       %p ※4QodeがSNSに投稿することはありません。
     = form_for(@user, html: {id: 'newUser__mail'}) do |f|
       = render "devise/shared/error_messages", resource: resource
