@@ -30,6 +30,7 @@ gem 'coderay'
 
 # active record
 gem 'devise'
+gem 'rails-i18n'
 gem 'carrierwave'
 gem 'fog-aws'
 gem 'mini_magick'
