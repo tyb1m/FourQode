@@ -25,7 +25,7 @@ gem 'haml-rails'
 gem 'erb2haml'
 gem 'font-awesome-rails'
 gem 'high_voltage'
-gem 'redcarpet', '~> 2.3.0'
+gem 'redcarpet', '~> 3.5.1'
 gem 'coderay'
 
 # active record
